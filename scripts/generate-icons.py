@@ -16,7 +16,7 @@ ARCTICONS_DIR = os.path.abspath(args.ARCTICONS_DIR)
 
 def check_arcticons_path(path):
     # Check if the given path includes "Arcticons" folder or if it is one level below
-    arcticons_folder = os.path.join(path, "Arcticons")
+    arcticons_folder = os.path.join(path, "Arcticons-selfhosted")
     if os.path.exists(arcticons_folder) and os.path.isdir(arcticons_folder):
         return arcticons_folder
     else:
@@ -25,7 +25,7 @@ def check_arcticons_path(path):
         if os.path.exists(other_folder) and os.path.isdir(other_folder) and os.path.exists(app_folder) and os.path.isdir(app_folder):
             return path
         else:
-            print(f"The path '{path}' does not include the 'Arcticons' folder.")
+            print(f"The path '{path}' does not include the 'Arcticons-selfhosted' folder.")
             while True:
                 user_input = input("Do you want to continue? (y/n): ").lower()
                 if user_input == 'y':
