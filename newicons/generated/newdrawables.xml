@@ -42,7 +42,6 @@
 	<item drawable="openhab" />
 	<item drawable="openvpn" />
 	<item drawable="owncloud" />
-	<item drawable="paperless-ngx" />
 	<item drawable="peertube" />
 	<item drawable="piwigo" />
 	<item drawable="pleroma" />
@@ -63,6 +62,7 @@
 	<item drawable="tiny_tiny_rss" />
 	<item drawable="ubuntu" />
 	<item drawable="vikunja" />
+	<item drawable="vscodium" />
 	<item drawable="wireguard" />
 	<item drawable="wordpress" />
 	<item drawable="zulip" />
