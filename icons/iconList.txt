@@ -58,6 +58,7 @@ tiddlywiki
 tiny_tiny_rss
 ubuntu
 vikunja
+vscodium
 wireguard
 wordpress
 zulip
