@@ -1,0 +1,80 @@
+body {    
+    font: 1rem/1 ArcticonsSans, sans-serif;
+    color: white;
+    background: #141414;
+    text-align: left;
+    max-width: 150ch;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header { max-width: 80ch; margin:auto }
+
+#popup {
+    visibility: hidden;
+    position: fixed !important;
+    bottom: 5%;
+    left: 50%;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    background: #CCCCCC;
+    color:lightseagreen;
+    transform: translate(-50%, 0%);
+}
+
+.visible {
+    visibility: visible;
+}
+
+a:link, a:visited { color: inherit }
+a:hover,button:hover { color:lightseagreen;}
+
+.searchBar {
+    font: inherit;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    color: inherit;
+    background: none;
+    border-radius: 1rem;
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.light-mode {
+    background:#f2f2f2;
+    color: black;
+    border-color: black;
+}
+
+hr {
+    background: lightseagreen; height: 2px;
+}
+
+.iconList, .iconPanel {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    flex-basis: stretch;
+    gap: 1rem;
+    padding: 1rem;
+    margin:auto;
+}
+
+.iconLink { 
+    font-size: 80%;
+    text-decoration: underline;
+    padding:0.2rem; 
+    
+}
+button {
+    font-family: inherit;
+}
+
+@font-face {
+    font-family: "ArcticonsSans";
+    src: url(https://raw.githubusercontent.com/Arcticons-Team/Arcticons-Font/refs/heads/main/ArcticonsSans-Regular.woff2);
+}
+
