@@ -1,4 +1,4 @@
-iconRawUrl = 'https://raw.githubusercontent.com/skedastically/demo/refs/heads/master'
+iconRawUrl = 'https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master'
 siteTemplateFile = 'scripts/template/template.html'
 iconTemplateFile = 'scripts/template/iconTemplate.html'
 iconListFile = 'icons/iconList.txt'
