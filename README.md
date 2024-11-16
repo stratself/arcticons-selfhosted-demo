@@ -1,10 +1,13 @@
 # Arcticons-selfhosted - Arcticons for self-hosted dashboards!
 
+
+**NOTICE: this is an unofficial WIP. I'll probably showcase this to Arcticons-team later, when I have the time to, but for now it stays here as demo.**
+
 | Website | Matrix Chat (Arcticons Space) | Knowledge Base |
 
 ## Usage
 
-See website. You can also search icons directly on this Github repo.
+See website to search for icons, or search directly on this Github repo.
 
 ## Contribute
 
