@@ -1,11 +1,9 @@
 body {    
-    font: 1rem/1 ArcticonsSans, sans-serif;
+    font: 1rem/1.2 ArcticonsSans, sans-serif;
     color: white;
     background: #141414;
     text-align: left;
-    max-width: 150ch;
     margin: auto;
-    padding: 0 1rem;
 }
 
 header { max-width: 80ch; margin:auto }
@@ -37,7 +35,6 @@ a:hover,button:hover { color:lightseagreen;}
     color: inherit;
     background: none;
     border-radius: 1rem;
-    width: 50%;
     padding: 1rem;
     margin: 1rem;
     text-align: center;
@@ -77,4 +74,3 @@ button {
     font-family: "ArcticonsSans";
     src: url(https://raw.githubusercontent.com/Arcticons-Team/Arcticons-Font/refs/heads/main/ArcticonsSans-Regular.woff2);
 }
-
