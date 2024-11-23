@@ -2,4 +2,14 @@
 <resources>
 	<version>1</version>
 	<category title="New" />
+	<item drawable="collabora_online" />
+	<item drawable="docker" />
+	<item drawable="fluffychat" />
+	<item drawable="gotify" />
+	<item drawable="n8n" />
+	<item drawable="nginx" />
+	<item drawable="postgresql" />
+	<item drawable="siyuan" />
+	<item drawable="stalwart_mail" />
+	<item drawable="wikiless" />
 </resources>
