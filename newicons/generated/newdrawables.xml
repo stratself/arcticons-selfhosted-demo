@@ -2,14 +2,23 @@
 <resources>
 	<version>1</version>
 	<category title="New" />
+	<item drawable="ansible" />
+	<item drawable="authelia" />
 	<item drawable="collabora_online" />
+	<item drawable="conduwuit" />
 	<item drawable="docker" />
+	<item drawable="filebrowser" />
 	<item drawable="fluffychat" />
 	<item drawable="gotify" />
+	<item drawable="headscale" />
+	<item drawable="metabase" />
 	<item drawable="n8n" />
+	<item drawable="netbird" />
 	<item drawable="nginx" />
 	<item drawable="postgresql" />
+	<item drawable="sftpgo" />
 	<item drawable="siyuan" />
 	<item drawable="stalwart_mail" />
+	<item drawable="technitium" />
 	<item drawable="wikiless" />
 </resources>
