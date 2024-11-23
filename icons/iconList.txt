@@ -1,15 +1,19 @@
 aegis
 akkoma
 alpinelinux
+ansible
 arch_linux
+authelia
 bitwarden
 collabora_online
+conduwuit
 debian
 docker
 element
 element_alt
 emby
 fedora
+filebrowser
 fluffychat
 friendica
 git
@@ -17,6 +21,7 @@ gitlab
 gotify
 gotosocial
 grocy
+headscale
 home_assistant
 home_assistant_alt_1
 immich
@@ -34,8 +39,10 @@ lunasea
 mastodon
 matrix
 mattermost
+metabase
 misskey
 n8n
+netbird
 nextcloud
 nextcloud_talk
 nginx
@@ -55,6 +62,7 @@ qbittorrent
 rocketchat
 rss
 seafile
+sftpgo
 simplex_chat
 siyuan
 snikket
@@ -63,6 +71,7 @@ standard_notes
 standard_notes_alt
 syncthing
 tailscale
+technitium
 tiddlywiki
 tiny_tiny_rss
 ubuntu
