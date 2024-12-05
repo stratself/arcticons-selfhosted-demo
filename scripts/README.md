@@ -1,8 +1,12 @@
 # Scripts
 
-All scripts are to run from root directory of repository.
+To prepare a release, run the following scripts from the root directory of the repo:
 
-To prepare a release, run the following scripts in order:
+```bash
+python3 ./scripts/generate-icons.py .
+python3 ./scripts/list-icons.py
+python3 ./scripts/publish-website.py
+```
 
 ## 1. generate-icons.py
 
