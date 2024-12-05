@@ -3,12 +3,16 @@
 	<version>1</version>
 	<category title="New" />
 	<item drawable="ansible" />
+	<item drawable="arcticons" />
 	<item drawable="authelia" />
 	<item drawable="collabora_online" />
 	<item drawable="conduwuit" />
 	<item drawable="docker" />
 	<item drawable="filebrowser" />
+	<item drawable="filestash" />
 	<item drawable="fluffychat" />
+	<item drawable="forgejo" />
+	<item drawable="freshrss" />
 	<item drawable="gotify" />
 	<item drawable="headscale" />
 	<item drawable="metabase" />
@@ -16,6 +20,7 @@
 	<item drawable="netbird" />
 	<item drawable="nginx" />
 	<item drawable="postgresql" />
+	<item drawable="rss_bridge" />
 	<item drawable="sftpgo" />
 	<item drawable="siyuan" />
 	<item drawable="stalwart_mail" />
