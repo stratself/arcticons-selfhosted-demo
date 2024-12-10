@@ -6,10 +6,12 @@ arch_linux
 arcticons
 authelia
 bitwarden
+borg
 collabora_online
 conduwuit
 debian
 docker
+ejabberd
 element
 element_alt
 emby
@@ -26,6 +28,7 @@ gotify
 gotosocial
 grocy
 headscale
+homarr
 home_assistant
 home_assistant_alt_1
 immich
@@ -50,9 +53,15 @@ netbird
 nextcloud
 nextcloud_talk
 nginx
+nginx_proxy_manager
 ntfy
 onionshare
 openhab
+opensuse_leap
+opensuse_leap_micro
+opensuse_microos
+opensuse_tumbleweed
+opensuse_tumbleweed_alt
 openvpn
 owncloud
 paperless-ngx
@@ -61,6 +70,7 @@ piwigo
 pleroma
 plex
 postgresql
+prosody
 proxmox_virtual_environment
 qbittorrent
 rocketchat
@@ -79,6 +89,7 @@ tailscale
 technitium
 tiddlywiki
 tiny_tiny_rss
+traefik
 ubuntu
 vikunja
 vscodium
