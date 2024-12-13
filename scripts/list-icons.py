@@ -1,7 +1,7 @@
 import os
 
 ICONS_PATH = './icons/white/svg'
-(ICON_LIST_PATH) = './icons/iconList.txt'
+(ICON_LIST_PATH) = './scripts/iconList.txt'
 iconList = [i[:-4] for i in os.listdir(ICONS_PATH)]
 print(f"There are {len(iconList)} icons")
 
