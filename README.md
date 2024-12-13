@@ -9,6 +9,8 @@
 
 See website to search for icons, or search directly on this Github repo.
 
+For simplicity, icons are not categorized. This feature may be considered later if there is enough demand.
+
 ## Contribute
 
 To contribute icons, add them to the `/newicons` folder in a pull request. Icons shall follow contribution guidelines and the tutorials in the [Knowledge Base](https://docs.arcticons.com).
