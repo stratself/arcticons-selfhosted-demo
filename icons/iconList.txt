@@ -5,8 +5,10 @@ ansible
 arch_linux
 arcticons
 authelia
+authentik
 bitwarden
 borg
+caddy
 collabora_online
 conduwuit
 debian
@@ -36,17 +38,20 @@ invoice_ninja
 jellyfin
 jitsi_meet
 joplin
+kanidm
 kitchenowl
 kodi
 lemmy
 libretube
 linux_mint
+lldap
 logseq
 lunasea
 mastodon
 matrix
 mattermost
 metabase
+miniflux
 misskey
 n8n
 netbird
@@ -55,6 +60,7 @@ nextcloud_talk
 nginx
 nginx_proxy_manager
 ntfy
+ollama
 onionshare
 openhab
 opensuse_leap
@@ -63,6 +69,7 @@ opensuse_microos
 opensuse_tumbleweed
 opensuse_tumbleweed_alt
 openvpn
+openwrt
 owncloud
 paperless-ngx
 peertube
@@ -91,6 +98,7 @@ tiddlywiki
 tiny_tiny_rss
 traefik
 ubuntu
+unbound
 vikunja
 vscodium
 wikiless

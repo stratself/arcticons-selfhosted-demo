@@ -5,7 +5,9 @@
 	<item drawable="ansible" />
 	<item drawable="arcticons" />
 	<item drawable="authelia" />
+	<item drawable="authentik" />
 	<item drawable="borg" />
+	<item drawable="caddy" />
 	<item drawable="collabora_online" />
 	<item drawable="conduwuit" />
 	<item drawable="docker" />
@@ -18,16 +20,21 @@
 	<item drawable="gotify" />
 	<item drawable="headscale" />
 	<item drawable="homarr" />
+	<item drawable="kanidm" />
+	<item drawable="lldap" />
 	<item drawable="metabase" />
+	<item drawable="miniflux" />
 	<item drawable="n8n" />
 	<item drawable="netbird" />
 	<item drawable="nginx" />
 	<item drawable="nginx_proxy_manager" />
+	<item drawable="ollama" />
 	<item drawable="opensuse_leap" />
 	<item drawable="opensuse_leap_micro" />
 	<item drawable="opensuse_microos" />
 	<item drawable="opensuse_tumbleweed" />
 	<item drawable="opensuse_tumbleweed_alt" />
+	<item drawable="openwrt" />
 	<item drawable="postgresql" />
 	<item drawable="prosody" />
 	<item drawable="rss_bridge" />
@@ -36,5 +43,6 @@
 	<item drawable="stalwart_mail" />
 	<item drawable="technitium" />
 	<item drawable="traefik" />
+	<item drawable="unbound" />
 	<item drawable="wikiless" />
 </resources>
