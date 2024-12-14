@@ -16,10 +16,10 @@ This script is a modified version of [`preparerelease.py`](https://github.com/Ar
 
 ## 2. check-icons.py
 
-Validate the JSON category map and sort alphabetically with the `--sort` flag. Currently only checks for files with missing category or without a reference.
+Validate the JSON category map (`appfilter.json`) and sort alphabetically with the `--sort` flag. Currently only checks for files with missing category or without a reference.
 
 If an alert is raised, kindly fix the issue before proceeding.
 
 ## publish-website.py
 
-Read from `iconList.txt` and add each icon as appropriate divs inside website.
+Read from `appfilter.json` and add each icon as appropriate divs inside website.
