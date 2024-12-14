@@ -14,6 +14,11 @@
             "distros"
         ]
     },
+    "amd": {
+        "categories": [
+            "other"
+        ]
+    },
     "ansible": {
         "categories": [
             "languages"
@@ -59,6 +64,11 @@
             "selfhosted"
         ]
     },
+    "box": {
+        "categories": [
+            "other"
+        ]
+    },
     "caddy": {
         "categories": [
             "selfhosted"
@@ -67,6 +77,11 @@
     "cinny": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "clanguage": {
+        "categories": [
+            "languages"
         ]
     },
     "collabora_online": {
@@ -84,6 +99,16 @@
             "selfhosted"
         ]
     },
+    "cplusplus": {
+        "categories": [
+            "languages"
+        ]
+    },
+    "csharp": {
+        "categories": [
+            "languages"
+        ]
+    },
     "debian": {
         "categories": [
             "distros"
@@ -92,6 +117,11 @@
     "docker": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "dropbox": {
+        "categories": [
+            "other"
         ]
     },
     "ejabberd": {
@@ -110,6 +140,11 @@
         ]
     },
     "emby": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "ente": {
         "categories": [
             "selfhosted"
         ]
@@ -159,9 +194,44 @@
             "selfhosted"
         ]
     },
+    "github": {
+        "categories": [
+            "other"
+        ]
+    },
     "gitlab": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "google": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_alt": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_alt_3": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_alt_4": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_gemini": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_keep": {
+        "categories": [
+            "other"
         ]
     },
     "gotify": {
@@ -239,9 +309,24 @@
             "selfhosted"
         ]
     },
+    "kodiremote": {
+        "categories": [
+            "other"
+        ]
+    },
+    "kofi": {
+        "categories": [
+            "other"
+        ]
+    },
     "lemmy": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "libreoffice": {
+        "categories": [
+            "other"
         ]
     },
     "libretube": {
@@ -289,6 +374,26 @@
             "selfhosted"
         ]
     },
+    "microsoft_azure": {
+        "categories": [
+            "other"
+        ]
+    },
+    "microsoft_outlook": {
+        "categories": [
+            "other"
+        ]
+    },
+    "minecraft": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "minecraft_alt_1": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "miniflux": {
         "categories": [
             "selfhosted"
@@ -297,6 +402,16 @@
     "misskey": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "monero": {
+        "categories": [
+            "other"
+        ]
+    },
+    "mullvad_vpn": {
+        "categories": [
+            "other"
         ]
     },
     "n8n": {
@@ -329,6 +444,16 @@
             "selfhosted"
         ]
     },
+    "nordvpn": {
+        "categories": [
+            "other"
+        ]
+    },
+    "notion": {
+        "categories": [
+            "languages"
+        ]
+    },
     "ntfy": {
         "categories": [
             "selfhosted"
@@ -342,6 +467,11 @@
     "onionshare": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "openai_chatgpt": {
+        "categories": [
+            "other"
         ]
     },
     "openhab": {
@@ -434,6 +564,11 @@
             "selfhosted"
         ]
     },
+    "reddit": {
+        "categories": [
+            "other"
+        ]
+    },
     "rocketchat": {
         "categories": [
             "selfhosted"
@@ -477,6 +612,21 @@
     "snikket": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "spotify": {
+        "categories": [
+            "other"
+        ]
+    },
+    "spotify_alt_1": {
+        "categories": [
+            "other"
+        ]
+    },
+    "spotify_alt_2": {
+        "categories": [
+            "other"
         ]
     },
     "stalwart_mail": {
@@ -559,164 +709,14 @@
             "selfhosted"
         ]
     },
-    "zulip": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "github": {
-        "categories": [
-            "other"
-        ]
-    },
-    "libreoffice": {
-        "categories": [
-            "other"
-        ]
-    },
-    "spotify": {
-        "categories": [
-            "other"
-        ]
-    },
-    "spotify_alt_1": {
-        "categories": [
-            "other"
-        ]
-    },
-    "spotify_alt_2": {
-        "categories": [
-            "other"
-        ]
-    },
     "youtube": {
         "categories": [
             "other"
         ]
     },
-    "reddit": {
+    "zalo": {
         "categories": [
             "other"
-        ]
-    },
-    "nordvpn": {
-        "categories": [
-            "other"
-        ]
-    },
-    "mullvad_vpn": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_alt": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_alt_3": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_alt_4": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_keep": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_gemini": {
-        "categories": [
-            "other"
-        ]
-    },
-    "kodiremote": {
-        "categories": [
-            "other"
-        ]
-    },
-    "kofi": {
-        "categories": [
-            "other"
-        ]
-    },
-    "box": {
-        "categories": [
-            "other"
-        ]
-    },
-    "monero": {
-        "categories": [
-            "other"
-        ]
-    },
-    "microsoft_azure": {
-        "categories": [
-            "other"
-        ]
-    },
-    "minecraft": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "minecraft_alt_1": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "cplusplus": {
-        "categories": [
-            "languages"
-        ]
-    },
-    "clanguage": {
-        "categories": [
-            "languages"
-        ]
-    },
-    "csharp": {
-        "categories": [
-            "languages"
-        ]
-    },
-    "notion": {
-        "categories": [
-            "languages"
-        ]
-    },  
-    "microsoft_outlook": {
-        "categories": [
-            "other"
-        ]
-    },
-    "amd": {
-        "categories": [
-            "other"
-        ]
-    },
-    "dropbox": {
-        "categories": [
-            "other"
-        ]
-    },
-    "chatgpt": {
-        "categories": [
-            "other"
-        ]
-    },
-    "ente": {
-        "categories": [
-            "selfhosted"
         ]
     },
     "zerotier": {
@@ -724,10 +724,9 @@
             "selfhosted"
         ]
     },
-    "zalo": {
+    "zulip": {
         "categories": [
-            "other"
+            "selfhosted"
         ]
     }
-    
 }
