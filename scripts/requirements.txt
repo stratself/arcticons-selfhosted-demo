@@ -1,0 +1,6 @@
+json
+lxml
+shutil
+pillow
+argparse
+cairosvg

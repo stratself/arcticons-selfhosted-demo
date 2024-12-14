@@ -1,21 +1,26 @@
+import json 
+
 iconRawUrl = 'https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master'
 siteTemplateFile = 'scripts/template/template.html'
 iconTemplateFile = 'scripts/template/iconTemplate.html'
-iconListFile = 'scripts/iconList.txt'
+iconCategoryMap = 'newicons/appfilter.json'
 websiteFile = 'docs/index.html'
 svgLink = iconRawUrl + '/icons/white/svg/'
 pngLink = iconRawUrl + '/icons/white/png/'
 webpLink = iconRawUrl + '/icons/white/webp/'
 
-def publishWebsite(siteTemplateFile, iconTemplateFile, iconListFile, websiteFile):
+def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteFile):
+    
     iconTemplate = open(iconTemplateFile,'r').read()
-    icons = open(iconListFile).read().split()
+    tagmap = json.load(open(iconCategoryMap,"r"))
+    icons = [i for i in tagmap]
     iconDivs = ""
 
     for icon in icons:
         print(f"Exporting {icon} to website")
         iconTitle = icon.title().replace("_"," ")
         iconDiv = iconTemplate.replace("{icon}",icon)
+        iconDiv = iconDiv.replace("{iconCategories}",str(" ".join(tagmap[icon]["categories"])))
         iconDiv = iconDiv.replace("{iconTitle}",iconTitle)
         iconDiv = iconDiv.replace("{svgLink}",svgLink)
         iconDiv = iconDiv.replace("{pngLink}",pngLink)
@@ -35,4 +40,4 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconListFile, websiteFile
     print("Completed!")
 
 if __name__ == "__main__":
-    publishWebsite(siteTemplateFile,iconTemplateFile,iconListFile,websiteFile)
+    publishWebsite(siteTemplateFile,iconTemplateFile,iconCategoryMap,websiteFile)

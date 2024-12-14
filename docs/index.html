@@ -14,17 +14,24 @@
           - 
           <a href="https://docs.arcticons.com/selfhosted">Contribute</a>
           -          
-          <button onclick="lightMode()">Dark/Light</button>    
+          <button class="light-mode-button" onclick="lightMode()">💡/🌙</button>    
           <p>Search for an icon and click on the desired format to copy its file URLs</p>
       </nav>
-      </header>
-    <center id="search">
+      <center id="search">
         <input id="searchBar" class="searchBar" type="search" placeholder="search">
+        <br>
+        <text>Categories:</text>
+        <button id="selfhosted-toggle" class="button-on" onclick="myFunction('selfhosted')">Selfhosted</button>
+        <button id="distros-toggle" class="button-on" onclick="myFunction('distros')">Distros</button>
+        <button id="languages-toggle" class="button-on" onclick="myFunction('languages')">Languages</button>
+        <button id="other-toggle" class="button-on" onclick="myFunction('other')">Other</button>
+        <button id="emojis-toggle" class="button-on" onclick="myFunction('emojis')">Emojis</button>
     </center>
+    </header>
     <div id="popup">
       URL copied!
     </div> 
-    <div class="iconList"><div class="iconPanel" id=aegis>
+    <div class="iconList"><div class="iconPanel selfhosted" id=aegis>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/aegis.svg" width="96px">
     <div class="iconDetails">
         <h3>Aegis</h3>
@@ -37,7 +44,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=akkoma>
+<div class="iconPanel selfhosted" id=akkoma>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/akkoma.svg" width="96px">
     <div class="iconDetails">
         <h3>Akkoma</h3>
@@ -50,20 +57,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=alpinelinux>
-    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/alpinelinux.svg" width="96px">
-    <div class="iconDetails">
-        <h3>Alpinelinux</h3>
-        <div class="iconCopy">
-            <div class="iconFormats">
-                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/alpinelinux.svg">SVG</a> |
-                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/alpinelinux.png">PNG</a> |
-                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/alpinelinux.webp">WEBP</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="iconPanel" id=alpine_linux>
+<div class="iconPanel distros" id=alpine_linux>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/alpine_linux.svg" width="96px">
     <div class="iconDetails">
         <h3>Alpine Linux</h3>
@@ -76,7 +70,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=ansible>
+<div class="iconPanel languages" id=ansible>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/ansible.svg" width="96px">
     <div class="iconDetails">
         <h3>Ansible</h3>
@@ -89,7 +83,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=apprise>
+<div class="iconPanel selfhosted" id=apprise>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/apprise.svg" width="96px">
     <div class="iconDetails">
         <h3>Apprise</h3>
@@ -102,7 +96,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=arch_linux>
+<div class="iconPanel distros" id=arch_linux>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/arch_linux.svg" width="96px">
     <div class="iconDetails">
         <h3>Arch Linux</h3>
@@ -115,7 +109,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=arcticons>
+<div class="iconPanel other" id=arcticons>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/arcticons.svg" width="96px">
     <div class="iconDetails">
         <h3>Arcticons</h3>
@@ -128,7 +122,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=artix_linux>
+<div class="iconPanel distros" id=artix_linux>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/artix_linux.svg" width="96px">
     <div class="iconDetails">
         <h3>Artix Linux</h3>
@@ -141,7 +135,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=authelia>
+<div class="iconPanel selfhosted" id=authelia>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/authelia.svg" width="96px">
     <div class="iconDetails">
         <h3>Authelia</h3>
@@ -154,7 +148,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=authentik>
+<div class="iconPanel selfhosted" id=authentik>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/authentik.svg" width="96px">
     <div class="iconDetails">
         <h3>Authentik</h3>
@@ -167,7 +161,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=bitwarden>
+<div class="iconPanel selfhosted" id=bitwarden>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/bitwarden.svg" width="96px">
     <div class="iconDetails">
         <h3>Bitwarden</h3>
@@ -180,7 +174,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=borg>
+<div class="iconPanel selfhosted" id=borg>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/borg.svg" width="96px">
     <div class="iconDetails">
         <h3>Borg</h3>
@@ -193,7 +187,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=caddy>
+<div class="iconPanel selfhosted" id=caddy>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/caddy.svg" width="96px">
     <div class="iconDetails">
         <h3>Caddy</h3>
@@ -206,7 +200,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=cinny>
+<div class="iconPanel selfhosted" id=cinny>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/cinny.svg" width="96px">
     <div class="iconDetails">
         <h3>Cinny</h3>
@@ -219,7 +213,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=collabora_online>
+<div class="iconPanel selfhosted" id=collabora_online>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/collabora_online.svg" width="96px">
     <div class="iconDetails">
         <h3>Collabora Online</h3>
@@ -232,7 +226,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=conduwuit>
+<div class="iconPanel selfhosted" id=conduwuit>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/conduwuit.svg" width="96px">
     <div class="iconDetails">
         <h3>Conduwuit</h3>
@@ -245,7 +239,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=conversejs>
+<div class="iconPanel selfhosted" id=conversejs>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/conversejs.svg" width="96px">
     <div class="iconDetails">
         <h3>Conversejs</h3>
@@ -258,7 +252,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=debian>
+<div class="iconPanel distros" id=debian>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/debian.svg" width="96px">
     <div class="iconDetails">
         <h3>Debian</h3>
@@ -271,7 +265,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=docker>
+<div class="iconPanel selfhosted" id=docker>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/docker.svg" width="96px">
     <div class="iconDetails">
         <h3>Docker</h3>
@@ -284,7 +278,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=ejabberd>
+<div class="iconPanel selfhosted" id=ejabberd>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/ejabberd.svg" width="96px">
     <div class="iconDetails">
         <h3>Ejabberd</h3>
@@ -297,7 +291,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=element>
+<div class="iconPanel selfhosted" id=element>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/element.svg" width="96px">
     <div class="iconDetails">
         <h3>Element</h3>
@@ -310,7 +304,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=element_alt>
+<div class="iconPanel selfhosted" id=element_alt>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/element_alt.svg" width="96px">
     <div class="iconDetails">
         <h3>Element Alt</h3>
@@ -323,7 +317,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=emby>
+<div class="iconPanel selfhosted" id=emby>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/emby.svg" width="96px">
     <div class="iconDetails">
         <h3>Emby</h3>
@@ -336,7 +330,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=fedora>
+<div class="iconPanel distros" id=fedora>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/fedora.svg" width="96px">
     <div class="iconDetails">
         <h3>Fedora</h3>
@@ -349,7 +343,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=filebrowser>
+<div class="iconPanel selfhosted" id=filebrowser>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/filebrowser.svg" width="96px">
     <div class="iconDetails">
         <h3>Filebrowser</h3>
@@ -362,7 +356,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=filestash>
+<div class="iconPanel selfhosted" id=filestash>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/filestash.svg" width="96px">
     <div class="iconDetails">
         <h3>Filestash</h3>
@@ -375,7 +369,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=fluffychat>
+<div class="iconPanel selfhosted" id=fluffychat>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/fluffychat.svg" width="96px">
     <div class="iconDetails">
         <h3>Fluffychat</h3>
@@ -388,7 +382,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=forgejo>
+<div class="iconPanel selfhosted" id=forgejo>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/forgejo.svg" width="96px">
     <div class="iconDetails">
         <h3>Forgejo</h3>
@@ -401,7 +395,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=freshrss>
+<div class="iconPanel selfhosted" id=freshrss>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/freshrss.svg" width="96px">
     <div class="iconDetails">
         <h3>Freshrss</h3>
@@ -414,7 +408,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=friendica>
+<div class="iconPanel selfhosted" id=friendica>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/friendica.svg" width="96px">
     <div class="iconDetails">
         <h3>Friendica</h3>
@@ -427,7 +421,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=git>
+<div class="iconPanel selfhosted" id=git>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/git.svg" width="96px">
     <div class="iconDetails">
         <h3>Git</h3>
@@ -440,7 +434,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=gitlab>
+<div class="iconPanel selfhosted" id=gitlab>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/gitlab.svg" width="96px">
     <div class="iconDetails">
         <h3>Gitlab</h3>
@@ -453,7 +447,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=gotify>
+<div class="iconPanel selfhosted" id=gotify>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/gotify.svg" width="96px">
     <div class="iconDetails">
         <h3>Gotify</h3>
@@ -466,7 +460,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=gotosocial>
+<div class="iconPanel selfhosted" id=gotosocial>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/gotosocial.svg" width="96px">
     <div class="iconDetails">
         <h3>Gotosocial</h3>
@@ -479,7 +473,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=grocy>
+<div class="iconPanel selfhosted" id=grocy>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/grocy.svg" width="96px">
     <div class="iconDetails">
         <h3>Grocy</h3>
@@ -492,7 +486,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=headscale>
+<div class="iconPanel selfhosted" id=headscale>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/headscale.svg" width="96px">
     <div class="iconDetails">
         <h3>Headscale</h3>
@@ -505,7 +499,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=homarr>
+<div class="iconPanel selfhosted" id=homarr>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/homarr.svg" width="96px">
     <div class="iconDetails">
         <h3>Homarr</h3>
@@ -518,7 +512,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=home_assistant>
+<div class="iconPanel selfhosted" id=home_assistant>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/home_assistant.svg" width="96px">
     <div class="iconDetails">
         <h3>Home Assistant</h3>
@@ -531,7 +525,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=home_assistant_alt_1>
+<div class="iconPanel selfhosted" id=home_assistant_alt_1>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/home_assistant_alt_1.svg" width="96px">
     <div class="iconDetails">
         <h3>Home Assistant Alt 1</h3>
@@ -544,7 +538,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=immich>
+<div class="iconPanel selfhosted" id=immich>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/immich.svg" width="96px">
     <div class="iconDetails">
         <h3>Immich</h3>
@@ -557,7 +551,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=invoice_ninja>
+<div class="iconPanel selfhosted" id=invoice_ninja>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/invoice_ninja.svg" width="96px">
     <div class="iconDetails">
         <h3>Invoice Ninja</h3>
@@ -570,7 +564,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=jellyfin>
+<div class="iconPanel selfhosted" id=jellyfin>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/jellyfin.svg" width="96px">
     <div class="iconDetails">
         <h3>Jellyfin</h3>
@@ -583,7 +577,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=jitsi_meet>
+<div class="iconPanel selfhosted" id=jitsi_meet>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/jitsi_meet.svg" width="96px">
     <div class="iconDetails">
         <h3>Jitsi Meet</h3>
@@ -596,7 +590,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=joplin>
+<div class="iconPanel selfhosted" id=joplin>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/joplin.svg" width="96px">
     <div class="iconDetails">
         <h3>Joplin</h3>
@@ -609,7 +603,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=kanidm>
+<div class="iconPanel selfhosted" id=kanidm>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/kanidm.svg" width="96px">
     <div class="iconDetails">
         <h3>Kanidm</h3>
@@ -622,7 +616,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=kitchenowl>
+<div class="iconPanel selfhosted" id=kitchenowl>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/kitchenowl.svg" width="96px">
     <div class="iconDetails">
         <h3>Kitchenowl</h3>
@@ -635,7 +629,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=kodi>
+<div class="iconPanel selfhosted" id=kodi>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/kodi.svg" width="96px">
     <div class="iconDetails">
         <h3>Kodi</h3>
@@ -648,7 +642,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=lemmy>
+<div class="iconPanel selfhosted" id=lemmy>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/lemmy.svg" width="96px">
     <div class="iconDetails">
         <h3>Lemmy</h3>
@@ -661,7 +655,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=libretube>
+<div class="iconPanel selfhosted" id=libretube>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/libretube.svg" width="96px">
     <div class="iconDetails">
         <h3>Libretube</h3>
@@ -674,7 +668,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=linux_mint>
+<div class="iconPanel selfhosted" id=linux_mint>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/linux_mint.svg" width="96px">
     <div class="iconDetails">
         <h3>Linux Mint</h3>
@@ -687,7 +681,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=lldap>
+<div class="iconPanel selfhosted" id=lldap>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/lldap.svg" width="96px">
     <div class="iconDetails">
         <h3>Lldap</h3>
@@ -700,7 +694,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=logseq>
+<div class="iconPanel selfhosted" id=logseq>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/logseq.svg" width="96px">
     <div class="iconDetails">
         <h3>Logseq</h3>
@@ -713,7 +707,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=lunasea>
+<div class="iconPanel selfhosted" id=lunasea>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/lunasea.svg" width="96px">
     <div class="iconDetails">
         <h3>Lunasea</h3>
@@ -726,7 +720,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=mastodon>
+<div class="iconPanel selfhosted" id=mastodon>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/mastodon.svg" width="96px">
     <div class="iconDetails">
         <h3>Mastodon</h3>
@@ -739,7 +733,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=matrix>
+<div class="iconPanel selfhosted" id=matrix>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/matrix.svg" width="96px">
     <div class="iconDetails">
         <h3>Matrix</h3>
@@ -752,7 +746,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=mattermost>
+<div class="iconPanel selfhosted" id=mattermost>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/mattermost.svg" width="96px">
     <div class="iconDetails">
         <h3>Mattermost</h3>
@@ -765,7 +759,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=metabase>
+<div class="iconPanel selfhosted" id=metabase>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/metabase.svg" width="96px">
     <div class="iconDetails">
         <h3>Metabase</h3>
@@ -778,7 +772,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=miniflux>
+<div class="iconPanel selfhosted" id=miniflux>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/miniflux.svg" width="96px">
     <div class="iconDetails">
         <h3>Miniflux</h3>
@@ -791,7 +785,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=misskey>
+<div class="iconPanel selfhosted" id=misskey>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/misskey.svg" width="96px">
     <div class="iconDetails">
         <h3>Misskey</h3>
@@ -804,7 +798,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=n8n>
+<div class="iconPanel selfhosted" id=n8n>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/n8n.svg" width="96px">
     <div class="iconDetails">
         <h3>N8N</h3>
@@ -817,7 +811,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=netbird>
+<div class="iconPanel selfhosted" id=netbird>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/netbird.svg" width="96px">
     <div class="iconDetails">
         <h3>Netbird</h3>
@@ -830,7 +824,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=nextcloud>
+<div class="iconPanel selfhosted" id=nextcloud>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/nextcloud.svg" width="96px">
     <div class="iconDetails">
         <h3>Nextcloud</h3>
@@ -843,7 +837,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=nextcloud_talk>
+<div class="iconPanel selfhosted" id=nextcloud_talk>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/nextcloud_talk.svg" width="96px">
     <div class="iconDetails">
         <h3>Nextcloud Talk</h3>
@@ -856,7 +850,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=nginx>
+<div class="iconPanel selfhosted" id=nginx>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/nginx.svg" width="96px">
     <div class="iconDetails">
         <h3>Nginx</h3>
@@ -869,7 +863,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=nginx_proxy_manager>
+<div class="iconPanel selfhosted" id=nginx_proxy_manager>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/nginx_proxy_manager.svg" width="96px">
     <div class="iconDetails">
         <h3>Nginx Proxy Manager</h3>
@@ -882,7 +876,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=ntfy>
+<div class="iconPanel selfhosted" id=ntfy>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/ntfy.svg" width="96px">
     <div class="iconDetails">
         <h3>Ntfy</h3>
@@ -895,7 +889,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=ollama>
+<div class="iconPanel selfhosted" id=ollama>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/ollama.svg" width="96px">
     <div class="iconDetails">
         <h3>Ollama</h3>
@@ -908,7 +902,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=onionshare>
+<div class="iconPanel selfhosted" id=onionshare>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/onionshare.svg" width="96px">
     <div class="iconDetails">
         <h3>Onionshare</h3>
@@ -921,7 +915,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=openhab>
+<div class="iconPanel selfhosted" id=openhab>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/openhab.svg" width="96px">
     <div class="iconDetails">
         <h3>Openhab</h3>
@@ -934,7 +928,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=opensuse_leap>
+<div class="iconPanel distros" id=opensuse_leap>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/opensuse_leap.svg" width="96px">
     <div class="iconDetails">
         <h3>Opensuse Leap</h3>
@@ -947,7 +941,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=opensuse_leap_micro>
+<div class="iconPanel distros" id=opensuse_leap_micro>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/opensuse_leap_micro.svg" width="96px">
     <div class="iconDetails">
         <h3>Opensuse Leap Micro</h3>
@@ -960,7 +954,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=opensuse_microos>
+<div class="iconPanel distros" id=opensuse_microos>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/opensuse_microos.svg" width="96px">
     <div class="iconDetails">
         <h3>Opensuse Microos</h3>
@@ -973,7 +967,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=opensuse_tumbleweed>
+<div class="iconPanel distros" id=opensuse_tumbleweed>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/opensuse_tumbleweed.svg" width="96px">
     <div class="iconDetails">
         <h3>Opensuse Tumbleweed</h3>
@@ -986,7 +980,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=opensuse_tumbleweed_alt>
+<div class="iconPanel distros" id=opensuse_tumbleweed_alt>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/opensuse_tumbleweed_alt.svg" width="96px">
     <div class="iconDetails">
         <h3>Opensuse Tumbleweed Alt</h3>
@@ -999,7 +993,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=openvpn>
+<div class="iconPanel selfhosted" id=openvpn>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/openvpn.svg" width="96px">
     <div class="iconDetails">
         <h3>Openvpn</h3>
@@ -1012,7 +1006,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=openwrt>
+<div class="iconPanel distros" id=openwrt>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/openwrt.svg" width="96px">
     <div class="iconDetails">
         <h3>Openwrt</h3>
@@ -1025,7 +1019,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=owncloud>
+<div class="iconPanel selfhosted" id=owncloud>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/owncloud.svg" width="96px">
     <div class="iconDetails">
         <h3>Owncloud</h3>
@@ -1038,7 +1032,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=paperless-ngx>
+<div class="iconPanel selfhosted" id=paperless-ngx>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/paperless-ngx.svg" width="96px">
     <div class="iconDetails">
         <h3>Paperless-Ngx</h3>
@@ -1051,7 +1045,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=peertube>
+<div class="iconPanel selfhosted" id=peertube>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/peertube.svg" width="96px">
     <div class="iconDetails">
         <h3>Peertube</h3>
@@ -1064,7 +1058,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=piwigo>
+<div class="iconPanel selfhosted" id=piwigo>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/piwigo.svg" width="96px">
     <div class="iconDetails">
         <h3>Piwigo</h3>
@@ -1077,7 +1071,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=pleroma>
+<div class="iconPanel selfhosted" id=pleroma>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/pleroma.svg" width="96px">
     <div class="iconDetails">
         <h3>Pleroma</h3>
@@ -1090,7 +1084,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=plex>
+<div class="iconPanel selfhosted" id=plex>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/plex.svg" width="96px">
     <div class="iconDetails">
         <h3>Plex</h3>
@@ -1103,7 +1097,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=postgresql>
+<div class="iconPanel selfhosted" id=postgresql>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/postgresql.svg" width="96px">
     <div class="iconDetails">
         <h3>Postgresql</h3>
@@ -1116,7 +1110,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=prosody>
+<div class="iconPanel selfhosted" id=prosody>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/prosody.svg" width="96px">
     <div class="iconDetails">
         <h3>Prosody</h3>
@@ -1129,7 +1123,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=proxmox_virtual_environment>
+<div class="iconPanel selfhosted" id=proxmox_virtual_environment>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/proxmox_virtual_environment.svg" width="96px">
     <div class="iconDetails">
         <h3>Proxmox Virtual Environment</h3>
@@ -1142,7 +1136,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=qbittorrent>
+<div class="iconPanel selfhosted" id=qbittorrent>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/qbittorrent.svg" width="96px">
     <div class="iconDetails">
         <h3>Qbittorrent</h3>
@@ -1155,7 +1149,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=rocketchat>
+<div class="iconPanel selfhosted" id=rocketchat>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/rocketchat.svg" width="96px">
     <div class="iconDetails">
         <h3>Rocketchat</h3>
@@ -1168,7 +1162,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=rss>
+<div class="iconPanel selfhosted" id=rss>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/rss.svg" width="96px">
     <div class="iconDetails">
         <h3>Rss</h3>
@@ -1181,7 +1175,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=rss_bridge>
+<div class="iconPanel selfhosted" id=rss_bridge>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/rss_bridge.svg" width="96px">
     <div class="iconDetails">
         <h3>Rss Bridge</h3>
@@ -1194,7 +1188,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=schildichat>
+<div class="iconPanel selfhosted" id=schildichat>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/schildichat.svg" width="96px">
     <div class="iconDetails">
         <h3>Schildichat</h3>
@@ -1207,7 +1201,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=seafile>
+<div class="iconPanel selfhosted" id=seafile>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/seafile.svg" width="96px">
     <div class="iconDetails">
         <h3>Seafile</h3>
@@ -1220,7 +1214,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=sftpgo>
+<div class="iconPanel selfhosted" id=sftpgo>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/sftpgo.svg" width="96px">
     <div class="iconDetails">
         <h3>Sftpgo</h3>
@@ -1233,7 +1227,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=simplex_chat>
+<div class="iconPanel selfhosted" id=simplex_chat>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/simplex_chat.svg" width="96px">
     <div class="iconDetails">
         <h3>Simplex Chat</h3>
@@ -1246,7 +1240,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=siyuan>
+<div class="iconPanel selfhosted" id=siyuan>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/siyuan.svg" width="96px">
     <div class="iconDetails">
         <h3>Siyuan</h3>
@@ -1259,7 +1253,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=snikket>
+<div class="iconPanel selfhosted" id=snikket>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/snikket.svg" width="96px">
     <div class="iconDetails">
         <h3>Snikket</h3>
@@ -1272,7 +1266,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=stalwart_mail>
+<div class="iconPanel selfhosted" id=stalwart_mail>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/stalwart_mail.svg" width="96px">
     <div class="iconDetails">
         <h3>Stalwart Mail</h3>
@@ -1285,7 +1279,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=standard_notes>
+<div class="iconPanel selfhosted" id=standard_notes>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/standard_notes.svg" width="96px">
     <div class="iconDetails">
         <h3>Standard Notes</h3>
@@ -1298,7 +1292,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=standard_notes_alt>
+<div class="iconPanel selfhosted" id=standard_notes_alt>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/standard_notes_alt.svg" width="96px">
     <div class="iconDetails">
         <h3>Standard Notes Alt</h3>
@@ -1311,7 +1305,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=syncthing>
+<div class="iconPanel selfhosted" id=syncthing>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/syncthing.svg" width="96px">
     <div class="iconDetails">
         <h3>Syncthing</h3>
@@ -1324,7 +1318,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=tailscale>
+<div class="iconPanel selfhosted" id=tailscale>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/tailscale.svg" width="96px">
     <div class="iconDetails">
         <h3>Tailscale</h3>
@@ -1337,7 +1331,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=technitium>
+<div class="iconPanel selfhosted" id=technitium>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/technitium.svg" width="96px">
     <div class="iconDetails">
         <h3>Technitium</h3>
@@ -1350,7 +1344,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=tiddlywiki>
+<div class="iconPanel selfhosted" id=tiddlywiki>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/tiddlywiki.svg" width="96px">
     <div class="iconDetails">
         <h3>Tiddlywiki</h3>
@@ -1363,7 +1357,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=tiny_tiny_rss>
+<div class="iconPanel selfhosted" id=tiny_tiny_rss>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/tiny_tiny_rss.svg" width="96px">
     <div class="iconDetails">
         <h3>Tiny Tiny Rss</h3>
@@ -1376,7 +1370,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=traefik>
+<div class="iconPanel selfhosted" id=traefik>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/traefik.svg" width="96px">
     <div class="iconDetails">
         <h3>Traefik</h3>
@@ -1389,7 +1383,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=ubuntu>
+<div class="iconPanel distros" id=ubuntu>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/ubuntu.svg" width="96px">
     <div class="iconDetails">
         <h3>Ubuntu</h3>
@@ -1402,7 +1396,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=unbound>
+<div class="iconPanel selfhosted" id=unbound>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/unbound.svg" width="96px">
     <div class="iconDetails">
         <h3>Unbound</h3>
@@ -1415,7 +1409,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=vikunja>
+<div class="iconPanel selfhosted" id=vikunja>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/vikunja.svg" width="96px">
     <div class="iconDetails">
         <h3>Vikunja</h3>
@@ -1428,7 +1422,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=vscodium>
+<div class="iconPanel selfhosted" id=vscodium>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/vscodium.svg" width="96px">
     <div class="iconDetails">
         <h3>Vscodium</h3>
@@ -1441,7 +1435,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=wikiless>
+<div class="iconPanel selfhosted" id=wikiless>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/wikiless.svg" width="96px">
     <div class="iconDetails">
         <h3>Wikiless</h3>
@@ -1454,7 +1448,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=wireguard>
+<div class="iconPanel selfhosted" id=wireguard>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/wireguard.svg" width="96px">
     <div class="iconDetails">
         <h3>Wireguard</h3>
@@ -1467,7 +1461,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=wordpress>
+<div class="iconPanel selfhosted" id=wordpress>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/wordpress.svg" width="96px">
     <div class="iconDetails">
         <h3>Wordpress</h3>
@@ -1480,7 +1474,7 @@
         </div>
     </div>
 </div>
-<div class="iconPanel" id=zulip>
+<div class="iconPanel selfhosted" id=zulip>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/zulip.svg" width="96px">
     <div class="iconDetails">
         <h3>Zulip</h3>
@@ -1497,5 +1491,6 @@
     </div>
     <script src="js/search.js"></script>
     <script src="js/buttons.js"></script>
+    <script src="js/filter.js"></script>
   </body>
 </html>

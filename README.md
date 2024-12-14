@@ -9,13 +9,21 @@
 
 See website to search for icons, or search directly on this Github repo.
 
-For simplicity, icons are not categorized. This feature may be considered later if there is enough demand.
-
 ## Contribute
 
-To contribute icons, add them to the `/newicons` folder in a pull request. Icons shall follow contribution guidelines and the tutorials in the [Knowledge Base](https://docs.arcticons.com).
+To contribute icons:
 
-> Note: Please name icons with proper underscores as spaces (e.g. `jitsi_meet.svg` instead of `jitsimeet.svg`) so they can be transformed to proper titles (`Jitsi Meet`).
+1. Add them to the `/newicons` folder in a pull request.
+2. Assign a category for them in `/newicons/appfilter.json`. The current categories are:
+    - **selfhosted**: Selfhosted apps
+    - **languages**: Programming languages
+    - **emojis**: List of emojis
+    - **distros**: Linux distributions and other OSes
+    - **other**: Miscellaneous stuff related to self-hosting e.g. Cloudflare logo
+
+Icons shall follow contribution guidelines and the tutorials in the [Knowledge Base](https://docs.arcticons.com).
+
+> Note: Please name icons with underscores as spaces (e.g. `jitsi_meet.svg` instead of `jitsimeet.svg`) so they can be transformed to proper titles (`Jitsi Meet`).
 
 ## Requests
 
