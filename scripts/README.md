@@ -4,7 +4,7 @@ To prepare a release, run the following scripts from the root directory of the r
 
 ```bash
 python3 ./scripts/generate-icons.py .
-python3 ./scripts/check-icons.py icons/white/svg newicons/appfilter.json
+python3 ./scripts/check-icons.py icons/white/svg newicons/appfilter.json --sort
 python3 ./scripts/publish-website.py
 ```
 
@@ -16,9 +16,9 @@ This script is a modified version of [`preparerelease.py`](https://github.com/Ar
 
 ## 2. check-icons.py
 
-Validate the JSON tagmap. Currently only checks for files with missing category or without a reference.
+Validate the JSON category map and sort alphabetically with the `--sort` flag. Currently only checks for files with missing category or without a reference.
 
-If an alert is raised, kindly fix the issue.
+If an alert is raised, kindly fix the issue before proceeding.
 
 ## publish-website.py
 
