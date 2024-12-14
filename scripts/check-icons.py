@@ -13,6 +13,7 @@ def check_icons(icons_path, categories_map_path):
     categories_map = json.load(open(categories_map_path,"r"))
     icons = [i for i in categories_map]
     iconList = [i[:-4] for i in os.listdir(icons_path)]
+    print("There are", len(iconList), "icons")
 
     lostIcons = list(set(iconList) - set(icons))
     lostKeys = list(set(icons) - set(iconList))
