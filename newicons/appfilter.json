@@ -336,7 +336,7 @@
     },
     "linux_mint": {
         "categories": [
-            "selfhosted"
+            "distros"
         ]
     },
     "lldap": {
