@@ -28,7 +28,7 @@ function lightMode() {
 
   // loop through all svgs and toggle replacement
   var images = document.getElementsByClassName("iconImage");
-  for(let i = 0; i < links.length; i++) {
+  for(let i = 0; i < images.length; i++) {
     if (images[i].src.includes("icons/white/")) {
       images[i].src = images[i].src.replace("icons/white/","icons/black/");
     }

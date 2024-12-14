@@ -4,7 +4,7 @@ To prepare a release, run the following scripts from the root directory of the r
 
 ```bash
 python3 ./scripts/generate-icons.py .
-python3 ./scripts/list-icons.py
+python3 ./scripts/check-icons.py icons/white/svg newicons/appfilter.json
 python3 ./scripts/publish-website.py
 ```
 
@@ -14,9 +14,11 @@ Takes icons from `/newicons` and export them to svg, png, and webp files.
 
 This script is a modified version of [`preparerelease.py`](https://github.com/Arcticons-Team/Arcticons/blob/main/scripts/preparerelease.py) found in the main repo.
 
-## 2. list-icons.py
+## 2. check-icons.py
 
-List all icons inside `icons/black/svg` and add them to `iconList.txt`.
+Validate the JSON tagmap. Currently only checks for files with missing category or without a reference.
+
+If an alert is raised, kindly fix the issue.
 
 ## publish-website.py
 

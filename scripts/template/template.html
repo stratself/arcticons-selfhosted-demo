@@ -14,13 +14,20 @@
           - 
           <a href="https://docs.arcticons.com/selfhosted">Contribute</a>
           -          
-          <button onclick="lightMode()">Dark/Light</button>    
+          <button class="light-mode-button" onclick="lightMode()">💡/🌙</button>    
           <p>Search for an icon and click on the desired format to copy its file URLs</p>
       </nav>
-      </header>
-    <center id="search">
+      <center id="search">
         <input id="searchBar" class="searchBar" type="search" placeholder="search">
+        <br>
+        <text>Categories:</text>
+        <button id="selfhosted-toggle" class="button-on" onclick="filter('selfhosted')">Selfhosted</button>
+        <button id="distros-toggle" class="button-on" onclick="filter('distros')">Distros</button>
+        <button id="languages-toggle" class="button-on" onclick="filter('languages')">Languages</button>
+        <button id="other-toggle" class="button-on" onclick="filter('other')">Other</button>
+        <button id="emojis-toggle" class="button-on" onclick="filter('emojis')">Emojis</button>
     </center>
+    </header>
     <div id="popup">
       URL copied!
     </div> 
@@ -28,5 +35,6 @@
     </div>
     <script src="js/search.js"></script>
     <script src="js/buttons.js"></script>
+    <script src="js/filter.js"></script>
   </body>
 </html>

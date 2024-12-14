@@ -1,31 +1,41 @@
+html {
+    scrollbar-color: var(--table-color) transparent;
+    scrollbar-width: thin;
+}
+
 body {    
-    font: 1rem/1.2 ArcticonsSans, sans-serif;
+    font: 1rem/1.2 "ArcticonsSans", sans-serif;
     color: white;
     background: #141414;
     text-align: left;
     margin: auto;
 }
 
-header { max-width: 80ch; margin:auto }
+header { max-width: 80ch; margin: auto }
 
 #popup {
     visibility: hidden;
     position: fixed !important;
     bottom: 5%;
     left: 50%;
-    padding: 1rem 4rem;
+    padding: 1rem;
     border-radius: 1rem;
-    background: #CCCCCC;
-    color:lightseagreen;
+    background: lightcoral;
+    color:black;
     transform: translate(-50%, 0%);
 }
 
-.visible {
-    visibility: visible;
+.invisible {
+    display:none !important;
+}
+
+.button-on {
+    background: lightcoral;
+    color:  black;
 }
 
 a:link, a:visited { color: inherit }
-a:hover,button:hover { color:lightseagreen;}
+a:hover { color:lightcoral;}
 
 .searchBar {
     font: inherit;
@@ -34,9 +44,8 @@ a:hover,button:hover { color:lightseagreen;}
     border-color: white;
     color: inherit;
     background: none;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
     text-align: center;
 }
 
@@ -46,8 +55,16 @@ a:hover,button:hover { color:lightseagreen;}
     border-color: black;
 }
 
+.light-mode-button {
+    color: lightcoral;
+    background:none;
+    font-family: monospace;
+}
+
+
 hr {
-    background: lightseagreen; height: 2px;
+    background: lightcoral; height: 2px;
+    border: none;
 }
 
 .iconList, .iconPanel {
@@ -64,10 +81,16 @@ hr {
     font-size: 80%;
     text-decoration: underline;
     padding:0.2rem; 
-    
 }
+
 button {
     font-family: inherit;
+    background:grey;
+    color: black;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    border: 2px solid inherit;
 }
 
 @font-face {

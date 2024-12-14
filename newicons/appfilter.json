@@ -1,0 +1,562 @@
+{
+    "aegis": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "akkoma": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "alpine_linux": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "ansible": {
+        "categories": [
+            "languages"
+        ]
+    },
+    "apprise": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "arch_linux": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "arcticons": {
+        "categories": [
+            "other"
+        ]
+    },
+    "artix_linux": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "authelia": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "authentik": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "bitwarden": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "borg": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "caddy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "cinny": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "collabora_online": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "conduwuit": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "conversejs": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "debian": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "docker": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "ejabberd": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "element": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "element_alt": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "emby": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "fedora": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "filebrowser": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "filestash": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "fluffychat": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "forgejo": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "freshrss": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "friendica": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "git": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "gitlab": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "gotify": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "gotosocial": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "grocy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "headscale": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "homarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "home_assistant": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "home_assistant_alt_1": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "immich": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "invoice_ninja": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "jellyfin": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "jitsi_meet": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "joplin": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "kanidm": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "kitchenowl": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "kodi": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "lemmy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "libretube": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "linux_mint": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "lldap": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "logseq": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "lunasea": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "mastodon": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "matrix": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "mattermost": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "metabase": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "miniflux": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "misskey": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "n8n": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "netbird": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "nextcloud": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "nextcloud_talk": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "nginx": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "nginx_proxy_manager": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "ntfy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "ollama": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "onionshare": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "openhab": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "opensuse_leap": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "opensuse_leap_micro": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "opensuse_microos": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "opensuse_tumbleweed": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "opensuse_tumbleweed_alt": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "openvpn": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "openwrt": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "owncloud": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "paperless-ngx": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "peertube": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "piwigo": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "pleroma": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "plex": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "postgresql": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "prosody": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "proxmox_virtual_environment": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "qbittorrent": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "rocketchat": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "rss": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "rss_bridge": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "schildichat": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "seafile": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "sftpgo": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "simplex_chat": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "siyuan": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "snikket": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "stalwart_mail": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "standard_notes": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "standard_notes_alt": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "syncthing": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "tailscale": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "technitium": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "tiddlywiki": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "tiny_tiny_rss": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "traefik": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "ubuntu": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "unbound": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "vikunja": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "vscodium": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "wikiless": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "wireguard": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "wordpress": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "zulip": {
+        "categories": [
+            "selfhosted"
+        ]
+    }
+}
