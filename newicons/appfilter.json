@@ -149,6 +149,11 @@
             "selfhosted"
         ]
     },
+    "funkwhale": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "git": {
         "categories": [
             "selfhosted"
