@@ -15,12 +15,17 @@ def check_icons(icons_path, categories_map_path):
     iconList = [i[:-4] for i in os.listdir(icons_path)]
 
     lostIcons = list(set(iconList) - set(icons))
+    lostKeys = list(set(icons) - set(iconList))
     lostCategories = [ i for i in categories_map if len(categories_map[i]["categories"]) == 0 ]
 
     if len(lostIcons) > 0:
         print("WARN: The following icons are not found in categories_map:\n")
         [print(f'\t{lostIcon}.svg') for lostIcon in lostIcons]
         print('\n')
+    if len(lostKeys) > 0:
+        print("WARN: The following keys do not have an icon associated with it:\n")
+        [print(f'\t{lostKey}.svg') for lostKey in lostKeys]
+        print('\n')        
     if len(lostCategories) > 0:
         print("WARN: The following icons are not assigned a category:\n")
         [print(f'\t{lostCategory}.svg') for lostCategory in lostCategories]
