@@ -69,6 +69,11 @@
             "selfhosted"
         ]
     },
+    "bookstack": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "borg": {
         "categories": [
             "selfhosted"
@@ -449,7 +454,37 @@
             "other"
         ]
     },
+    "microsoft_excel": {
+        "categories": [
+            "other"
+        ]
+    },
+    "microsoft_onedrive": {
+        "categories": [
+            "other"
+        ]
+    },
+    "microsoft_onenote": {
+        "categories": [
+            "other"
+        ]
+    },
     "microsoft_outlook": {
+        "categories": [
+            "other"
+        ]
+    },
+    "microsoft_powerpoint": {
+        "categories": [
+            "other"
+        ]
+    },
+    "microsoft_teams": {
+        "categories": [
+            "other"
+        ]
+    },
+    "microsoft_word": {
         "categories": [
             "other"
         ]
