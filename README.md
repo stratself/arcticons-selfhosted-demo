@@ -18,7 +18,7 @@ To contribute icons:
     - **selfhosted**: Selfhosted apps
     - **programming**: Programming tools and languages
     - **distros**: Linux distributions and other OSes
-    - **other**: Miscellaneous stuff related to self-hosting e.g. Cloudflare logo
+    - **other**: Miscellaneous stuff related to self-hosting e.g. logos of popular services or utility icons
 
 Icons shall follow [contribution guidelines](https://docs.arcticons.com/contribute/creating-icons) and the [Knowledge Base](https://docs.arcticons.com) tutorials.
 
