@@ -4,59 +4,9 @@
             "selfhosted"
         ]
     },
-    "nvidia": {
-        "categories": [
-            "other"
-        ]
-    },
-    "facebook": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_analytics": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_docs": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_chrome": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_drive": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_sheets": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_slides": {
-        "categories": [
-            "other"
-        ]
-    },
     "akkoma": {
         "categories": [
             "selfhosted"
-        ]
-    },
-    "simplytranslate": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "gitbook": {
-        "categories": [
-            "other"
         ]
     },
     "alpine_linux": {
@@ -199,6 +149,11 @@
             "selfhosted"
         ]
     },
+    "facebook": {
+        "categories": [
+            "other"
+        ]
+    },
     "fedora": {
         "categories": [
             "distros"
@@ -244,6 +199,11 @@
             "selfhosted"
         ]
     },
+    "gitbook": {
+        "categories": [
+            "other"
+        ]
+    },
     "github": {
         "categories": [
             "other"
@@ -274,12 +234,42 @@
             "other"
         ]
     },
+    "google_analytics": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_chrome": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_docs": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_drive": {
+        "categories": [
+            "other"
+        ]
+    },
     "google_gemini": {
         "categories": [
             "other"
         ]
     },
     "google_keep": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_sheets": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_slides": {
         "categories": [
             "other"
         ]
@@ -509,6 +499,11 @@
             "selfhosted"
         ]
     },
+    "nvidia": {
+        "categories": [
+            "other"
+        ]
+    },
     "ollama": {
         "categories": [
             "selfhosted"
@@ -650,6 +645,11 @@
         ]
     },
     "simplex_chat": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "simplytranslate": {
         "categories": [
             "selfhosted"
         ]
