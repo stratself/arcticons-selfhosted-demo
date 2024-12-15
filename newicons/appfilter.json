@@ -84,6 +84,11 @@
             "selfhosted"
         ]
     },
+    "centos": {
+        "categories": [
+            "distros"
+        ]
+    },
     "cinny": {
         "categories": [
             "selfhosted"
@@ -169,21 +174,6 @@
             "distros"
         ]
     },
-    "centos": {
-        "categories": [
-            "distros"
-        ]
-    },    
-    "rocky_linux": {
-        "categories": [
-            "distros"
-        ]
-    },
-    "slackware": {
-        "categories": [
-            "distros"
-        ]
-    },
     "filebrowser": {
         "categories": [
             "selfhosted"
@@ -242,6 +232,11 @@
     "gmail": {
         "categories": [
             "distros"
+        ]
+    },
+    "goblog": {
+        "categories": [
+            "selfhosted"
         ]
     },
     "google": {
@@ -664,6 +659,11 @@
             "selfhosted"
         ]
     },
+    "rocky_linux": {
+        "categories": [
+            "distros"
+        ]
+    },
     "rss": {
         "categories": [
             "selfhosted"
@@ -702,6 +702,11 @@
     "siyuan": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "slackware": {
+        "categories": [
+            "distros"
         ]
     },
     "snikket": {
@@ -785,11 +790,6 @@
         ]
     },
     "visual_studio_code": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "goblog": {
         "categories": [
             "selfhosted"
         ]
