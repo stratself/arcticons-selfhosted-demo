@@ -9,6 +9,7 @@
 	<item drawable="audiobookshelf" />
 	<item drawable="authelia" />
 	<item drawable="authentik" />
+	<item drawable="bookstack" />
 	<item drawable="borg" />
 	<item drawable="box" />
 	<item drawable="caddy" />
@@ -56,7 +57,13 @@
 	<item drawable="lldap" />
 	<item drawable="metabase" />
 	<item drawable="microsoft_azure" />
+	<item drawable="microsoft_excel" />
+	<item drawable="microsoft_onedrive" />
+	<item drawable="microsoft_onenote" />
 	<item drawable="microsoft_outlook" />
+	<item drawable="microsoft_powerpoint" />
+	<item drawable="microsoft_teams" />
+	<item drawable="microsoft_word" />
 	<item drawable="minecraft" />
 	<item drawable="minecraft_alt_1" />
 	<item drawable="miniflux" />
