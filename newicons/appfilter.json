@@ -116,7 +116,7 @@
     },
     "docker": {
         "categories": [
-            "selfhosted"
+            "programming"
         ]
     },
     "dropbox": {
@@ -124,6 +124,16 @@
             "other"
         ]
     },
+    "obtainium": {
+        "categories": [
+            "other"
+        ]
+    },
+    "obsidian": {
+        "categories": [
+            "other"
+        ]
+    },        
     "ejabberd": {
         "categories": [
             "selfhosted"
@@ -509,6 +519,31 @@
             "selfhosted"
         ]
     },
+    "visual_code_studio": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "audiobookshelf": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "android": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "google_home": {
+        "categories": [
+            "other"
+        ]
+    },
+    "gmail": {
+        "categories": [
+            "distros"
+        ]
+    },    
     "onionshare": {
         "categories": [
             "selfhosted"
