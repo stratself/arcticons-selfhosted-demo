@@ -3,8 +3,10 @@
 	<version>1</version>
 	<category title="New" />
 	<item drawable="amd" />
+	<item drawable="android" />
 	<item drawable="ansible" />
 	<item drawable="arcticons" />
+	<item drawable="audiobookshelf" />
 	<item drawable="authelia" />
 	<item drawable="authentik" />
 	<item drawable="borg" />
@@ -28,6 +30,7 @@
 	<item drawable="funkwhale" />
 	<item drawable="gitbook" />
 	<item drawable="github" />
+	<item drawable="gmail" />
 	<item drawable="google" />
 	<item drawable="google_alt" />
 	<item drawable="google_alt_3" />
@@ -37,6 +40,7 @@
 	<item drawable="google_docs" />
 	<item drawable="google_drive" />
 	<item drawable="google_gemini" />
+	<item drawable="google_home" />
 	<item drawable="google_keep" />
 	<item drawable="google_sheets" />
 	<item drawable="google_slides" />
@@ -63,6 +67,8 @@
 	<item drawable="nordvpn" />
 	<item drawable="notion" />
 	<item drawable="nvidia" />
+	<item drawable="obsidian" />
+	<item drawable="obtainium" />
 	<item drawable="ollama" />
 	<item drawable="openai_chatgpt" />
 	<item drawable="opensuse_leap" />
@@ -85,6 +91,7 @@
 	<item drawable="technitium" />
 	<item drawable="traefik" />
 	<item drawable="unbound" />
+	<item drawable="visual_studio_code" />
 	<item drawable="wikiless" />
 	<item drawable="youtube" />
 	<item drawable="zalo" />
