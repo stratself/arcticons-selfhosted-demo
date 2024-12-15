@@ -4,6 +4,11 @@
             "selfhosted"
         ]
     },
+    "nvidia": {
+        "categories": [
+            "other"
+        ]
+    },
     "akkoma": {
         "categories": [
             "selfhosted"
