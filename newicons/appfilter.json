@@ -21,7 +21,7 @@
     },
     "ansible": {
         "categories": [
-            "languages"
+            "programming"
         ]
     },
     "apprise": {
@@ -81,7 +81,7 @@
     },
     "clanguage": {
         "categories": [
-            "languages"
+            "programming"
         ]
     },
     "collabora_online": {
@@ -101,12 +101,12 @@
     },
     "cplusplus": {
         "categories": [
-            "languages"
+            "programming"
         ]
     },
     "csharp": {
         "categories": [
-            "languages"
+            "programming"
         ]
     },
     "debian": {
