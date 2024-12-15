@@ -17,7 +17,6 @@ To contribute icons:
 2. Assign a category for them in `/newicons/appfilter.json`. The current categories are:
     - **selfhosted**: Selfhosted apps
     - **languages**: Programming languages
-    - **emojis**: List of emojis
     - **distros**: Linux distributions and other OSes
     - **other**: Miscellaneous stuff related to self-hosting e.g. Cloudflare logo
 
