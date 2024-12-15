@@ -169,6 +169,21 @@
             "distros"
         ]
     },
+    "centos": {
+        "categories": [
+            "distros"
+        ]
+    },    
+    "rocky_linux": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "slackware": {
+        "categories": [
+            "distros"
+        ]
+    },
     "filebrowser": {
         "categories": [
             "selfhosted"
@@ -770,6 +785,11 @@
         ]
     },
     "visual_studio_code": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "goblog": {
         "categories": [
             "selfhosted"
         ]
