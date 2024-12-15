@@ -9,9 +9,54 @@
             "other"
         ]
     },
+    "facebook": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_analytics": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_docs": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_chrome": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_drive": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_sheets": {
+        "categories": [
+            "other"
+        ]
+    },
+    "google_slides": {
+        "categories": [
+            "other"
+        ]
+    },
     "akkoma": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "simplytranslate": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "gitbook": {
+        "categories": [
+            "other"
         ]
     },
     "alpine_linux": {
