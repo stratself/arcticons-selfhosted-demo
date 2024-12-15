@@ -21,9 +21,12 @@ To contribute icons:
     - **distros**: Linux distributions and other OSes
     - **other**: Miscellaneous stuff related to self-hosting e.g. Cloudflare logo
 
-Icons shall follow contribution guidelines and the tutorials in the [Knowledge Base](https://docs.arcticons.com).
+Icons shall follow [contribution guidelines](https://docs.arcticons.com/contribute/creating-icons) and the [Knowledge Base](https://docs.arcticons.com) tutorials.
 
-> Note: Please name icons with underscores as spaces (e.g. `jitsi_meet.svg` instead of `jitsimeet.svg`) so they can be transformed to proper titles (`Jitsi Meet`).
+Tips: 
+
+- Please name icons with underscores as spaces (e.g. `jitsi_meet.svg` instead of `jitsimeet.svg`) so they can be transformed to proper titles (`Jitsi Meet`).
+- A lot of icons may already exist in the [main repo for Android](https://github.com/Arcticons-team/Arcticons), you can copy-paste them and add proper categories.
 
 ## Requests
 
@@ -32,6 +35,8 @@ Please file an issue, preferably with link(s) to the logo(s).
 ## Credits
 
 Inspiration from https://selfh.st/icons.
+
+Thank you to all contributors!
 
 ## License
 
