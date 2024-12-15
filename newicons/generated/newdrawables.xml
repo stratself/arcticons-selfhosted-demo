@@ -12,6 +12,7 @@
 	<item drawable="borg" />
 	<item drawable="box" />
 	<item drawable="caddy" />
+	<item drawable="centos" />
 	<item drawable="clanguage" />
 	<item drawable="collabora_online" />
 	<item drawable="conduwuit" />
@@ -31,6 +32,7 @@
 	<item drawable="gitbook" />
 	<item drawable="github" />
 	<item drawable="gmail" />
+	<item drawable="goblog" />
 	<item drawable="google" />
 	<item drawable="google_alt" />
 	<item drawable="google_alt_3" />
@@ -80,10 +82,12 @@
 	<item drawable="postgresql" />
 	<item drawable="prosody" />
 	<item drawable="reddit" />
+	<item drawable="rocky_linux" />
 	<item drawable="rss_bridge" />
 	<item drawable="sftpgo" />
 	<item drawable="simplytranslate" />
 	<item drawable="siyuan" />
+	<item drawable="slackware" />
 	<item drawable="spotify" />
 	<item drawable="spotify_alt_1" />
 	<item drawable="spotify_alt_2" />
