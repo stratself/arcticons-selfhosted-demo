@@ -37,7 +37,7 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
     print("Writing index.html")
     f.write(iconWebsite)
     f.close()
-    print("Completed!")
+    print(f"Completed publishing website! {len(icons)} icons are generated")
 
 if __name__ == "__main__":
     publishWebsite(siteTemplateFile,iconTemplateFile,iconCategoryMap,websiteFile)
