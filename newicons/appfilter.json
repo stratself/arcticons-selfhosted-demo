@@ -14,6 +14,16 @@
             "selfhosted"
         ]
     },
+    "duckduckgo": {
+        "categories": [
+            "other"
+        ]
+    },
+    "searxng": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
     "affine": {
         "categories": [
             "selfhosted"
