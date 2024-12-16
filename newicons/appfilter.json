@@ -506,7 +506,12 @@
     },
     "slack": {
         "categories": [
-            "selfhosted "
+            "other"
+        ]
+    },
+    "pushbullet": {
+        "categories": [
+            "other"
         ]
     },
 
