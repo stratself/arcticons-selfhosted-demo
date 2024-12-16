@@ -555,7 +555,27 @@
             "other"
         ]
     },
-    "mullvad_vpn": {
+    "proton_vpn": {
+        "categories": [
+            "other"
+        ]
+    },
+    "ivpn": {
+        "categories": [
+            "other"
+        ]
+    },
+    "ivpn_alt": {
+        "categories": [
+            "other"
+        ]
+    },
+    "pia_vpn": {
+        "categories": [
+            "other"
+        ]
+    },
+    "windscribe_vpn": {
         "categories": [
             "other"
         ]
