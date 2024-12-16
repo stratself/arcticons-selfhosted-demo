@@ -37,7 +37,13 @@ header { max-width: 80ch; margin: auto }
 a:link, a:visited { color: inherit }
 a:hover { color:lightcoral;}
 
-.searchBar {
+center#search {
+    background:inherit;
+    position:sticky !important;
+    top: 0;
+}
+
+#searchBar {
     font: inherit;
     border-width: 2px;
     border-style: solid;
@@ -72,16 +78,21 @@ hr {
     flex-direction: row;
     flex-wrap:wrap;
     flex-basis: stretch;
-    gap: 1rem;
     padding: 1rem;
     margin:auto;
 }
 
+.iconPanel:hover {
+    filter: drop-shadow(0px 0px 4px lightcoral);
+
+}
+
 .iconLink { 
-    font-size: 80%;
+    font-size: 75%;
     text-decoration: underline;
     padding:0.2rem; 
 }
+
 
 button {
     font-family: inherit;
