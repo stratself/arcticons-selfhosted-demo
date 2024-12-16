@@ -524,6 +524,16 @@
             "selfhosted"
         ]
     },
+    "twitter": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "twitter_alt_1": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
     "mattermost": {
         "categories": [
             "selfhosted"
