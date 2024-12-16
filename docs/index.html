@@ -14,17 +14,17 @@
           - 
           <a href="https://docs.arcticons.com/selfhosted">Contribute</a>
           <p>Search for an icon and click on the desired format to copy its file URLs</p>
-          <p>Total available icons: 198</p>
+          <p>Total available icons: 209</p>
       </nav>
     </header>
     <center id="search">
       <input id="searchBar" class="searchBar" type="search" placeholder="search" autofocus>
       <button class="light-mode-button" onclick="lightMode()">💡/🌙</button>    
       <div class="category-filters">
-	<text>Categories:</text><button id="distros-toggle" class="button-on" onclick="filter('distros')">Distros (17)</button>
+	<text>Categories:</text><button id="other-toggle" class="button-on" onclick="filter('other')">Other (65)</button>
+<button id="distros-toggle" class="button-on" onclick="filter('distros')">Distros (17)</button>
+<button id="selfhosted-toggle" class="button-on" onclick="filter('selfhosted')">Selfhosted (121)</button>
 <button id="programming-toggle" class="button-on" onclick="filter('programming')">Programming (6)</button>
-<button id="other-toggle" class="button-on" onclick="filter('other')">Other (58)</button>
-<button id="selfhosted-toggle" class="button-on" onclick="filter('selfhosted')">Selfhosted (117)</button>
 
       </div>
     </center>
@@ -421,6 +421,19 @@
         </div>
     </div>
 </div>
+<div class="iconPanel selfhosted" id=cryptpad>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/cryptpad.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Cryptpad</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/cryptpad.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/cryptpad.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/cryptpad.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="iconPanel programming" id=csharp>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/csharp.svg" width="96px">
     <div class="iconDetails">
@@ -495,6 +508,19 @@
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/dropbox.svg">SVG</a> |
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/dropbox.png">PNG</a> |
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/dropbox.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iconPanel other" id=duckduckgo>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/duckduckgo.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Duckduckgo</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/duckduckgo.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/duckduckgo.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/duckduckgo.webp">WEBP</a>
             </div>
         </div>
     </div>
@@ -1110,6 +1136,19 @@
         </div>
     </div>
 </div>
+<div class="iconPanel selfhosted" id=jekyll>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/jekyll.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Jekyll</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/jekyll.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/jekyll.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/jekyll.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="iconPanel selfhosted" id=jellyfin>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/jellyfin.svg" width="96px">
     <div class="iconDetails">
@@ -1587,6 +1626,19 @@
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/nextcloud.svg">SVG</a> |
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/nextcloud.png">PNG</a> |
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/nextcloud.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iconPanel selfhosted" id=nextcloud_news>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/nextcloud_news.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Nextcloud News</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/nextcloud_news.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/nextcloud_news.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/nextcloud_news.webp">WEBP</a>
             </div>
         </div>
     </div>
@@ -2150,6 +2202,19 @@
         </div>
     </div>
 </div>
+<div class="iconPanel selfhosted" id=searxng>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/searxng.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Searxng</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/searxng.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/searxng.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/searxng.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="iconPanel selfhosted" id=sftpgo>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/sftpgo.svg" width="96px">
     <div class="iconDetails">
@@ -2371,6 +2436,58 @@
         </div>
     </div>
 </div>
+<div class="iconPanel other" id=telegram>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/telegram.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Telegram</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/telegram.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/telegram.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/telegram.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iconPanel other" id=telegram_alt_1>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/telegram_alt_1.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Telegram Alt 1</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/telegram_alt_1.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/telegram_alt_1.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/telegram_alt_1.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iconPanel other" id=telegram_alt_2>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/telegram_alt_2.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Telegram Alt 2</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/telegram_alt_2.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/telegram_alt_2.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/telegram_alt_2.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iconPanel other" id=telegram_alt_3>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/telegram_alt_3.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Telegram Alt 3</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/telegram_alt_3.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/telegram_alt_3.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/telegram_alt_3.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="iconPanel selfhosted" id=tiddlywiki>
     <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/tiddlywiki.svg" width="96px">
     <div class="iconDetails">
@@ -2406,6 +2523,32 @@
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/traefik.svg">SVG</a> |
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/traefik.png">PNG</a> |
                 <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/traefik.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iconPanel other" id=twitter>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/twitter.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Twitter</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/twitter.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/twitter.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/twitter.webp">WEBP</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="iconPanel other" id=twitter_alt_1>
+    <img class="iconImage" src="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/twitter_alt_1.svg" width="96px">
+    <div class="iconDetails">
+        <h3>Twitter Alt 1</h3>
+        <div class="iconCopy">
+            <div class="iconFormats">
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/svg/twitter_alt_1.svg">SVG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/png/twitter_alt_1.png">PNG</a> |
+                <a class="iconLink" onclick="copyUrl(event)" href="https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white/webp/twitter_alt_1.webp">WEBP</a>
             </div>
         </div>
     </div>
