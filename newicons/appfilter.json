@@ -1,7 +1,22 @@
 {
+    "actual_budget": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "aegis": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "affine": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "airtable": {
+        "categories": [
+            "other"
         ]
     },
     "akkoma": {
@@ -60,6 +75,11 @@
         ]
     },
     "authentik": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "baikal": {
         "categories": [
             "selfhosted"
         ]
@@ -192,6 +212,11 @@
     "fluffychat": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "folder_icon": {
+        "categories": [
+            "other"
         ]
     },
     "forgejo": {
@@ -349,9 +374,24 @@
             "selfhosted"
         ]
     },
+    "invidious": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "invoice_ninja": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "ivpn": {
+        "categories": [
+            "other"
+        ]
+    },
+    "ivpn_alt": {
+        "categories": [
+            "other"
         ]
     },
     "jellyfin": {
@@ -434,6 +474,11 @@
             "selfhosted"
         ]
     },
+    "materialious": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "matrix": {
         "categories": [
             "selfhosted"
@@ -484,72 +529,11 @@
             "other"
         ]
     },
-    "folder_icon": {
-        "categories": [
-            "other"
-        ]
-    },
-    "invidious": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "materialious": {
-        "categories": [
-            "selfhosted"
-        ]
-    },    
     "microsoft_word": {
         "categories": [
             "other"
         ]
     },
-    "slack": {
-        "categories": [
-            "other"
-        ]
-    },
-    "airtable": {
-        "categories": [
-            "other"
-        ]
-    },    
-    "affine": {
-        "categories": [
-            "selfhosted"
-        ]
-    }, 
-    "actual_budget": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "baikal": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "pinafore": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "pixelfed": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "pixelfed_alt": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "pushbullet": {
-        "categories": [
-            "other"
-        ]
-    },
-
     "minecraft": {
         "categories": [
             "selfhosted"
@@ -575,27 +559,7 @@
             "other"
         ]
     },
-    "proton_vpn": {
-        "categories": [
-            "other"
-        ]
-    },
-    "ivpn": {
-        "categories": [
-            "other"
-        ]
-    },
-    "ivpn_alt": {
-        "categories": [
-            "other"
-        ]
-    },
-    "pia_vpn": {
-        "categories": [
-            "other"
-        ]
-    },
-    "windscribe_vpn": {
+    "mullvad_vpn": {
         "categories": [
             "other"
         ]
@@ -730,7 +694,27 @@
             "selfhosted"
         ]
     },
+    "pia_vpn": {
+        "categories": [
+            "other"
+        ]
+    },
+    "pinafore": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "piwigo": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "pixelfed": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "pixelfed_alt": {
         "categories": [
             "selfhosted"
         ]
@@ -755,9 +739,19 @@
             "selfhosted"
         ]
     },
+    "proton_vpn": {
+        "categories": [
+            "other"
+        ]
+    },
     "proxmox_virtual_environment": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "pushbullet": {
+        "categories": [
+            "other"
         ]
     },
     "qbittorrent": {
@@ -818,6 +812,11 @@
     "siyuan": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "slack": {
+        "categories": [
+            "other"
         ]
     },
     "slackware": {
@@ -918,6 +917,11 @@
     "wikiless": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "windscribe_vpn": {
+        "categories": [
+            "other"
         ]
     },
     "wireguard": {
