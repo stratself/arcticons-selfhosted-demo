@@ -489,7 +489,16 @@
             "other"
         ]
     },
-
+    "invidious": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "materialious": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
     "microsoft_word": {
         "categories": [
             "other"
