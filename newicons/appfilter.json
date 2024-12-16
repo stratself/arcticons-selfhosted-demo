@@ -564,6 +564,11 @@
             "other"
         ]
     },
+    "hashicorp_terraform": {
+        "categories": [
+            "programming"
+        ]
+    },    
     "n8n": {
         "categories": [
             "selfhosted"
