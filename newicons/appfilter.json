@@ -528,7 +528,17 @@
         "categories": [
             "selfhosted"
         ]
-    },            
+    },
+    "pixelfed": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "pixelfed_alt": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "pushbullet": {
         "categories": [
             "other"
