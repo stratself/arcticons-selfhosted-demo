@@ -509,6 +509,11 @@
             "other"
         ]
     },
+    "airtable": {
+        "categories": [
+            "other"
+        ]
+    },    
     "affine": {
         "categories": [
             "selfhosted"
