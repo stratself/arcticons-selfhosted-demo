@@ -284,6 +284,11 @@
             "selfhosted"
         ]
     },
+    "nextcloud_news": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "goblog": {
         "categories": [
             "selfhosted"
