@@ -37,12 +37,6 @@ header { max-width: 80ch; margin: auto }
 a:link, a:visited { color: inherit }
 a:hover { color:lightcoral;}
 
-center#search {
-    background:inherit;
-    position:sticky !important;
-    top: 0;
-}
-
 #searchBar {
     font: inherit;
     border-width: 2px;
