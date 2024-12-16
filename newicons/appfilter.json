@@ -509,6 +509,11 @@
             "other"
         ]
     },
+    "affine": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
     "pushbullet": {
         "categories": [
             "other"
