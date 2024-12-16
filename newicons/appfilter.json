@@ -526,14 +526,19 @@
     },
     "twitter": {
         "categories": [
-            "selfhosted"
+            "other"
         ]
     },
     "twitter_alt_1": {
         "categories": [
+            "other"
+        ]
+    }, 
+    "jekyll": {
+        "categories": [
             "selfhosted"
         ]
-    },    
+    }, 
     "mattermost": {
         "categories": [
             "selfhosted"
