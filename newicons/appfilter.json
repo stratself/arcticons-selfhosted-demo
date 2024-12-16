@@ -14,16 +14,6 @@
             "selfhosted"
         ]
     },
-    "duckduckgo": {
-        "categories": [
-            "other"
-        ]
-    },
-    "searxng": {
-        "categories": [
-            "selfhosted"
-        ]
-    },    
     "affine": {
         "categories": [
             "selfhosted"
@@ -159,6 +149,11 @@
             "programming"
         ]
     },
+    "cryptpad": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "csharp": {
         "categories": [
             "programming"
@@ -185,6 +180,11 @@
         ]
     },
     "dropbox": {
+        "categories": [
+            "other"
+        ]
+    },
+    "duckduckgo": {
         "categories": [
             "other"
         ]
@@ -287,16 +287,6 @@
     "gmail": {
         "categories": [
             "other"
-        ]
-    },
-    "cryptpad": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "nextcloud_news": {
-        "categories": [
-            "selfhosted"
         ]
     },
     "goblog": {
@@ -434,6 +424,11 @@
             "other"
         ]
     },
+    "jekyll": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "jellyfin": {
         "categories": [
             "selfhosted"
@@ -524,21 +519,6 @@
             "selfhosted"
         ]
     },
-    "twitter": {
-        "categories": [
-            "other"
-        ]
-    },
-    "twitter_alt_1": {
-        "categories": [
-            "other"
-        ]
-    }, 
-    "jekyll": {
-        "categories": [
-            "selfhosted"
-        ]
-    }, 
     "mattermost": {
         "categories": [
             "selfhosted"
@@ -630,6 +610,11 @@
         ]
     },
     "nextcloud": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "nextcloud_news": {
         "categories": [
             "selfhosted"
         ]
@@ -849,6 +834,11 @@
             "selfhosted"
         ]
     },
+    "searxng": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "sftpgo": {
         "categories": [
             "selfhosted"
@@ -934,6 +924,26 @@
             "selfhosted"
         ]
     },
+    "telegram": {
+        "categories": [
+            "other"
+        ]
+    },
+    "telegram_alt_1": {
+        "categories": [
+            "other"
+        ]
+    },
+    "telegram_alt_2": {
+        "categories": [
+            "other"
+        ]
+    },
+    "telegram_alt_3": {
+        "categories": [
+            "other"
+        ]
+    },
     "tiddlywiki": {
         "categories": [
             "selfhosted"
@@ -947,6 +957,16 @@
     "traefik": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "twitter": {
+        "categories": [
+            "other"
+        ]
+    },
+    "twitter_alt_1": {
+        "categories": [
+            "other"
         ]
     },
     "ubuntu": {
