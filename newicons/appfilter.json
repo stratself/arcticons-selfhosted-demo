@@ -573,6 +573,11 @@
         "categories": [
             "other"
         ]
+    },
+    "zorin": {
+        "categories": [
+            "selfhosted"
+        ]
     },   
     "discord_alt": {
         "categories": [
