@@ -1,9 +1,0 @@
-<svg version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
- <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
-  <path transform="matrix(.97339 0 0 .97339 1.1861 5.3714)" d="m45.074 36.56h-42.148l21.074-36.502z" style="paint-order:stroke fill markers"/>
-  <path transform="matrix(.65815 -.17635 .17635 .65815 4.45 17.293)" d="m45.074 36.56h-42.148l21.074-36.502z" stroke-width="1.4676" style="paint-order:stroke fill markers"/>
-  <path transform="matrix(.41306 -.23848 .23848 .41306 8.8168 24.763)" d="m45.074 36.56h-42.148l21.074-36.502z" stroke-width="2.0966" style="paint-order:stroke fill markers"/>
-  <path transform="matrix(.23609 -.23609 .23609 .23609 13.123 29.022)" d="m45.074 36.56h-42.148l21.074-36.502z" stroke-width="2.9951" style="paint-order:stroke fill markers"/>
-  <path transform="matrix(.11686 -.2024 .2024 .11686 16.806 31.122)" d="m45.074 36.56h-42.148l21.074-36.502z" stroke-width="4.2787" style="paint-order:stroke fill markers"/>
- </g>
-</svg>

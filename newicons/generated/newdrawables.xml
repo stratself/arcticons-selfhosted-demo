@@ -2,6 +2,9 @@
 <resources>
 	<version>1</version>
 	<category title="New" />
+	<item drawable="actual_budget" />
+	<item drawable="affine" />
+	<item drawable="airtable" />
 	<item drawable="amd" />
 	<item drawable="android" />
 	<item drawable="ansible" />
@@ -9,6 +12,7 @@
 	<item drawable="audiobookshelf" />
 	<item drawable="authelia" />
 	<item drawable="authentik" />
+	<item drawable="baikal" />
 	<item drawable="bookstack" />
 	<item drawable="borg" />
 	<item drawable="box" />
@@ -27,6 +31,7 @@
 	<item drawable="filebrowser" />
 	<item drawable="filestash" />
 	<item drawable="fluffychat" />
+	<item drawable="folder_icon" />
 	<item drawable="forgejo" />
 	<item drawable="freshrss" />
 	<item drawable="funkwhale" />
@@ -50,11 +55,15 @@
 	<item drawable="gotify" />
 	<item drawable="headscale" />
 	<item drawable="homarr" />
+	<item drawable="invidious" />
+	<item drawable="ivpn" />
+	<item drawable="ivpn_alt" />
 	<item drawable="kanidm" />
 	<item drawable="kodiremote" />
 	<item drawable="kofi" />
 	<item drawable="libreoffice" />
 	<item drawable="lldap" />
+	<item drawable="materialious" />
 	<item drawable="metabase" />
 	<item drawable="microsoft_azure" />
 	<item drawable="microsoft_excel" />
@@ -86,14 +95,21 @@
 	<item drawable="opensuse_tumbleweed" />
 	<item drawable="opensuse_tumbleweed_alt" />
 	<item drawable="openwrt" />
+	<item drawable="pia_vpn" />
+	<item drawable="pinafore" />
+	<item drawable="pixelfed" />
+	<item drawable="pixelfed_alt" />
 	<item drawable="postgresql" />
 	<item drawable="prosody" />
+	<item drawable="proton_vpn" />
+	<item drawable="pushbullet" />
 	<item drawable="reddit" />
 	<item drawable="rocky_linux" />
 	<item drawable="rss_bridge" />
 	<item drawable="sftpgo" />
 	<item drawable="simplytranslate" />
 	<item drawable="siyuan" />
+	<item drawable="slack" />
 	<item drawable="slackware" />
 	<item drawable="spotify" />
 	<item drawable="spotify_alt_1" />
@@ -104,6 +120,7 @@
 	<item drawable="unbound" />
 	<item drawable="visual_studio_code" />
 	<item drawable="wikiless" />
+	<item drawable="windscribe_vpn" />
 	<item drawable="youtube" />
 	<item drawable="zalo" />
 	<item drawable="zerotier" />
