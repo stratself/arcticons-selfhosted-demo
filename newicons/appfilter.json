@@ -564,6 +564,16 @@
             "other"
         ]
     },
+    "discord": {
+        "categories": [
+            "other"
+        ]
+    },
+    "discord_alt": {
+        "categories": [
+            "other"
+        ]
+    },    
     "hashicorp_terraform": {
         "categories": [
             "programming"
