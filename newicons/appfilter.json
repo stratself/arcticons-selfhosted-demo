@@ -513,7 +513,12 @@
         "categories": [
             "selfhosted"
         ]
-    },    
+    }, 
+    "actual_budget": {
+        "categories": [
+            "selfhosted"
+        ]
+    },        
     "pushbullet": {
         "categories": [
             "other"
