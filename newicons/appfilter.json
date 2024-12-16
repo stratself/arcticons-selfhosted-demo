@@ -1,15 +1,10 @@
 {
-    "actual_budget": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "activepieces": {
         "categories": [
             "selfhosted"
         ]
     },
-    "socialhome": {
+    "actual_budget": {
         "categories": [
             "selfhosted"
         ]
@@ -162,6 +157,16 @@
     "debian": {
         "categories": [
             "distros"
+        ]
+    },
+    "discord": {
+        "categories": [
+            "other"
+        ]
+    },
+    "discord_alt": {
+        "categories": [
+            "other"
         ]
     },
     "docker": {
@@ -357,6 +362,11 @@
     "grocy": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "hashicorp_terraform": {
+        "categories": [
+            "programming"
         ]
     },
     "headscale": {
@@ -574,31 +584,6 @@
             "other"
         ]
     },
-    "discord": {
-        "categories": [
-            "other"
-        ]
-    },
-    "zoom": {
-        "categories": [
-            "other"
-        ]
-    },
-    "zorin": {
-        "categories": [
-            "selfhosted"
-        ]
-    },   
-    "discord_alt": {
-        "categories": [
-            "other"
-        ]
-    },    
-    "hashicorp_terraform": {
-        "categories": [
-            "programming"
-        ]
-    },    
     "n8n": {
         "categories": [
             "selfhosted"
@@ -864,6 +849,11 @@
             "selfhosted"
         ]
     },
+    "socialhome": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "spotify": {
         "categories": [
             "other"
@@ -980,6 +970,16 @@
         ]
     },
     "zerotier": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "zoom": {
+        "categories": [
+            "other"
+        ]
+    },
+    "zorin": {
         "categories": [
             "selfhosted"
         ]
