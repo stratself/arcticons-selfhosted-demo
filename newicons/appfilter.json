@@ -504,6 +504,12 @@
             "other"
         ]
     },
+    "slack": {
+        "categories": [
+            "selfhosted "
+        ]
+    },
+
     "minecraft": {
         "categories": [
             "selfhosted"
