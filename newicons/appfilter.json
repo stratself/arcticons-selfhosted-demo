@@ -523,7 +523,12 @@
         "categories": [
             "selfhosted"
         ]
-    },        
+    },
+    "pinafore": {
+        "categories": [
+            "selfhosted"
+        ]
+    },            
     "pushbullet": {
         "categories": [
             "other"
