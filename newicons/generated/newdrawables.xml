@@ -23,11 +23,13 @@
 	<item drawable="collabora_online" />
 	<item drawable="conduwuit" />
 	<item drawable="cplusplus" />
+	<item drawable="cryptpad" />
 	<item drawable="csharp" />
 	<item drawable="discord" />
 	<item drawable="discord_alt" />
 	<item drawable="docker" />
 	<item drawable="dropbox" />
+	<item drawable="duckduckgo" />
 	<item drawable="ejabberd" />
 	<item drawable="ente" />
 	<item drawable="facebook" />
@@ -62,6 +64,7 @@
 	<item drawable="invidious" />
 	<item drawable="ivpn" />
 	<item drawable="ivpn_alt" />
+	<item drawable="jekyll" />
 	<item drawable="kanidm" />
 	<item drawable="kodiremote" />
 	<item drawable="kofi" />
@@ -84,6 +87,7 @@
 	<item drawable="mullvad_vpn" />
 	<item drawable="n8n" />
 	<item drawable="netbird" />
+	<item drawable="nextcloud_news" />
 	<item drawable="nginx" />
 	<item drawable="nginx_proxy_manager" />
 	<item drawable="nordvpn" />
@@ -110,6 +114,7 @@
 	<item drawable="reddit" />
 	<item drawable="rocky_linux" />
 	<item drawable="rss_bridge" />
+	<item drawable="searxng" />
 	<item drawable="sftpgo" />
 	<item drawable="simplytranslate" />
 	<item drawable="siyuan" />
@@ -121,7 +126,13 @@
 	<item drawable="spotify_alt_2" />
 	<item drawable="stalwart_mail" />
 	<item drawable="technitium" />
+	<item drawable="telegram" />
+	<item drawable="telegram_alt_1" />
+	<item drawable="telegram_alt_2" />
+	<item drawable="telegram_alt_3" />
 	<item drawable="traefik" />
+	<item drawable="twitter" />
+	<item drawable="twitter_alt_1" />
 	<item drawable="unbound" />
 	<item drawable="visual_studio_code" />
 	<item drawable="wikiless" />
