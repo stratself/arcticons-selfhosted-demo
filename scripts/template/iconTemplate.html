@@ -1,5 +1,8 @@
-<div id={icon} data-categories="{iconCategories}" class="iconPanel" >
-    <img class="iconImage" src="{svgLink}{icon}.svg" width="96px">
+<div id={icon} data-categories="{iconCategories}" {iconAlts} class="iconPanel" >
+    <div class="iconImageDiv">
+        <img class="iconImage" src="{svgLink}{icon}.svg" width="96px">
+        {iconSwitcher}
+    </div>
     <div class="iconDetails">
         <h3>{iconTitle}</h3>
         <div class="iconCopy">

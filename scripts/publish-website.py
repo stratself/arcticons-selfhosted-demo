@@ -6,13 +6,14 @@ iconRawUrl = 'https://raw.githubusercontent.com/skedastically/arcticons-selfhost
 siteTemplateFile = 'scripts/template/template.html'
 iconTemplateFile = 'scripts/template/iconTemplate.html'
 buttonToggleFile = "scripts/template/buttonToggleTemplate.html"
+iconSwitcherFile = "scripts/template/iconSwitcherTemplate.html"
 iconCategoryMap = 'newicons/appfilter.json'
 websiteFile = 'docs/index.html'
 svgLink = iconRawUrl + '/icons/white/svg/'
 pngLink = iconRawUrl + '/icons/white/png/'
 webpLink = iconRawUrl + '/icons/white/webp/'
 
-def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteFile, buttonToggleFile):
+def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteFile, buttonToggleFile, iconSwitcherFile):
     
     tagmap = json.load(open(iconCategoryMap,"r"))
     icons = [i for i in tagmap]
@@ -22,6 +23,8 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
 
     for icon in icons:
         print(f"Exporting {icon} to website")
+        
+        # Replace title, icon, categories, and links
         iconTitle = icon.title().replace("_"," ")
         iconDiv = iconTemplate.replace("{icon}",icon)
         iconDiv = iconDiv.replace("{iconCategories}",str(" ".join(tagmap[icon]["categories"])))
@@ -29,7 +32,20 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
         iconDiv = iconDiv.replace("{svgLink}",svgLink)
         iconDiv = iconDiv.replace("{pngLink}",pngLink)
         iconDiv = iconDiv.replace("{webpLink}",webpLink)
+        
+        # Check for existence of alts and add them to icon listing
+        iconAlts = ""
+        iconSwitcher = ""
+        if "alts" in tagmap[icon]:
+            iconAlts = "data-alt='" + icon + " " + " ".join(tagmap[icon]["alts"]) + "'"
+            iconSwitcher = open(iconSwitcherFile,'r').read().replace("{icon}",icon)
+        iconDiv = iconDiv.replace("{iconAlts}",iconAlts)
+        iconDiv = iconDiv.replace("{iconSwitcher}",iconSwitcher)
+        
+        # Compile final icon divs set
         iconDivs = iconDivs + iconDiv
+
+        # Append category to count them later
         for item in tagmap[icon]["categories"]:
             categories.append(item)
 
@@ -58,4 +74,4 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
     print(f"Completed publishing website! {len(icons)} icons are generated")
 
 if __name__ == "__main__":
-    publishWebsite(siteTemplateFile,iconTemplateFile,iconCategoryMap,websiteFile,buttonToggleFile)
+    publishWebsite(siteTemplateFile,iconTemplateFile,iconCategoryMap,websiteFile,buttonToggleFile, iconSwitcherFile)
