@@ -15,8 +15,8 @@ webpLink = iconRawUrl + '/icons/white/webp/'
 
 def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteFile, buttonToggleFile, iconSwitcherFile):
     
-    tagmap = json.load(open(iconCategoryMap,"r"))
-    icons = [i for i in tagmap]
+    categories_map = json.load(open(iconCategoryMap,"r"))
+    icons = [i for i in categories_map]
     iconTemplate = open(iconTemplateFile,'r').read()
     iconDivs = ""
     categories = []
@@ -27,7 +27,7 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
         # Replace title, icon, categories, and links
         iconTitle = icon.title().replace("_"," ")
         iconDiv = iconTemplate.replace("{icon}",icon)
-        iconDiv = iconDiv.replace("{iconCategories}",str(" ".join(tagmap[icon]["categories"])))
+        iconDiv = iconDiv.replace("{iconCategories}",str(" ".join(categories_map[icon]["categories"])))
         iconDiv = iconDiv.replace("{iconTitle}",iconTitle)
         iconDiv = iconDiv.replace("{svgLink}",svgLink)
         iconDiv = iconDiv.replace("{pngLink}",pngLink)
@@ -36,11 +36,11 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
         # Check for existence of alts and add them to icon listing
         iconAlts = ""
         iconSwitcher = ""
-        if "alts" in tagmap[icon]:
-            iconAlts = "data-alt='" + icon + " " + " ".join(tagmap[icon]["alts"]) + "'"
+        if "alts" in categories_map[icon]:
+            iconAlts = "data-alt='" + icon + " " + " ".join(categories_map[icon]["alts"]) + "'"
             iconSwitcher = open(iconSwitcherFile,'r').read().replace("{icon}",icon)
-            for alt in tagmap[icon]["alts"]:
-                for item in tagmap[icon]["categories"]:
+            for alt in categories_map[icon]["alts"]:
+                for item in categories_map[icon]["categories"]:
                     categories.append(item)
 
         iconDiv = iconDiv.replace("{iconAlts}",iconAlts)
@@ -50,7 +50,7 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
         iconDivs = iconDivs + iconDiv
 
         # Append category to count them later
-        for item in tagmap[icon]["categories"]:
+        for item in categories_map[icon]["categories"]:
             categories.append(item)
 
     buttonToggleTemplate = open(buttonToggleFile).read()
@@ -63,7 +63,12 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
         buttonToggleDiv = buttonToggleDiv + buttonToggle + '\n'
 
     iconWebsite = open(siteTemplateFile).read()
-    iconWebsite = iconWebsite.replace("{iconCount}",str(len(set(icons))))
+    totalIcons = []
+    for icon in icons:
+        totalIcons.append(icon)
+        if "alts" in categories_map[icon]:
+            [totalIcons.append(alt) for alt in categories_map[icon]["alts"]]
+    iconWebsite = iconWebsite.replace("{iconCount}",str(len(set(totalIcons))))
     
     index = iconWebsite.find('<div class="iconList">') + len('<div class="iconList">')
     iconWebsite = iconWebsite[:index] + iconDivs + iconWebsite[index:]
@@ -75,7 +80,7 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
     print("Writing index.html")
     f.write(iconWebsite)
     f.close()
-    print(f"Completed publishing website! {len(set(icons))} icons are generated")
+    print(f"Completed publishing website! {len(set(totalIcons))} icons are generated")
 
 if __name__ == "__main__":
     publishWebsite(siteTemplateFile,iconTemplateFile,iconCategoryMap,websiteFile,buttonToggleFile, iconSwitcherFile)
