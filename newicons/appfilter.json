@@ -479,6 +479,11 @@
             "selfhosted"
         ]
     },
+    "jira": {
+        "categories": [
+            "other"
+        ]
+    },
     "jitsi_meet": {
         "categories": [
             "selfhosted"
