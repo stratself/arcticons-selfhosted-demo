@@ -20,6 +20,17 @@
             "selfhosted"
         ]
     },
+    "hugo": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "zola": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+
     "aegis": {
         "categories": [
             "other"
