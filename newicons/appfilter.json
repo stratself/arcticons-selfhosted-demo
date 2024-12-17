@@ -202,12 +202,8 @@
     "element": {
         "categories": [
             "selfhosted"
-        ]
-    },
-    "element_alt": {
-        "categories": [
-            "selfhosted"
-        ]
+        ],
+        "alts": ["element_alt"]
     },
     "emby": {
         "categories": [
@@ -322,22 +318,8 @@
     "google": {
         "categories": [
             "other"
-        ]
-    },
-    "google_alt": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_alt_3": {
-        "categories": [
-            "other"
-        ]
-    },
-    "google_alt_4": {
-        "categories": [
-            "other"
-        ]
+        ],
+        "alts": [ "google_alt", "google_alt_3", "google_alt_4"]
     },
     "google_analytics": {
         "categories": [
@@ -417,12 +399,8 @@
     "home_assistant": {
         "categories": [
             "selfhosted"
-        ]
-    },
-    "home_assistant_alt_1": {
-        "categories": [
-            "selfhosted"
-        ]
+        ],
+        "alts": ["home_assistant_alt_1"]
     },
     "hugo": {
         "categories": [
@@ -457,12 +435,8 @@
     "ivpn": {
         "categories": [
             "other"
-        ]
-    },
-    "ivpn_alt": {
-        "categories": [
-            "other"
-        ]
+        ],
+        "alts": ["ivpn_alt"]
     },
     "jekyll": {
         "categories": [
@@ -627,12 +601,8 @@
     "minecraft": {
         "categories": [
             "selfhosted"
-        ]
-    },
-    "minecraft_alt_1": {
-        "categories": [
-            "selfhosted"
-        ]
+        ],
+        "alts": ["minecraft_alt_1"]
     },
     "miniflux": {
         "categories": [
@@ -757,12 +727,8 @@
     "opensuse_tumbleweed": {
         "categories": [
             "distros"
-        ]
-    },
-    "opensuse_tumbleweed_alt": {
-        "categories": [
-            "distros"
-        ]
+        ],
+        "alts": ["opensuse_tumbleweed_alt"]
     },
     "openvpn": {
         "categories": [
@@ -807,12 +773,8 @@
     "pixelfed": {
         "categories": [
             "selfhosted"
-        ]
-    },
-    "pixelfed_alt": {
-        "categories": [
-            "selfhosted"
-        ]
+        ],
+        "alts": ["pixelfed_alt"]
     },
     "pleroma": {
         "categories": [
@@ -937,17 +899,8 @@
     "spotify": {
         "categories": [
             "other"
-        ]
-    },
-    "spotify_alt_1": {
-        "categories": [
-            "other"
-        ]
-    },
-    "spotify_alt_2": {
-        "categories": [
-            "other"
-        ]
+        ],
+        "alts": ["spotify_alt_1","spotify_alt_2"]
     },
     "stalwart_mail": {
         "categories": [
@@ -957,12 +910,8 @@
     "standard_notes": {
         "categories": [
             "selfhosted"
-        ]
-    },
-    "standard_notes_alt": {
-        "categories": [
-            "selfhosted"
-        ]
+        ],
+        "alts": ["standard_notes_alt"]
     },
     "syncthing": {
         "categories": [
@@ -982,22 +931,8 @@
     "telegram": {
         "categories": [
             "other"
-        ]
-    },
-    "telegram_alt_1": {
-        "categories": [
-            "other"
-        ]
-    },
-    "telegram_alt_2": {
-        "categories": [
-            "other"
-        ]
-    },
-    "telegram_alt_3": {
-        "categories": [
-            "other"
-        ]
+        ],
+        "alts": ["telegram_alt_1","telegram_alt_2","telegram_alt_3"]
     },
     "threads": {
         "categories": [
@@ -1027,12 +962,8 @@
     "twitter": {
         "categories": [
             "other"
-        ]
-    },
-    "twitter_alt_1": {
-        "categories": [
-            "other"
-        ]
+        ],
+        "alts": ["twitter_alt_1"]
     },
     "ubuntu": {
         "categories": [
