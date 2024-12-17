@@ -9,6 +9,11 @@
             "selfhosted"
         ]
     },
+    "amazon_web_services": {
+        "categories": [
+            "other"
+        ]
+    },
     "aegis": {
         "categories": [
             "selfhosted"
