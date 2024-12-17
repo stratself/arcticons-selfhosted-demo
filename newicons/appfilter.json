@@ -4,33 +4,11 @@
             "selfhosted"
         ]
     },
-    "mail_in_a_box": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "mailu": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-
     "actual_budget": {
         "categories": [
             "selfhosted"
         ]
     },
-    "hugo": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "zola": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-
     "aegis": {
         "categories": [
             "other"
@@ -446,6 +424,11 @@
             "selfhosted"
         ]
     },
+    "hugo": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "ifttt": {
         "categories": [
             "other"
@@ -562,6 +545,16 @@
         ]
     },
     "lunasea": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "mail_in_a_box": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "mailu": {
         "categories": [
             "selfhosted"
         ]
@@ -1097,6 +1090,11 @@
         ]
     },
     "zerotier": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "zola": {
         "categories": [
             "selfhosted"
         ]

@@ -66,6 +66,7 @@
 	<item drawable="hashicorp_terraform" />
 	<item drawable="headscale" />
 	<item drawable="homarr" />
+	<item drawable="hugo" />
 	<item drawable="ifttt" />
 	<item drawable="instagram" />
 	<item drawable="invidious" />
@@ -78,6 +79,8 @@
 	<item drawable="kofi" />
 	<item drawable="libreoffice" />
 	<item drawable="lldap" />
+	<item drawable="mail_in_a_box" />
+	<item drawable="mailu" />
 	<item drawable="materialious" />
 	<item drawable="metabase" />
 	<item drawable="microsoft_azure" />
@@ -150,6 +153,7 @@
 	<item drawable="youtube" />
 	<item drawable="zalo" />
 	<item drawable="zerotier" />
+	<item drawable="zola" />
 	<item drawable="zoom" />
 	<item drawable="zorin" />
 </resources>
