@@ -14,13 +14,16 @@ See website to search for icons, or search directly on this Github repo.
 To contribute icons:
 
 1. Add them to the `/newicons` folder in a pull request.
-2. Assign a category for them in `/newicons/appfilter.json`. The current categories are:
-    - **selfhosted**: Selfhosted apps
+
+    Icons shall follow [contribution guidelines](https://docs.arcticons.com/contribute/creating-icons) and the [Knowledge Base](https://docs.arcticons.com) tutorials.
+
+3. Assign a category for them in `/newicons/appfilter.json`. The current categories are:
+    - **selfhosted**: Selfhosted software
     - **programming**: Programming tools and languages
     - **distros**: Linux distributions and other OSes
     - **other**: Miscellaneous stuff related to self-hosting e.g. logos of popular services or utility icons
 
-Icons shall follow [contribution guidelines](https://docs.arcticons.com/contribute/creating-icons) and the [Knowledge Base](https://docs.arcticons.com) tutorials.
+    If no categories are assigned, I'll try figuring them out
 
 Tips: 
 

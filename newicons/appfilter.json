@@ -4,6 +4,17 @@
             "selfhosted"
         ]
     },
+    "mail_in_a_box": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "mailu": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+
     "actual_budget": {
         "categories": [
             "selfhosted"
