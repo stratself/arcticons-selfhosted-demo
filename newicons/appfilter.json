@@ -4,54 +4,9 @@
             "selfhosted"
         ]
     },
-    "freenet": {
-        "categories": [
-            "programming"
-        ]
-    },
-    "fediverse": {
-        "categories": [
-            "other"
-        ]
-    },
-    "threads": {
-        "categories": [
-            "other"
-        ]
-    },
-    "instagram": {
-        "categories": [
-            "other"
-        ]
-    },
-    "ifttt": {
-        "categories": [
-            "other"
-        ]
-    },
-    "tor_browser": {
-        "categories": [
-            "other"
-        ]
-    },
-    "firefox": {
-        "categories": [
-            "other"
-        ]
-    },
-    "firefish": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "actual_budget": {
         "categories": [
             "selfhosted"
-        ]
-    },
-    "amazon_web_services": {
-        "categories": [
-            "other"
         ]
     },
     "aegis": {
@@ -77,6 +32,11 @@
     "alpine_linux": {
         "categories": [
             "distros"
+        ]
+    },
+    "amazon_web_services": {
+        "categories": [
+            "other"
         ]
     },
     "amd": {
@@ -264,6 +224,11 @@
             "other"
         ]
     },
+    "fediverse": {
+        "categories": [
+            "other"
+        ]
+    },
     "fedora": {
         "categories": [
             "distros"
@@ -279,6 +244,16 @@
             "selfhosted"
         ]
     },
+    "firefish": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "firefox": {
+        "categories": [
+            "other"
+        ]
+    },
     "fluffychat": {
         "categories": [
             "selfhosted"
@@ -292,6 +267,11 @@
     "forgejo": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "freenet": {
+        "categories": [
+            "programming"
         ]
     },
     "freshrss": {
@@ -444,9 +424,19 @@
             "selfhosted"
         ]
     },
+    "ifttt": {
+        "categories": [
+            "other"
+        ]
+    },
     "immich": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "instagram": {
+        "categories": [
+            "other"
         ]
     },
     "invidious": {
@@ -994,6 +984,11 @@
             "other"
         ]
     },
+    "threads": {
+        "categories": [
+            "other"
+        ]
+    },
     "tiddlywiki": {
         "categories": [
             "selfhosted"
@@ -1002,6 +997,11 @@
     "tiny_tiny_rss": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "tor_browser": {
+        "categories": [
+            "other"
         ]
     },
     "traefik": {
