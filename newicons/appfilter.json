@@ -11,7 +11,12 @@
     },
     "fediverse": {
         "categories": [
-            "programming"
+            "other"
+        ]
+    },
+    "ifttt": {
+        "categories": [
+            "other"
         ]
     },
     "tor_browser": {
