@@ -4,9 +4,9 @@
             "selfhosted"
         ]
     },
-    "tor": {
+    "tor_browser": {
         "categories": [
-            "selfhosted"
+            "other"
         ]
     },
     "firefish": {
