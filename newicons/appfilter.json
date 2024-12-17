@@ -1051,12 +1051,12 @@
     },
     "visual_studio_code": {
         "categories": [
-            "selfhosted"
+            "selfhosted", "programming"
         ]
     },
     "vscodium": {
         "categories": [
-            "selfhosted"
+            "selfhosted", "programming"
         ]
     },
     "wikiless": {
