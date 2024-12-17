@@ -4,7 +4,22 @@
             "selfhosted"
         ]
     },
+    "freenet": {
+        "categories": [
+            "programming"
+        ]
+    },
+    "fediverse": {
+        "categories": [
+            "programming"
+        ]
+    },
     "tor_browser": {
+        "categories": [
+            "other"
+        ]
+    },
+    "firefox": {
         "categories": [
             "other"
         ]
