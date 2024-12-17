@@ -172,12 +172,8 @@
     "discord": {
         "categories": [
             "other"
-        ]
-    },
-    "discord_alt": {
-        "categories": [
-            "other"
-        ]
+        ],
+        "alts": ["discord_alt"]
     },
     "docker": {
         "categories": [
