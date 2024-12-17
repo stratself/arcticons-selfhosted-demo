@@ -9,6 +9,7 @@ body {
     background: #141414;
     text-align: left;
     margin: auto;
+    font-variant-ligatures: none;
 }
 
 header { max-width: 80ch; margin: auto }
