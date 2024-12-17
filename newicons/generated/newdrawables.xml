@@ -6,6 +6,7 @@
 	<item drawable="actual_budget" />
 	<item drawable="affine" />
 	<item drawable="airtable" />
+	<item drawable="amazon_web_services" />
 	<item drawable="amd" />
 	<item drawable="android" />
 	<item drawable="ansible" />
@@ -33,11 +34,15 @@
 	<item drawable="ejabberd" />
 	<item drawable="ente" />
 	<item drawable="facebook" />
+	<item drawable="fediverse" />
 	<item drawable="filebrowser" />
 	<item drawable="filestash" />
+	<item drawable="firefish" />
+	<item drawable="firefox" />
 	<item drawable="fluffychat" />
 	<item drawable="folder_icon" />
 	<item drawable="forgejo" />
+	<item drawable="freenet" />
 	<item drawable="freshrss" />
 	<item drawable="funkwhale" />
 	<item drawable="gitbook" />
@@ -61,10 +66,13 @@
 	<item drawable="hashicorp_terraform" />
 	<item drawable="headscale" />
 	<item drawable="homarr" />
+	<item drawable="ifttt" />
+	<item drawable="instagram" />
 	<item drawable="invidious" />
 	<item drawable="ivpn" />
 	<item drawable="ivpn_alt" />
 	<item drawable="jekyll" />
+	<item drawable="jira" />
 	<item drawable="kanidm" />
 	<item drawable="kodiremote" />
 	<item drawable="kofi" />
@@ -130,6 +138,8 @@
 	<item drawable="telegram_alt_1" />
 	<item drawable="telegram_alt_2" />
 	<item drawable="telegram_alt_3" />
+	<item drawable="threads" />
+	<item drawable="torbrowser" />
 	<item drawable="traefik" />
 	<item drawable="twitter" />
 	<item drawable="twitter_alt_1" />
