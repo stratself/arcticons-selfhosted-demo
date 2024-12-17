@@ -1,4 +1,6 @@
 import json 
+from bs4 import BeautifulSoup
+
 
 iconRawUrl = 'https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master'
 siteTemplateFile = 'scripts/template/template.html'
@@ -48,7 +50,7 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
 
     index = iconWebsite.find('<div class="category-filters">') + len('<div class="category-filters">')
     iconWebsite = iconWebsite[:index] + "\n\t<text>Categories:</text>" + buttonToggleDiv + iconWebsite[index:]
-
+    iconWebsite = BeautifulSoup(iconWebsite, 'html.parser').prettify()
     f = open(websiteFile,'w')
     print("Writing index.html")
     f.write(iconWebsite)

@@ -4,3 +4,4 @@ shutil
 pillow
 argparse
 cairosvg
+beautifulsoup4
