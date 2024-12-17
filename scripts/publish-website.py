@@ -33,7 +33,9 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
 
     buttonToggleTemplate = open(buttonToggleFile).read()
     buttonToggleDiv = ""
-    for category in set(categories):
+    categoriesSet = ("selfhosted","programming","distros","other")
+    for category in categoriesSet:
+        print(category)
         buttonToggle = buttonToggleTemplate.replace("{category}",category)
         buttonToggle = buttonToggle.replace("{categoryTitle}",category.title())
         buttonToggle = buttonToggle.replace("{categoryCount}",str(categories.count(category)))
