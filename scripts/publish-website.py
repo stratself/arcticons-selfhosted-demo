@@ -39,6 +39,10 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
         if "alts" in tagmap[icon]:
             iconAlts = "data-alt='" + icon + " " + " ".join(tagmap[icon]["alts"]) + "'"
             iconSwitcher = open(iconSwitcherFile,'r').read().replace("{icon}",icon)
+            for alt in tagmap[icon]["alts"]:
+                for item in tagmap[icon]["categories"]:
+                    categories.append(item)
+
         iconDiv = iconDiv.replace("{iconAlts}",iconAlts)
         iconDiv = iconDiv.replace("{iconSwitcher}",iconSwitcher)
         
@@ -59,7 +63,7 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
         buttonToggleDiv = buttonToggleDiv + buttonToggle + '\n'
 
     iconWebsite = open(siteTemplateFile).read()
-    iconWebsite = iconWebsite.replace("{iconCount}",str(len(icons)))
+    iconWebsite = iconWebsite.replace("{iconCount}",str(len(set(icons))))
     
     index = iconWebsite.find('<div class="iconList">') + len('<div class="iconList">')
     iconWebsite = iconWebsite[:index] + iconDivs + iconWebsite[index:]
@@ -71,7 +75,7 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
     print("Writing index.html")
     f.write(iconWebsite)
     f.close()
-    print(f"Completed publishing website! {len(icons)} icons are generated")
+    print(f"Completed publishing website! {len(set(icons))} icons are generated")
 
 if __name__ == "__main__":
     publishWebsite(siteTemplateFile,iconTemplateFile,iconCategoryMap,websiteFile,buttonToggleFile, iconSwitcherFile)
