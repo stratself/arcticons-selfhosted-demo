@@ -4,6 +4,11 @@
             "selfhosted"
         ]
     },
+    "tor": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "firefish": {
         "categories": [
             "selfhosted"
