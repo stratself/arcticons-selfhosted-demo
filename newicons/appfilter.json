@@ -200,10 +200,12 @@
         ]
     },
     "element": {
+        "alts": [
+            "element_alt"
+        ],
         "categories": [
             "selfhosted"
-        ],
-        "alts": ["element_alt"]
+        ]
     },
     "emby": {
         "categories": [
@@ -316,10 +318,14 @@
         ]
     },
     "google": {
+        "alts": [
+            "google_alt",
+            "google_alt_3",
+            "google_alt_4"
+        ],
         "categories": [
             "other"
-        ],
-        "alts": [ "google_alt", "google_alt_3", "google_alt_4"]
+        ]
     },
     "google_analytics": {
         "categories": [
@@ -397,10 +403,12 @@
         ]
     },
     "home_assistant": {
+        "alts": [
+            "home_assistant_alt_1"
+        ],
         "categories": [
             "selfhosted"
-        ],
-        "alts": ["home_assistant_alt_1"]
+        ]
     },
     "hugo": {
         "categories": [
@@ -433,10 +441,12 @@
         ]
     },
     "ivpn": {
+        "alts": [
+            "ivpn_alt"
+        ],
         "categories": [
             "other"
-        ],
-        "alts": ["ivpn_alt"]
+        ]
     },
     "jekyll": {
         "categories": [
@@ -599,10 +609,12 @@
         ]
     },
     "minecraft": {
+        "alts": [
+            "minecraft_alt_1"
+        ],
         "categories": [
             "selfhosted"
-        ],
-        "alts": ["minecraft_alt_1"]
+        ]
     },
     "miniflux": {
         "categories": [
@@ -725,10 +737,12 @@
         ]
     },
     "opensuse_tumbleweed": {
+        "alts": [
+            "opensuse_tumbleweed_alt"
+        ],
         "categories": [
             "distros"
-        ],
-        "alts": ["opensuse_tumbleweed_alt"]
+        ]
     },
     "openvpn": {
         "categories": [
@@ -771,10 +785,12 @@
         ]
     },
     "pixelfed": {
+        "alts": [
+            "pixelfed_alt"
+        ],
         "categories": [
             "selfhosted"
-        ],
-        "alts": ["pixelfed_alt"]
+        ]
     },
     "pleroma": {
         "categories": [
@@ -897,10 +913,13 @@
         ]
     },
     "spotify": {
+        "alts": [
+            "spotify_alt_1",
+            "spotify_alt_2"
+        ],
         "categories": [
             "other"
-        ],
-        "alts": ["spotify_alt_1","spotify_alt_2"]
+        ]
     },
     "stalwart_mail": {
         "categories": [
@@ -908,10 +927,12 @@
         ]
     },
     "standard_notes": {
+        "alts": [
+            "standard_notes_alt"
+        ],
         "categories": [
             "selfhosted"
-        ],
-        "alts": ["standard_notes_alt"]
+        ]
     },
     "syncthing": {
         "categories": [
@@ -929,10 +950,14 @@
         ]
     },
     "telegram": {
+        "alts": [
+            "telegram_alt_1",
+            "telegram_alt_2",
+            "telegram_alt_3"
+        ],
         "categories": [
             "other"
-        ],
-        "alts": ["telegram_alt_1","telegram_alt_2","telegram_alt_3"]
+        ]
     },
     "threads": {
         "categories": [
@@ -960,10 +985,12 @@
         ]
     },
     "twitter": {
+        "alts": [
+            "twitter_alt_1"
+        ],
         "categories": [
             "other"
-        ],
-        "alts": ["twitter_alt_1"]
+        ]
     },
     "ubuntu": {
         "categories": [
@@ -982,12 +1009,14 @@
     },
     "visual_studio_code": {
         "categories": [
-            "selfhosted", "programming"
+            "selfhosted",
+            "programming"
         ]
     },
     "vscodium": {
         "categories": [
-            "selfhosted", "programming"
+            "selfhosted",
+            "programming"
         ]
     },
     "wikiless": {
