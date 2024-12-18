@@ -4,7 +4,45 @@
             "selfhosted"
         ]
     },
+    "bazarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "lidarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "sonarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "radarr": {
+        "categories": [
+            "selfhosted"
+        ],
+        "alts": [ "radarr_alt"]
+
+    },
+    "overseerr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },   
+    "tautulli": {
+        "categories": [
+            "selfhosted"
+        ]
+    },     
     "actual_budget": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+
+    "prowlarr": {
         "categories": [
             "selfhosted"
         ]
