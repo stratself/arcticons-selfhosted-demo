@@ -211,7 +211,17 @@
         "categories": [
             "other"
         ],
-        "alts": ["discord_alt"]
+        "alts": [
+            "discord_alt",
+            "discord_alt_2",
+            "discord_alt_3",
+            "discord_alt_4",
+            "discord_alt_5",
+            "discord_alt_6",
+            "discord_alt_7",
+            "discord_alt_8",
+            "discord_alt_9"
+        ]
     },
     "docker": {
         "categories": [
