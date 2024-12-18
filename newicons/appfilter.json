@@ -94,6 +94,11 @@
             "selfhosted"
         ]
     },
+    "baserow": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "bazarr": {
         "categories": [
             "selfhosted"
@@ -224,6 +229,11 @@
         ]
     },
     "ente": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "ersatztv": {
         "categories": [
             "selfhosted"
         ]
@@ -489,6 +499,11 @@
             "selfhosted"
         ]
     },
+    "keycloak": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "kitchenowl": {
         "categories": [
             "selfhosted"
@@ -737,6 +752,11 @@
             "selfhosted"
         ]
     },
+    "openmediavault": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "opensuse_leap": {
         "categories": [
             "distros"
@@ -823,39 +843,18 @@
             "selfhosted"
         ]
     },
+    "pocket_id": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "postgresql": {
         "categories": [
             "selfhosted",
             "programming"
         ]
     },
-
     "prosody": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "baserow": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "ersatztv": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "keycloak": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "openmediavault": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "pocket_id": {
         "categories": [
             "selfhosted"
         ]

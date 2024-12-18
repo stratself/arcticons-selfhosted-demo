@@ -16,6 +16,7 @@
 	<item drawable="authelia" />
 	<item drawable="authentik" />
 	<item drawable="baikal" />
+	<item drawable="baserow" />
 	<item drawable="bazarr" />
 	<item drawable="bookstack" />
 	<item drawable="borg" />
@@ -43,6 +44,7 @@
 	<item drawable="duckduckgo" />
 	<item drawable="ejabberd" />
 	<item drawable="ente" />
+	<item drawable="ersatztv" />
 	<item drawable="facebook" />
 	<item drawable="fediverse" />
 	<item drawable="filebrowser" />
@@ -85,6 +87,7 @@
 	<item drawable="jekyll" />
 	<item drawable="jira" />
 	<item drawable="kanidm" />
+	<item drawable="keycloak" />
 	<item drawable="kodiremote" />
 	<item drawable="kofi" />
 	<item drawable="libreoffice" />
@@ -119,6 +122,7 @@
 	<item drawable="obtainium" />
 	<item drawable="ollama" />
 	<item drawable="openai_chatgpt" />
+	<item drawable="openmediavault" />
 	<item drawable="opensuse_leap" />
 	<item drawable="opensuse_leap_micro" />
 	<item drawable="opensuse_microos" />
@@ -130,6 +134,7 @@
 	<item drawable="pinafore" />
 	<item drawable="pixelfed" />
 	<item drawable="pixelfed_alt" />
+	<item drawable="pocket_id" />
 	<item drawable="postgresql" />
 	<item drawable="prosody" />
 	<item drawable="proton_vpn" />
