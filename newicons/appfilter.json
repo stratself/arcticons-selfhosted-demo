@@ -9,6 +9,31 @@
             "selfhosted"
         ]
     },
+    "etebase": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "pi_hole": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "organizr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "flarum": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "filerun": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "aegis": {
         "categories": [
             "other"
@@ -24,7 +49,33 @@
             "other"
         ]
     },
+    "freeipa": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "yarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "calibre_web": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "redlib": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    
     "akkoma": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "komga": {
         "categories": [
             "selfhosted"
         ]
@@ -283,6 +334,27 @@
             "other"
         ]
     },
+    "twingate": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "linkedin": {
+        "categories": [
+            "other"
+        ]
+    },
+    "x_twitter": {
+        "categories": [
+            "other"
+        ]
+    },
+    "signal": {
+        "categories": [
+            "other"
+        ],
+        "alts": ["signal_alt_1", "signal_alt_2"]
+    },
     "forgejo": {
         "categories": [
             "selfhosted"
@@ -299,6 +371,11 @@
         ]
     },
     "friendica": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "frigate": {
         "categories": [
             "selfhosted"
         ]
