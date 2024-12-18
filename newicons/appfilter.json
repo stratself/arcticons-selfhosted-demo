@@ -869,9 +869,10 @@
             "selfhosted"
         ]
     },
-    "proxmox_virtual_environment": {
+    "proxmox": {
         "categories": [
-            "selfhosted"
+            "selfhosted",
+            "distros"
         ]
     },
     "pushbullet": {
