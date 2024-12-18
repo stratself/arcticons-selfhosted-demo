@@ -17,20 +17,18 @@ To contribute icons:
 
     Icons shall follow [contribution guidelines](https://docs.arcticons.com/contribute/creating-icons) and the [Knowledge Base](https://docs.arcticons.com) tutorials.
 
-3. Assign a category for them in `/newicons/appfilter.json`. The current categories are:
+2. Assign a category for them in `/newicons/appfilter.json`. The current categories are:
     - **selfhosted**: Selfhosted software
     - **programming**: Programming tools and languages
     - **distros**: Linux distributions and other OSes
     - **other**: Miscellaneous stuff related to self-hosting e.g. logos of popular services or utility icons
-
-    If no categories are assigned, I'll try figuring them out
 
 Tips: 
 
 - Please name icons with underscores as spaces (e.g. `jitsi_meet.svg` instead of `jitsimeet.svg`) so they can be transformed to proper titles (`Jitsi Meet`).
 - A lot of icons may already exist in the [main repo for Android](https://github.com/Arcticons-team/Arcticons), you can copy-paste them and add proper categories.
 
-## Requests
+## Requests and issues
 
 Please file an issue, preferably with link(s) to the logo(s).
 
