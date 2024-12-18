@@ -139,6 +139,7 @@
 	<item drawable="prosody" />
 	<item drawable="proton_vpn" />
 	<item drawable="prowlarr" />
+	<item drawable="proxmox" />
 	<item drawable="pushbullet" />
 	<item drawable="radarr" />
 	<item drawable="radarr_alt" />
@@ -169,6 +170,7 @@
 	<item drawable="twitter" />
 	<item drawable="twitter_alt_1" />
 	<item drawable="unbound" />
+	<item drawable="uptime_kuma" />
 	<item drawable="visual_studio_code" />
 	<item drawable="wikiless" />
 	<item drawable="windscribe_vpn" />

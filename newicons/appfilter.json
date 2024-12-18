@@ -1073,6 +1073,11 @@
             "selfhosted"
         ]
     },
+    "uptime_kuma": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "vikunja": {
         "categories": [
             "selfhosted"
