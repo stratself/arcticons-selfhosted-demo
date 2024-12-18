@@ -885,6 +885,12 @@
             "selfhosted"
         ]
     },
+    "unraid": {
+        "categories": [
+            "selfhosted",
+            "distros"
+        ]
+    },
     "radarr": {
         "alts": [
             "radarr_alt"
