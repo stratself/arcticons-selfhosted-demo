@@ -4,7 +4,7 @@
 **NOTICE: this is an unofficial WIP. I'll probably showcase this to Arcticons-team later, when I have the time to, but for now it stays here as demo.**
 
 <center>
-| Website | Matrix Chat (Arcticons Space) | Knowledge Base |
+| Website | Matrix Chat (Arcticons Space) | Knowledge Base | [Privacy](PRIVACY.md)
 </center>
 
 ## Usage
