@@ -4,7 +4,9 @@
 **NOTICE: this is an unofficial WIP. I'll probably showcase this to Arcticons-team later, when I have the time to, but for now it stays here as demo.**
 
 <center>
+
 | Website | Matrix Chat (Arcticons Space) | Knowledge Base | [Privacy](PRIVACY.md)
+
 </center>
 
 ## Usage
@@ -20,7 +22,6 @@ To contribute icons:
     - Icons shall follow [contribution guidelines](https://docs.arcticons.com/contribute/creating-icons) and the [Knowledge Base](https://docs.arcticons.com) tutorials.
     - Please name icons with underscores as spaces (e.g. `jitsi_meet.svg`) so they can be titled properly (`Jitsi Meet`).
 
-
 2. Assign a category for them in `/newicons/appfilter.json`. The current categories are:
     - **selfhosted**: Selfhosted software
     - **programming**: Programming tools and languages
@@ -31,7 +32,7 @@ To contribute icons:
 <summary>Extra tips</summary>
 
 - A lot of icons may already exist in the [main Android repo](https://github.com/Arcticons-team/Arcticons), you can copy-paste and categorise them accordingly
-- To avoid cloning the huge `/icons` folder, you can clone use [git sparse-checkout](https://stackoverflow.com/a/63786181) with the `/newicons` folder:
+- To avoid cloning the entire huge repo, you can use [git sparse-checkout](https://stackoverflow.com/a/63786181) with the `/newicons` folder only:
   
     ```bash
     git clone --filter=blob:none --no-checkout --depth 1 --sparse https://github.com/Arcticons-team/Arcticons-selfhosted
