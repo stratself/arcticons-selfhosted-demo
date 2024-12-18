@@ -885,12 +885,6 @@
             "selfhosted"
         ]
     },
-    "unraid": {
-        "categories": [
-            "selfhosted",
-            "distros"
-        ]
-    },
     "radarr": {
         "alts": [
             "radarr_alt"
@@ -1077,6 +1071,12 @@
     "unbound": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "unraid": {
+        "categories": [
+            "selfhosted",
+            "distros"
         ]
     },
     "uptime_kuma": {
