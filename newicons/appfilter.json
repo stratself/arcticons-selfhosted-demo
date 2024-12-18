@@ -4,45 +4,7 @@
             "selfhosted"
         ]
     },
-    "bazarr": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "lidarr": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "sonarr": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "radarr": {
-        "categories": [
-            "selfhosted"
-        ],
-        "alts": [ "radarr_alt"]
-
-    },
-    "overseerr": {
-        "categories": [
-            "selfhosted"
-        ]
-    },   
-    "tautulli": {
-        "categories": [
-            "selfhosted"
-        ]
-    },     
     "actual_budget": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-
-    "prowlarr": {
         "categories": [
             "selfhosted"
         ]
@@ -132,6 +94,11 @@
             "selfhosted"
         ]
     },
+    "bazarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "bitwarden": {
         "categories": [
             "selfhosted"
@@ -208,9 +175,6 @@
         ]
     },
     "discord": {
-        "categories": [
-            "other"
-        ],
         "alts": [
             "discord_alt",
             "discord_alt_2",
@@ -221,6 +185,9 @@
             "discord_alt_7",
             "discord_alt_8",
             "discord_alt_9"
+        ],
+        "categories": [
+            "other"
         ]
     },
     "docker": {
@@ -557,6 +524,11 @@
             "selfhosted"
         ]
     },
+    "lidarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "linux_mint": {
         "categories": [
             "distros"
@@ -798,6 +770,11 @@
             "distros"
         ]
     },
+    "overseerr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "owncloud": {
         "categories": [
             "selfhosted"
@@ -861,6 +838,11 @@
             "other"
         ]
     },
+    "prowlarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "proxmox_virtual_environment": {
         "categories": [
             "selfhosted"
@@ -872,6 +854,14 @@
         ]
     },
     "qbittorrent": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "radarr": {
+        "alts": [
+            "radarr_alt"
+        ],
         "categories": [
             "selfhosted"
         ]
@@ -956,6 +946,11 @@
             "selfhosted"
         ]
     },
+    "sonarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "spotify": {
         "alts": [
             "spotify_alt_1",
@@ -984,6 +979,11 @@
         ]
     },
     "tailscale": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "tautulli": {
         "categories": [
             "selfhosted"
         ]
