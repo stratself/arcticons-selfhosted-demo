@@ -825,10 +825,37 @@
     },
     "postgresql": {
         "categories": [
+            "selfhosted",
+            "programming"
+        ]
+    },
+
+    "prosody": {
+        "categories": [
             "selfhosted"
         ]
     },
-    "prosody": {
+    "baserow": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "ersatztv": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "keycloak": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "openmediavault": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "pocket_id": {
         "categories": [
             "selfhosted"
         ]
