@@ -9,31 +9,6 @@
             "selfhosted"
         ]
     },
-    "etebase": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "pi_hole": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "organizr": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "flarum": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "filerun": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "aegis": {
         "categories": [
             "other"
@@ -49,33 +24,7 @@
             "other"
         ]
     },
-    "freeipa": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "yarr": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "calibre_web": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "redlib": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    
     "akkoma": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "komga": {
         "categories": [
             "selfhosted"
         ]
@@ -176,6 +125,11 @@
         ]
     },
     "caddy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "calibre_web": {
         "categories": [
             "selfhosted"
         ]
@@ -289,6 +243,11 @@
             "selfhosted"
         ]
     },
+    "etebase": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "facebook": {
         "categories": [
             "other"
@@ -309,6 +268,11 @@
             "selfhosted"
         ]
     },
+    "filerun": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "filestash": {
         "categories": [
             "selfhosted"
@@ -324,6 +288,11 @@
             "other"
         ]
     },
+    "flarum": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "fluffychat": {
         "categories": [
             "selfhosted"
@@ -334,28 +303,12 @@
             "other"
         ]
     },
-    "twingate": {
+    "forgejo": {
         "categories": [
             "selfhosted"
         ]
     },
-    "linkedin": {
-        "categories": [
-            "other"
-        ]
-    },
-    "x_twitter": {
-        "categories": [
-            "other"
-        ]
-    },
-    "signal": {
-        "categories": [
-            "other"
-        ],
-        "alts": ["signal_alt_1", "signal_alt_2"]
-    },
-    "forgejo": {
+    "freeipa": {
         "categories": [
             "selfhosted"
         ]
@@ -601,6 +554,11 @@
             "other"
         ]
     },
+    "komga": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "lemmy": {
         "categories": [
             "selfhosted"
@@ -619,6 +577,11 @@
     "lidarr": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "linkedin": {
+        "categories": [
+            "other"
         ]
     },
     "linux_mint": {
@@ -867,6 +830,11 @@
             "distros"
         ]
     },
+    "organizr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "overseerr": {
         "categories": [
             "selfhosted"
@@ -883,6 +851,11 @@
         ]
     },
     "peertube": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "pi_hole": {
         "categories": [
             "selfhosted"
         ]
@@ -975,6 +948,11 @@
             "other"
         ]
     },
+    "redlib": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "rocketchat": {
         "categories": [
             "selfhosted"
@@ -1013,6 +991,15 @@
     "sftpgo": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "signal": {
+        "alts": [
+            "signal_alt_1",
+            "signal_alt_2"
+        ],
+        "categories": [
+            "other"
         ]
     },
     "simplex_chat": {
@@ -1132,6 +1119,11 @@
             "selfhosted"
         ]
     },
+    "twingate": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "twitter": {
         "alts": [
             "twitter_alt_1"
@@ -1194,6 +1186,16 @@
         ]
     },
     "wordpress": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "x_twitter": {
+        "categories": [
+            "other"
+        ]
+    },
+    "yarr": {
         "categories": [
             "selfhosted"
         ]
