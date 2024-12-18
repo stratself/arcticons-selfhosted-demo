@@ -3,7 +3,7 @@ document.getElementById('searchBar').addEventListener('input', function (event) 
     const listIcons = document.querySelectorAll('.iconList .iconPanel');
     
     listIcons.forEach(function (icon) {
-        const iconName = icon.id.toLowerCase().replace("_"," ");
+        const iconName = icon.id.toLowerCase().replaceAll("_"," ");
         if (iconName.includes(searchTerm)) {
             icon.style.display = 'flex';
         } else {
