@@ -1,51 +1,62 @@
-import json 
+import json
 from bs4 import BeautifulSoup
 
 
-iconRawUrl = 'https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master'
-siteTemplateFile = 'scripts/template/template.html'
-iconTemplateFile = 'scripts/template/iconTemplate.html'
+iconRawUrl = "https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master"
+siteTemplateFile = "scripts/template/template.html"
+iconTemplateFile = "scripts/template/iconTemplate.html"
 buttonToggleFile = "scripts/template/buttonToggleTemplate.html"
 iconSwitcherFile = "scripts/template/iconSwitcherTemplate.html"
-iconCategoryMap = 'newicons/appfilter.json'
-websiteFile = 'docs/index.html'
-svgLink = iconRawUrl + '/icons/white/svg/'
-pngLink = iconRawUrl + '/icons/white/png/'
-webpLink = iconRawUrl + '/icons/white/webp/'
+iconCategoryMap = "newicons/appfilter.json"
+websiteFile = "docs/index.html"
+svgLink = iconRawUrl + "/icons/white/svg/"
+pngLink = iconRawUrl + "/icons/white/png/"
+webpLink = iconRawUrl + "/icons/white/webp/"
 
-def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteFile, buttonToggleFile, iconSwitcherFile):
-    
-    categories_map = json.load(open(iconCategoryMap,"r"))
+
+def publishWebsite(
+    siteTemplateFile,
+    iconTemplateFile,
+    iconCategoryMap,
+    websiteFile,
+    buttonToggleFile,
+    iconSwitcherFile,
+):
+    categories_map = json.load(open(iconCategoryMap, "r"))
     icons = [i for i in categories_map]
-    iconTemplate = open(iconTemplateFile,'r').read()
+    iconTemplate = open(iconTemplateFile, "r").read()
     iconDivs = ""
     categories = []
 
     for icon in icons:
         print(f"Exporting {icon} to website")
-        
+
         # Replace title, icon, categories, and links
-        iconTitle = icon.title().replace("_"," ")
-        iconDiv = iconTemplate.replace("{icon}",icon)
-        iconDiv = iconDiv.replace("{iconCategories}",str(" ".join(categories_map[icon]["categories"])))
-        iconDiv = iconDiv.replace("{iconTitle}",iconTitle)
-        iconDiv = iconDiv.replace("{svgLink}",svgLink)
-        iconDiv = iconDiv.replace("{pngLink}",pngLink)
-        iconDiv = iconDiv.replace("{webpLink}",webpLink)
-        
+        iconTitle = icon.title().replace("_", " ")
+        iconDiv = iconTemplate.replace("{icon}", icon)
+        iconDiv = iconDiv.replace(
+            "{iconCategories}", str(" ".join(categories_map[icon]["categories"]))
+        )
+        iconDiv = iconDiv.replace("{iconTitle}", iconTitle)
+        iconDiv = iconDiv.replace("{svgLink}", svgLink)
+        iconDiv = iconDiv.replace("{pngLink}", pngLink)
+        iconDiv = iconDiv.replace("{webpLink}", webpLink)
+
         # Check for existence of alts and add them to icon listing
         iconAlts = ""
         iconSwitcher = ""
         if "alts" in categories_map[icon]:
-            iconAlts = "data-alt='" + icon + " " + " ".join(categories_map[icon]["alts"]) + "'"
-            iconSwitcher = open(iconSwitcherFile,'r').read().replace("{icon}",icon)
+            iconAlts = (
+                "data-alt='" + icon + " " + " ".join(categories_map[icon]["alts"]) + "'"
+            )
+            iconSwitcher = open(iconSwitcherFile, "r").read().replace("{icon}", icon)
             for alt in categories_map[icon]["alts"]:
                 for item in categories_map[icon]["categories"]:
                     categories.append(item)
 
-        iconDiv = iconDiv.replace("{iconAlts}",iconAlts)
-        iconDiv = iconDiv.replace("{iconSwitcher}",iconSwitcher)
-        
+        iconDiv = iconDiv.replace("{iconAlts}", iconAlts)
+        iconDiv = iconDiv.replace("{iconSwitcher}", iconSwitcher)
+
         # Compile final icon divs set
         iconDivs = iconDivs + iconDiv
 
@@ -55,12 +66,14 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
 
     buttonToggleTemplate = open(buttonToggleFile).read()
     buttonToggleDiv = ""
-    categoriesSet = ("selfhosted","programming","distros","other")
+    categoriesSet = ("selfhosted", "programming", "distros", "other")
     for category in categoriesSet:
-        buttonToggle = buttonToggleTemplate.replace("{category}",category)
-        buttonToggle = buttonToggle.replace("{categoryTitle}",category.title())
-        buttonToggle = buttonToggle.replace("{categoryCount}",str(categories.count(category)))
-        buttonToggleDiv = buttonToggleDiv + buttonToggle + '\n'
+        buttonToggle = buttonToggleTemplate.replace("{category}", category)
+        buttonToggle = buttonToggle.replace("{categoryTitle}", category.title())
+        buttonToggle = buttonToggle.replace(
+            "{categoryCount}", str(categories.count(category))
+        )
+        buttonToggleDiv = buttonToggleDiv + buttonToggle + "\n"
 
     iconWebsite = open(siteTemplateFile).read()
     totalIcons = []
@@ -68,19 +81,34 @@ def publishWebsite(siteTemplateFile, iconTemplateFile, iconCategoryMap, websiteF
         totalIcons.append(icon)
         if "alts" in categories_map[icon]:
             [totalIcons.append(alt) for alt in categories_map[icon]["alts"]]
-    iconWebsite = iconWebsite.replace("{iconCount}",str(len(set(totalIcons))))
-    
+    iconWebsite = iconWebsite.replace("{iconCount}", str(len(set(totalIcons))))
+
     index = iconWebsite.find('<div class="iconList">') + len('<div class="iconList">')
     iconWebsite = iconWebsite[:index] + iconDivs + iconWebsite[index:]
 
-    index = iconWebsite.find('<div class="category-filters">') + len('<div class="category-filters">')
-    iconWebsite = iconWebsite[:index] + "\n\t<text>Categories:</text>" + buttonToggleDiv + iconWebsite[index:]
-    iconWebsite = BeautifulSoup(iconWebsite, 'html.parser').prettify()
-    f = open(websiteFile,'w')
+    index = iconWebsite.find('<div class="category-filters">') + len(
+        '<div class="category-filters">'
+    )
+    iconWebsite = (
+        iconWebsite[:index]
+        + "\n\t<text>Categories:</text>"
+        + buttonToggleDiv
+        + iconWebsite[index:]
+    )
+    iconWebsite = BeautifulSoup(iconWebsite, "html.parser").prettify()
+    f = open(websiteFile, "w")
     print("Writing index.html")
     f.write(iconWebsite)
     f.close()
     print(f"Completed publishing website! {len(set(totalIcons))} icons are generated")
 
+
 if __name__ == "__main__":
-    publishWebsite(siteTemplateFile,iconTemplateFile,iconCategoryMap,websiteFile,buttonToggleFile, iconSwitcherFile)
+    publishWebsite(
+        siteTemplateFile,
+        iconTemplateFile,
+        iconCategoryMap,
+        websiteFile,
+        buttonToggleFile,
+        iconSwitcherFile,
+    )
