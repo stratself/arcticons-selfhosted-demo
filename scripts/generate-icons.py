@@ -2,17 +2,18 @@ from shutil import copy2
 from typing import List
 from lxml import etree
 from PIL import Image
-import os, io, re, glob, cairosvg ,argparse
+import os, io, re, glob, cairosvg, argparse
 
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--checkonly", action="store_true", help="Run checks only")
 parser.add_argument("--new", action="store_true", help="Run a new Release")
-parser.add_argument('ARCTICONS_DIR', type=str, help='Path to the Arcticons directory')
+parser.add_argument("ARCTICONS_DIR", type=str, help="Path to the Arcticons directory")
 
 args = parser.parse_args()
 
 ARCTICONS_DIR = os.path.abspath(args.ARCTICONS_DIR)
+
 
 def check_arcticons_path(path):
     # Check if the given path includes "Arcticons" folder or if it is one level below
@@ -22,15 +23,22 @@ def check_arcticons_path(path):
     else:
         app_folder = os.path.join(path, "app")
         other_folder = os.path.join(path, "other")
-        if os.path.exists(other_folder) and os.path.isdir(other_folder) and os.path.exists(app_folder) and os.path.isdir(app_folder):
+        if (
+            os.path.exists(other_folder)
+            and os.path.isdir(other_folder)
+            and os.path.exists(app_folder)
+            and os.path.isdir(app_folder)
+        ):
             return path
         else:
-            print(f"The path '{path}' does not include the 'Arcticons-selfhosted' folder.")
+            print(
+                f"The path '{path}' does not include the 'Arcticons-selfhosted' folder."
+            )
             while True:
                 user_input = input("Do you want to continue? (y/n): ").lower()
-                if user_input == 'y':
+                if user_input == "y":
                     break
-                elif user_input == 'n':
+                elif user_input == "n":
                     exit()  # or raise an exception or take appropriate action
                 else:
                     print("Invalid input. Please enter 'y' or 'n'.")
@@ -39,9 +47,9 @@ def check_arcticons_path(path):
 
 ARCTICONS_PATH = check_arcticons_path(ARCTICONS_DIR)
 
-#Define Path
-NEWICONS_PATH = ARCTICONS_PATH +"/newicons"
-ICONS_PATH = ARCTICONS_PATH +"/icons"
+# Define Path
+NEWICONS_PATH = ARCTICONS_PATH + "/newicons"
+ICONS_PATH = ARCTICONS_PATH + "/icons"
 APPFILTER_PATH = NEWICONS_PATH + "/appfilter.xml"
 DRAWABLE_PATH = ICONS_PATH + "/main/res/xml/drawable.xml"
 NEWDRAWABLE_PATH = ARCTICONS_PATH + "/newicons/generated/newdrawables.xml"
@@ -52,14 +60,14 @@ EXPORT_LIGHT_DIR = ICONS_PATH + "/black/webp"
 EXPORT_DARK_DIR_PNG = ICONS_PATH + "/white/png"
 EXPORT_LIGHT_DIR_PNG = ICONS_PATH + "/black/png"
 
-#Export Sizes of the icons
+# Export Sizes of the icons
 SIZES = [256]
-#Define original color
+# Define original color
 ORIGINAL_STROKE = r"stroke\s*:\s*(#FFFFFF|#ffffff|#fff|white|rgb\(255,255,255\)|rgba\(255,255,255,1\.?\d*\))"
 ORIGINAL_STROKE_ALT = r"stroke\s*=\"\s*(#FFFFFF|#ffffff|#fff|white|rgb\(255,255,255\)|rgba\(255,255,255,1\.?\d*\))\""
 ORIGINAL_FILL = r"fill\s*:\s*(#FFFFFF|#ffffff|#fff|white|rgb\(255,255,255\)|rgba\(255,255,255,1\.?\d*\))"
 ORIGINAL_FILL_ALT = r"fill\s*=\"\s*(#FFFFFF|#ffffff|#fff|white|rgb\(255,255,255\)|rgba\(255,255,255,1\.?\d*\))\""
-#Define Replace Colors
+# Define Replace Colors
 REPLACE_STROKE_WHITE = "stroke:#fff"
 REPLACE_STROKE_WHITE_ALT = '''stroke="#fff"'''
 REPLACE_FILL_WHITE = "fill:#fff"
@@ -71,16 +79,18 @@ REPLACE_FILL_BLACK_ALT = '''fill="#000"'''
 
 ##### Iconpack stuff #####
 
-#helper sort xml creation
-def natural_sort_key(s: str, _nsre=re.compile('([0-9]+)')):
-    return [int(text) if text.isdigit() else text.lower()
-            for text in re.split(_nsre, s.as_posix())]
+
+# helper sort xml creation
+def natural_sort_key(s: str, _nsre=re.compile("([0-9]+)")):
+    return [
+        int(text) if text.isdigit() else text.lower()
+        for text in re.split(_nsre, s.as_posix())
+    ]
 
 
-def create_new_drawables(svgdir: str,newdrawables:str) -> None:
-
+def create_new_drawables(svgdir: str, newdrawables: str) -> None:
     drawable = re.compile(r'drawable="([\w_]+)"')
-    
+
     # Get all in New
     newDrawables = set()
     if not args.new:
@@ -102,18 +112,21 @@ def create_new_drawables(svgdir: str,newdrawables:str) -> None:
     drawable_suf = '" />\n'
     if os.path.exists(newdrawables):
         os.remove(newdrawables)
-    with open(newdrawables, 'w',encoding="utf-8") as fp:
-        fp.write('<?xml version="1.0" encoding="utf-8"?>\n<resources>\n\t<version>1</version>\n\t<category title="New" />\n')
+    with open(newdrawables, "w", encoding="utf-8") as fp:
+        fp.write(
+            '<?xml version="1.0" encoding="utf-8"?>\n<resources>\n\t<version>1</version>\n\t<category title="New" />\n'
+        )
         for drawable in sortedNewDrawables:
-            fp.write(f'{drawable_pre}{drawable}{drawable_suf}')
-        fp.write('</resources>\n')
+            fp.write(f"{drawable_pre}{drawable}{drawable_suf}")
+        fp.write("</resources>\n")
         fp.close
 
-    newIcons= len(newDrawables)   
-    print("There are %i new icons"% newIcons)
+    newIcons = len(newDrawables)
+    print("There are %i new icons" % newIcons)
 
-#new appfilter sort
-def sortxml(path:str):
+
+# new appfilter sort
+def sortxml(path: str):
     # Parse the XML file
     parser = etree.XMLParser(remove_blank_text=True)
     tree = etree.parse(path, parser)
@@ -125,15 +138,15 @@ def sortxml(path:str):
     items = []
     for element in root:
         if element.tag == etree.Comment:
-            if comment_str != None: 
-                elements.append((comment_str,items))
+            if comment_str != None:
+                elements.append((comment_str, items))
                 items = []
             # Get the XML string representation of the element
             comment_str = element.text
         else:
             items.append(element)
-    #This needs to be here ore the last entry is gone
-    elements.append((comment_str,items))
+    # This needs to be here ore the last entry is gone
+    elements.append((comment_str, items))
 
     # Sort the elements by the comment value
     elements.sort(key=lambda element: element[0].lower())
@@ -146,17 +159,18 @@ def sortxml(path:str):
         root.extend(element[1])
 
     # Add Spaces between entries
-    xml_str = etree.tostring(root,encoding = 'utf-8', pretty_print=True)
-    xml_str_line = add_newline_before_occurrences(xml_str.decode(),r'  <!--|</res')
-    xml_str_line = add_tab(xml_str_line,r"..(<!|<i)")
+    xml_str = etree.tostring(root, encoding="utf-8", pretty_print=True)
+    xml_str_line = add_newline_before_occurrences(xml_str.decode(), r"  <!--|</res")
+    xml_str_line = add_tab(xml_str_line, r"..(<!|<i)")
 
-
-    #Write sorted xml to file
-    with open (path,'w', encoding='utf-8') as f:
+    # Write sorted xml to file
+    with open(path, "w", encoding="utf-8") as f:
         f.write(xml_str_line)
+
 
 def add_tab(string, pattern):
     return re.sub(pattern, r"\t\g<1>", string)
+
 
 def add_newline_before_occurrences(string, pattern):
     return re.sub(pattern, r"\n\g<0>", string)
@@ -164,146 +178,247 @@ def add_newline_before_occurrences(string, pattern):
 
 ##### Legacy Arcticons #####
 
-#Change Color of SVG based on rules
-def svg_colors(dir:str,stroke:str,fill:str,stroke_alt:str,fill_alt:str,replace_stroke:str,replace_fill:str,replace_stroke_alt:str,replace_fill_alt:str)  -> None:
+
+# Change Color of SVG based on rules
+def svg_colors(
+    dir: str,
+    stroke: str,
+    fill: str,
+    stroke_alt: str,
+    fill_alt: str,
+    replace_stroke: str,
+    replace_fill: str,
+    replace_stroke_alt: str,
+    replace_fill_alt: str,
+) -> None:
     for x in glob.glob(f"{dir}/*.svg"):
-        with open(x, 'r') as fp:
+        with open(x, "r") as fp:
             content = fp.read()
-       
+
         content = re.sub(stroke, replace_stroke, content, flags=re.IGNORECASE)
         content = re.sub(fill, replace_fill, content, flags=re.IGNORECASE)
         content = re.sub(stroke_alt, replace_stroke_alt, content, flags=re.IGNORECASE)
         content = re.sub(fill_alt, replace_fill_alt, content, flags=re.IGNORECASE)
-    
-        with open(x, 'w') as fp:
+
+        with open(x, "w") as fp:
             fp.write(content)
 
-#Create PNG of the SVG and Copy to destination
-def create_icons(sizes: List[int], dir:str ,export_dir: str, export_dir_png: str, icon_dir: str , mode:str):
-    print(f'Working on {mode}')
+
+# Create PNG of the SVG and Copy to destination
+def create_icons(
+    sizes: List[int],
+    dir: str,
+    export_dir: str,
+    export_dir_png: str,
+    icon_dir: str,
+    mode: str,
+):
+    print(f"Working on {mode}")
     for file_path in glob.glob(f"{dir}/*.svg"):
-        file= os.path.basename(file_path)
+        file = os.path.basename(file_path)
         name = file[:-4]
-        copy2(file_path, f'{icon_dir}/{file}')
+        copy2(file_path, f"{icon_dir}/{file}")
         for size in sizes:
             try:
                 # Convert SVG to PNG
-                png_data = cairosvg.svg2png(url=file_path,output_width=size, output_height=size,)
+                png_data = cairosvg.svg2png(
+                    url=file_path,
+                    output_width=size,
+                    output_height=size,
+                )
 
                 # Open the PNG image from the in-memory data
                 image = Image.open(io.BytesIO(png_data))
 
                 # Convert and save it as WebP
-                image.save(export_dir+f'/{name}.webp', format="WEBP")
+                image.save(export_dir + f"/{name}.webp", format="WEBP")
 
                 # Convert and save it as PNG
-                image.save(export_dir_png+f'/{name}.png', format="PNG")
+                image.save(export_dir_png + f"/{name}.png", format="PNG")
 
             except Exception as e:
                 print(f"Error: {e}")
 
-def remove_svg(dir:str):
+
+def remove_svg(dir: str):
     for file_path in glob.glob(f"{dir}/*.svg"):
         os.remove(file_path)
 
+
 ###### Checks ######
+
 
 # Check Icons
 def checkSVG(dir: str):
-
     def replace_stroke(match):
         strokestr = match.group("strokestr")
         stroke_width = float(match.group("number"))
         if stroke_width > 0.9 and stroke_width < 1.2:
-            return f'{strokestr}1'
+            return f"{strokestr}1"
         elif stroke_width >= 0 and stroke_width < 0.3:
-            return f'{strokestr}0'
+            return f"{strokestr}0"
         else:
-            return f'{strokestr}{stroke_width}'
+            return f"{strokestr}{stroke_width}"
 
     strokeattr = {}
     for file_path in glob.glob(f"{dir}/*.svg"):
-        file= os.path.basename(file_path)
+        file = os.path.basename(file_path)
         name = file[:-4]
-        with open(file_path, 'r', encoding='utf-8') as fp:
+        with open(file_path, "r", encoding="utf-8") as fp:
             content = fp.read()
-            content = re.sub(r'(?P<strokestr>stroke-width(?:="|: ?))(?P<number>\d*(?:.\d+)?)(?=[p"; }\/])', replace_stroke, content)
+            content = re.sub(
+                r'(?P<strokestr>stroke-width(?:="|: ?))(?P<number>\d*(?:.\d+)?)(?=[p"; }\/])',
+                replace_stroke,
+                content,
+            )
 
-            #check colors regex
-            stroke_colors = re.findall(r'stroke(?:=\"|:)(?:rgb[^a]|#).*?(?=[\"; ])', content)
-            fill_colors = re.findall(r'fill(?:=\"|:)(?:rgb[^a]|#).*?(?=[\"; ])', content)
-            stroke_opacities = re.findall(r'stroke-opacity(?:=\"|:).*?(?=[\"; ])', content)
-            fill_opacities = re.findall(r'fill-opacity(?:=\"|:).*?(?=[\"; ])', content)
-            stroke_rgbas = re.findall(r'stroke(?:=\"|:)rgba.*?(?=[\"; ])', content)
-            fill_rgbas = re.findall(r'fill(?:=\"|:)rgba.*?(?=[\"; ])', content)
+            # check colors regex
+            stroke_colors = re.findall(
+                r"stroke(?:=\"|:)(?:rgb[^a]|#).*?(?=[\"; ])", content
+            )
+            fill_colors = re.findall(
+                r"fill(?:=\"|:)(?:rgb[^a]|#).*?(?=[\"; ])", content
+            )
+            stroke_opacities = re.findall(
+                r"stroke-opacity(?:=\"|:).*?(?=[\"; ])", content
+            )
+            fill_opacities = re.findall(r"fill-opacity(?:=\"|:).*?(?=[\"; ])", content)
+            stroke_rgbas = re.findall(r"stroke(?:=\"|:)rgba.*?(?=[\"; ])", content)
+            fill_rgbas = re.findall(r"fill(?:=\"|:)rgba.*?(?=[\"; ])", content)
 
-            #Other Attributes regex
-            strokes = re.findall(r'stroke-width(?:=\"|:).*?(?=[\"; ])', content)
-            linecaps = re.findall(r"stroke-linecap(?:=\"|:).*?(?=[\";}])",content)
-            linejoins = re.findall(r"stroke-linejoin(?:=\"|:).*?(?=[\";}])",content)
+            # Other Attributes regex
+            strokes = re.findall(r"stroke-width(?:=\"|:).*?(?=[\"; ])", content)
+            linecaps = re.findall(r"stroke-linecap(?:=\"|:).*?(?=[\";}])", content)
+            linejoins = re.findall(r"stroke-linejoin(?:=\"|:).*?(?=[\";}])", content)
             # Write the updated content back to the file
-            with open(file_path, 'w', encoding='utf-8') as output_file:
+            with open(file_path, "w", encoding="utf-8") as output_file:
                 output_file.write(content)
-            #colors
+            # colors
             for stroke_color in stroke_colors:
-                if stroke_color not in ['stroke:#ffffff', 'stroke:#fff', 'stroke:#FFFFFF', 'stroke="#fff', 'stroke="#ffffff', 'stroke="#FFFFFF', 'stroke="white', 'stroke:rgb(255,255,255)', 'stroke="rgb(255,255,255)']:
+                if stroke_color not in [
+                    "stroke:#ffffff",
+                    "stroke:#fff",
+                    "stroke:#FFFFFF",
+                    'stroke="#fff',
+                    'stroke="#ffffff',
+                    'stroke="#FFFFFF',
+                    'stroke="white',
+                    "stroke:rgb(255,255,255)",
+                    'stroke="rgb(255,255,255)',
+                ]:
                     if file in strokeattr:
                         strokeattr[file] += [stroke_color]
-                    else: strokeattr[file] = [stroke_color]
+                    else:
+                        strokeattr[file] = [stroke_color]
             for fill_color in fill_colors:
-                if fill_color not in ['fill:#ffffff', 'fill:#fff', 'fill:#FFFFFF', 'fill="#ffffff', 'fill="#fff', 'fill="#FFFFFF', 'fill="white', 'fill:rgb(255,255,255)', 'fill="rgb(255,255,255)']:
+                if fill_color not in [
+                    "fill:#ffffff",
+                    "fill:#fff",
+                    "fill:#FFFFFF",
+                    'fill="#ffffff',
+                    'fill="#fff',
+                    'fill="#FFFFFF',
+                    'fill="white',
+                    "fill:rgb(255,255,255)",
+                    'fill="rgb(255,255,255)',
+                ]:
                     if file in strokeattr:
                         strokeattr[file] += [fill_color]
-                    else: strokeattr[file] = [fill_color]
+                    else:
+                        strokeattr[file] = [fill_color]
             for stroke_opacity in stroke_opacities:
-                if stroke_opacity not in ['stroke-opacity="0', 'stroke-opacity="0%', 'stroke-opacity="1', 'stroke-opacity="100%','stroke-opacity:1','stroke-opacity:0'] and not re.findall(r'stroke-opacity[=:]\"?[01]\.0+$',stroke_opacity):
+                if stroke_opacity not in [
+                    'stroke-opacity="0',
+                    'stroke-opacity="0%',
+                    'stroke-opacity="1',
+                    'stroke-opacity="100%',
+                    "stroke-opacity:1",
+                    "stroke-opacity:0",
+                ] and not re.findall(r"stroke-opacity[=:]\"?[01]\.0+$", stroke_opacity):
                     if file in strokeattr:
                         strokeattr[file] += [stroke_opacity]
-                    else: strokeattr[file] = [stroke_opacity]
+                    else:
+                        strokeattr[file] = [stroke_opacity]
             for fill_opacity in fill_opacities:
-                if fill_opacity not in ['fill-opacity="0', 'fill-opacity="0%', 'fill-opacity="1', 'fill-opacity="100%','fill-opacity:0','fill-opacity:1'] and not re.findall(r'fill-opacity[=:]\"?[01]\.0+$',fill_opacity):
+                if fill_opacity not in [
+                    'fill-opacity="0',
+                    'fill-opacity="0%',
+                    'fill-opacity="1',
+                    'fill-opacity="100%',
+                    "fill-opacity:0",
+                    "fill-opacity:1",
+                ] and not re.findall(r"fill-opacity[=:]\"?[01]\.0+$", fill_opacity):
                     if file in strokeattr:
                         strokeattr[file] += [fill_opacity]
-                    else: strokeattr[file] = [fill_opacity]
+                    else:
+                        strokeattr[file] = [fill_opacity]
             for stroke_rgba in stroke_rgbas:
-                stroke_rgba_color, stroke_rgba_opacity = stroke_rgba.rsplit(',',1)
-                if stroke_rgba_color not in ['stroke:rgba(255,255,255', 'stroke="rgba(255,255,255'] or float(stroke_rgba_opacity[:-1]) not in [0.0, 1.0]:
+                stroke_rgba_color, stroke_rgba_opacity = stroke_rgba.rsplit(",", 1)
+                if stroke_rgba_color not in [
+                    "stroke:rgba(255,255,255",
+                    'stroke="rgba(255,255,255',
+                ] or float(stroke_rgba_opacity[:-1]) not in [0.0, 1.0]:
                     if file in strokeattr:
                         strokeattr[file] += [stroke_rgba]
-                    else: strokeattr[file] = [stroke_rgba]
+                    else:
+                        strokeattr[file] = [stroke_rgba]
             for fill_rgba in fill_rgbas:
-                fill_rgba_color, fill_rgba_opacity = fill_rgba.rsplit(',',1)
-                if fill_rgba_color not in ['fill:rgba(255,255,255', 'fill="rgba(255,255,255'] or float(fill_rgba_opacity[:-1]) not in [0.0, 1.0]:
+                fill_rgba_color, fill_rgba_opacity = fill_rgba.rsplit(",", 1)
+                if fill_rgba_color not in [
+                    "fill:rgba(255,255,255",
+                    'fill="rgba(255,255,255',
+                ] or float(fill_rgba_opacity[:-1]) not in [0.0, 1.0]:
                     if file in strokeattr:
                         strokeattr[file] += [fill_rgba]
-                    else: strokeattr[file] = [fill_rgba]
-            #Other Attributes
+                    else:
+                        strokeattr[file] = [fill_rgba]
+            # Other Attributes
             for stroke in strokes:
-                if stroke not in ['stroke-width:1','stroke-width:1px','stroke-width:0px','stroke-width:0','stroke-width="1','stroke-width="1px','stroke-width="0']:
+                if stroke not in [
+                    "stroke-width:1",
+                    "stroke-width:1px",
+                    "stroke-width:0px",
+                    "stroke-width:0",
+                    'stroke-width="1',
+                    'stroke-width="1px',
+                    'stroke-width="0',
+                ]:
                     if file in strokeattr:
                         strokeattr[file] += [stroke]
-                    else: strokeattr[file] = [stroke]
+                    else:
+                        strokeattr[file] = [stroke]
             for linecap in linecaps:
-                if linecap not in ['stroke-linecap:round','stroke-linecap="round','stroke-linecap: round']:
+                if linecap not in [
+                    "stroke-linecap:round",
+                    'stroke-linecap="round',
+                    "stroke-linecap: round",
+                ]:
                     if file in strokeattr:
                         strokeattr[file] += [linecap]
-                    else: strokeattr[file] = [linecap]
+                    else:
+                        strokeattr[file] = [linecap]
             for linejoin in linejoins:
-                if linejoin not in ['stroke-linejoin:round','stroke-linejoin="round','stroke-linejoin: round']:
+                if linejoin not in [
+                    "stroke-linejoin:round",
+                    'stroke-linejoin="round',
+                    "stroke-linejoin: round",
+                ]:
                     if file in strokeattr:
                         strokeattr[file] += [linejoin]
-                    else: strokeattr[file] = [linejoin]   
+                    else:
+                        strokeattr[file] = [linejoin]
 
     if len(strokeattr) > 0:
-        print('\n\n______ Found SVG with wrong line attributtes ______\n')
+        print("\n\n______ Found SVG with wrong line attributtes ______\n")
         for svg in strokeattr:
-            print(f'\n{svg}:')
+            print(f"\n{svg}:")
             for attr in strokeattr[svg]:
-                print(f'\t {attr}')
+                print(f"\t {attr}")
 
         print("\n\n____ Please check these first before proceeding ____\n\n")
         return True
     return False
+
 
 ###### Main #####
 # runs everything in necessary order
@@ -312,12 +427,47 @@ def main():
         return
     if args.checkonly:
         return
-    create_new_drawables(NEWICONS_PATH,NEWDRAWABLE_PATH)
-    svg_colors(NEWICONS_PATH,ORIGINAL_STROKE,ORIGINAL_FILL,ORIGINAL_STROKE_ALT,ORIGINAL_FILL_ALT,REPLACE_STROKE_WHITE,REPLACE_FILL_WHITE,REPLACE_STROKE_WHITE_ALT,REPLACE_FILL_WHITE_ALT)
-    create_icons(SIZES, NEWICONS_PATH ,EXPORT_DARK_DIR, EXPORT_DARK_DIR_PNG, WHITE_DIR, 'Dark Mode')
-    svg_colors(NEWICONS_PATH,ORIGINAL_STROKE,ORIGINAL_FILL,ORIGINAL_STROKE_ALT,ORIGINAL_FILL_ALT,REPLACE_STROKE_BLACK,REPLACE_FILL_BLACK,REPLACE_STROKE_BLACK_ALT,REPLACE_FILL_BLACK_ALT)
-    create_icons(SIZES, NEWICONS_PATH ,EXPORT_LIGHT_DIR, EXPORT_LIGHT_DIR_PNG, BLACK_DIR, 'Light Mode')
+    create_new_drawables(NEWICONS_PATH, NEWDRAWABLE_PATH)
+    svg_colors(
+        NEWICONS_PATH,
+        ORIGINAL_STROKE,
+        ORIGINAL_FILL,
+        ORIGINAL_STROKE_ALT,
+        ORIGINAL_FILL_ALT,
+        REPLACE_STROKE_WHITE,
+        REPLACE_FILL_WHITE,
+        REPLACE_STROKE_WHITE_ALT,
+        REPLACE_FILL_WHITE_ALT,
+    )
+    create_icons(
+        SIZES,
+        NEWICONS_PATH,
+        EXPORT_DARK_DIR,
+        EXPORT_DARK_DIR_PNG,
+        WHITE_DIR,
+        "Dark Mode",
+    )
+    svg_colors(
+        NEWICONS_PATH,
+        ORIGINAL_STROKE,
+        ORIGINAL_FILL,
+        ORIGINAL_STROKE_ALT,
+        ORIGINAL_FILL_ALT,
+        REPLACE_STROKE_BLACK,
+        REPLACE_FILL_BLACK,
+        REPLACE_STROKE_BLACK_ALT,
+        REPLACE_FILL_BLACK_ALT,
+    )
+    create_icons(
+        SIZES,
+        NEWICONS_PATH,
+        EXPORT_LIGHT_DIR,
+        EXPORT_LIGHT_DIR_PNG,
+        BLACK_DIR,
+        "Light Mode",
+    )
     remove_svg(NEWICONS_PATH)
 
+
 if __name__ == "__main__":
-	main()
+    main()
