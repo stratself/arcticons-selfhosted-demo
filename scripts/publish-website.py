@@ -82,19 +82,8 @@ def publishWebsite(
         if "alts" in categories_map[icon]:
             [totalIcons.append(alt) for alt in categories_map[icon]["alts"]]
     iconWebsite = iconWebsite.replace("{iconCount}", str(len(set(totalIcons))))
-
-    index = iconWebsite.find('<div class="iconList">') + len('<div class="iconList">')
-    iconWebsite = iconWebsite[:index] + iconDivs + iconWebsite[index:]
-
-    index = iconWebsite.find('<div class="category-filters">') + len(
-        '<div class="category-filters">'
-    )
-    iconWebsite = (
-        iconWebsite[:index]
-        + "\n\t<text>Categories:</text>"
-        + buttonToggleDiv
-        + iconWebsite[index:]
-    )
+    iconWebsite = iconWebsite.replace("{iconDivs}", iconDivs)
+    iconWebsite = iconWebsite.replace("{iconCategories}", buttonToggleDiv)
     iconWebsite = BeautifulSoup(iconWebsite, "html.parser").prettify()
     f = open(websiteFile, "w")
     print("Writing index.html")

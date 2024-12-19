@@ -1,5 +1,5 @@
 html {
-    scrollbar-color: var(--table-color) transparent;
+    scrollbar-color: white transparent;
     scrollbar-width: thin;
 }
 
@@ -49,6 +49,22 @@ a:hover, .icon-switcher:hover { color:lightcoral;}
     padding: 0.5rem 1rem;
     margin: 1rem;
     text-align: center;
+}
+
+#category-filters {
+    display:flex;
+    overflow:scroll;
+    flex-wrap:none;
+    text-wrap:nowrap;
+    scrollbar-color: var(--table-color) transparent;
+    scrollbar-width: none;
+    max-width: 80ch;
+    scrollbar-color: white transparent;
+    scrollbar-width:thin;
+}
+
+#category-filters text {
+    margin: auto 
 }
 
 .light-mode {
