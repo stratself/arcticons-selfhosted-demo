@@ -67,6 +67,7 @@
 	<item drawable="github" />
 	<item drawable="gmail" />
 	<item drawable="goblog" />
+	<item drawable="gogs" />
 	<item drawable="google" />
 	<item drawable="google_alt" />
 	<item drawable="google_alt_3" />
@@ -84,7 +85,9 @@
 	<item drawable="gotify" />
 	<item drawable="hashicorp_terraform" />
 	<item drawable="headscale" />
+	<item drawable="hoarder" />
 	<item drawable="homarr" />
+	<item drawable="homepage" />
 	<item drawable="hugo" />
 	<item drawable="ifttt" />
 	<item drawable="instagram" />
@@ -98,6 +101,7 @@
 	<item drawable="kodiremote" />
 	<item drawable="kofi" />
 	<item drawable="komga" />
+	<item drawable="leantime" />
 	<item drawable="libreoffice" />
 	<item drawable="lidarr" />
 	<item drawable="linkedin" />
@@ -138,8 +142,12 @@
 	<item drawable="opensuse_tumbleweed" />
 	<item drawable="opensuse_tumbleweed_alt" />
 	<item drawable="openwrt" />
+	<item drawable="opnsense" />
+	<item drawable="opnsense_alt" />
 	<item drawable="organizr" />
 	<item drawable="overseerr" />
+	<item drawable="penpot" />
+	<item drawable="photoprism" />
 	<item drawable="pi_hole" />
 	<item drawable="pia_vpn" />
 	<item drawable="pinafore" />
@@ -152,10 +160,12 @@
 	<item drawable="prowlarr" />
 	<item drawable="proxmox" />
 	<item drawable="pushbullet" />
+	<item drawable="quadrix" />
 	<item drawable="radarr" />
 	<item drawable="radarr_alt" />
 	<item drawable="reddit" />
 	<item drawable="redlib" />
+	<item drawable="revolt" />
 	<item drawable="rocky_linux" />
 	<item drawable="rss_bridge" />
 	<item drawable="searxng" />
@@ -193,6 +203,7 @@
 	<item drawable="windscribe_vpn" />
 	<item drawable="x_twitter" />
 	<item drawable="yarr" />
+	<item drawable="yourls" />
 	<item drawable="youtube" />
 	<item drawable="zalo" />
 	<item drawable="zerotier" />
