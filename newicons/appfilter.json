@@ -4,6 +4,52 @@
             "selfhosted"
         ]
     },
+    "gogs": {
+        "categories": [
+            "selfhosted"
+        ]
+    },   
+    "hoarder": {
+        "categories": [
+            "selfhosted"
+        ]
+    },     
+    "homepage": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
+    "leantime": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
+    "opnsense": {
+        "categories": [
+            "selfhosted"
+        ],
+        "alts": ["opnsense_alt"]
+    },
+    "penpot": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "photoprism": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "revolt": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "yourls": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "actual_budget": {
         "categories": [
             "selfhosted"
