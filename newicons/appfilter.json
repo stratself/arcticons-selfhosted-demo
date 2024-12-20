@@ -50,6 +50,11 @@
             "selfhosted"
         ]
     },
+    "opentofu": {
+        "categories": [
+            "selfhosted","programming"
+        ]
+    },
     "actual_budget": {
         "categories": [
             "selfhosted"
