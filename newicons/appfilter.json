@@ -4,57 +4,6 @@
             "selfhosted"
         ]
     },
-    "gogs": {
-        "categories": [
-            "selfhosted"
-        ]
-    },   
-    "hoarder": {
-        "categories": [
-            "selfhosted"
-        ]
-    },     
-    "homepage": {
-        "categories": [
-            "selfhosted"
-        ]
-    },    
-    "leantime": {
-        "categories": [
-            "selfhosted"
-        ]
-    },    
-    "opnsense": {
-        "categories": [
-            "selfhosted"
-        ],
-        "alts": ["opnsense_alt"]
-    },
-    "penpot": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "photoprism": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "revolt": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "yourls": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "opentofu": {
-        "categories": [
-            "selfhosted","programming"
-        ]
-    },
     "actual_budget": {
         "categories": [
             "selfhosted"
@@ -419,6 +368,11 @@
             "selfhosted"
         ]
     },
+    "gogs": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "google": {
         "alts": [
             "google_alt",
@@ -499,6 +453,11 @@
             "selfhosted"
         ]
     },
+    "hoarder": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "homarr": {
         "categories": [
             "selfhosted"
@@ -508,6 +467,11 @@
         "alts": [
             "home_assistant_alt_1"
         ],
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "homepage": {
         "categories": [
             "selfhosted"
         ]
@@ -606,6 +570,11 @@
         ]
     },
     "komga": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "leantime": {
         "categories": [
             "selfhosted"
         ]
@@ -871,6 +840,12 @@
             "distros"
         ]
     },
+    "opentofu": {
+        "categories": [
+            "selfhosted",
+            "programming"
+        ]
+    },
     "openvpn": {
         "categories": [
             "selfhosted"
@@ -879,6 +854,14 @@
     "openwrt": {
         "categories": [
             "distros"
+        ]
+    },
+    "opnsense": {
+        "alts": [
+            "opnsense_alt"
+        ],
+        "categories": [
+            "selfhosted"
         ]
     },
     "organizr": {
@@ -902,6 +885,16 @@
         ]
     },
     "peertube": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "penpot": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "photoprism": {
         "categories": [
             "selfhosted"
         ]
@@ -1000,6 +993,11 @@
         ]
     },
     "redlib": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "revolt": {
         "categories": [
             "selfhosted"
         ]
@@ -1247,6 +1245,11 @@
         ]
     },
     "yarr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "yourls": {
         "categories": [
             "selfhosted"
         ]
