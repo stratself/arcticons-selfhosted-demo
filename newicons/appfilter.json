@@ -848,7 +848,8 @@
     },
     "openvpn": {
         "categories": [
-            "selfhosted"
+            "selfhosted",
+            "programming"
         ]
     },
     "openwrt": {
@@ -975,6 +976,11 @@
         ]
     },
     "qbittorrent": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "quadrix": {
         "categories": [
             "selfhosted"
         ]
@@ -1231,7 +1237,8 @@
     },
     "wireguard": {
         "categories": [
-            "selfhosted"
+            "selfhosted",
+            "programming"
         ]
     },
     "wordpress": {
