@@ -52,7 +52,6 @@ a:hover, .icon-switcher:hover { color:lightcoral;}
 }
 
 #category-filters {
-    display:flex;
     overflow:scroll;
     flex-wrap:none;
     text-wrap:nowrap;
@@ -129,5 +128,5 @@ button {
 
 @font-face {
     font-family: "ArcticonsSans";
-    src: url(https://raw.githubusercontent.com/Arcticons-Team/Arcticons-Font/refs/heads/main/ArcticonsSans-Regular.ttf);
+    src: url(https://raw.githubusercontent.com/Arcticons-Team/Arcticons-Font/refs/heads/main/ArcticonsSans-Regular.woff2);
 }

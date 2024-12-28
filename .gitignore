@@ -1,4 +1,5 @@
 workspace.code-workspace
 /example
+/drafts
 *.ipynb
 priorities.txt
