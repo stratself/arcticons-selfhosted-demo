@@ -12,7 +12,10 @@ python3 ./scripts/publish-website.py
 
 Takes icons from `/newicons` and export them to svg, png, and webp files.
 
-This script is a modified version of [`preparerelease.py`](https://github.com/Arcticons-Team/Arcticons/blob/main/scripts/preparerelease.py) found in the main repo.
+This script is a modified version of [`preparerelease.py`](https://github.com/Arcticons-Team/Arcticons/blob/main/scripts/preparerelease.py) found in the main repo. Some bugs are present:
+
+- Directory confirmation prompt is still raised. Just type `y` to continue.
+- `newdrawables.xml` are created, although not used. For now ignore them.
 
 ## 2. check-icons.py
 
