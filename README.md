@@ -13,6 +13,22 @@
 
 See website to search for icons, or search directly on this Github repo.
 
+All icons are in the `/icons` folder of this repo in the following tree structure:
+
+```
+├── icons
+│   ├── black
+│   │   ├── png
+│   │   ├── svg
+│   │   └── webp
+│   └── white
+│       ├── png
+│       ├── svg
+│       └── webp
+```
+
+You can use them for further self-hosting.
+
 ## Contribute
 
 To contribute icons:
