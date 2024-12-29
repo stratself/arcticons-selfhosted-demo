@@ -1,5 +1,7 @@
 # Scripts
 
+The scripts uses dependencies as listed in [requirements.txt](requirements.txt). Install them with your favorite Python package manager.
+
 To prepare a release, run the following scripts from the root directory of the repo:
 
 ```bash
@@ -12,10 +14,11 @@ python3 ./scripts/publish-website.py
 
 Takes icons from `/newicons` and export them to svg, png, and webp files.
 
-This script is a modified version of [`preparerelease.py`](https://github.com/Arcticons-Team/Arcticons/blob/main/scripts/preparerelease.py) found in the main repo. Some bugs are present:
+This script is a modified version of [`preparerelease.py`](https://github.com/Arcticons-Team/Arcticons/blob/main/scripts/preparerelease.py) found in the main repo. It takes the following arguments:
 
-- Directory confirmation prompt is still raised. Just type `y` to continue.
-- `newdrawables.xml` are created, although not used. For now ignore them.
+- `-h, --help`: print help page
+- `--checkonly`: do not create icon, check for their validity only
+- `--new`: discard all entry in `newicons/generated/newdrawables.json` and rewrite them with all new SVGs. Suitable for new release.
 
 ## 2. check-icons.py
 
