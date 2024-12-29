@@ -1,13 +1,13 @@
 # Scripts
 
-The scripts uses dependencies as listed in [requirements.txt](requirements.txt). Install them with your favorite Python package manager.
+This project uses [uv](https://docs.astral.sh/uv/) to run Python commands. Dependencies are also noted in [`requirements.txt`](requirements.txt)
 
 To prepare a release, run the following scripts from the root directory of the repo:
 
 ```bash
-python3 ./scripts/generate-icons.py .
-python3 ./scripts/check-icons.py icons/white/svg newicons/appfilter.json --sort
-python3 ./scripts/publish-website.py
+uv run ./scripts/generate-icons.py .
+uv run ./scripts/check-icons.py icons/white/svg newicons/appfilter.json --sort
+uv run ./scripts/publish-website.py
 ```
 
 ## 1. generate-icons.py
