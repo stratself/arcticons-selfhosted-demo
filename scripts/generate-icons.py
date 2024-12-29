@@ -1,9 +1,13 @@
 from shutil import copy2
 from typing import List
-from lxml import etree
 from PIL import Image
-import os, io, re, glob, cairosvg, argparse
-
+import os
+import io
+import re
+import glob
+import cairosvg
+import argparse
+import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--checkonly", action="store_true", help="Run checks only")
@@ -50,9 +54,7 @@ ARCTICONS_PATH = check_arcticons_path(ARCTICONS_DIR)
 # Define Path
 NEWICONS_PATH = ARCTICONS_PATH + "/newicons"
 ICONS_PATH = ARCTICONS_PATH + "/icons"
-APPFILTER_PATH = NEWICONS_PATH + "/appfilter.xml"
-DRAWABLE_PATH = ICONS_PATH + "/main/res/xml/drawable.xml"
-NEWDRAWABLE_PATH = ARCTICONS_PATH + "/newicons/generated/newdrawables.xml"
+NEWDRAWABLE_PATH = ARCTICONS_PATH + "/newicons/generated/newdrawables.json"
 WHITE_DIR = ICONS_PATH + "/white/svg"
 BLACK_DIR = ICONS_PATH + "/black/svg"
 EXPORT_DARK_DIR = ICONS_PATH + "/white/webp"
@@ -80,103 +82,31 @@ REPLACE_FILL_BLACK_ALT = '''fill="#000"'''
 ##### Iconpack stuff #####
 
 
-# helper sort xml creation
-def natural_sort_key(s: str, _nsre=re.compile("([0-9]+)")):
-    return [
-        int(text) if text.isdigit() else text.lower()
-        for text in re.split(_nsre, s.as_posix())
-    ]
-
-
 def create_new_drawables(svgdir: str, newdrawables: str) -> None:
-    drawable = re.compile(r'drawable="([\w_]+)"')
+    # Create newdrawables.txt file
+    data = json.load(open(newdrawables))
 
-    # Get all in New
-    newDrawables = set()
+    # populate newDrawables list
+    newDrawables = []
     if not args.new:
-        with open(newdrawables) as file:
-            lines = file.readlines()
-            for line in lines:
-                new = re.search(drawable, line)
-                if new:
-                    newDrawables.add(new.group(1))
+        newDrawables = json.load(open(newdrawables))["new"]
 
     for file_path in glob.glob(f"{svgdir}/*.svg"):
         file = os.path.basename(file_path)
         name = file[:-4]
-        newDrawables.add(name)
+        newDrawables.append(name)
 
-    sortedNewDrawables = sorted(newDrawables)
-
-    drawable_pre = '\t<item drawable="'
-    drawable_suf = '" />\n'
+    # return sorted unique list of newDrawables
+    newDrawables = list(sorted(set(newDrawables)))
+    data["new"] = newDrawables
+    # Write to json
     if os.path.exists(newdrawables):
         os.remove(newdrawables)
-    with open(newdrawables, "w", encoding="utf-8") as fp:
-        fp.write(
-            '<?xml version="1.0" encoding="utf-8"?>\n<resources>\n\t<version>1</version>\n\t<category title="New" />\n'
-        )
-        for drawable in sortedNewDrawables:
-            fp.write(f"{drawable_pre}{drawable}{drawable_suf}")
-        fp.write("</resources>\n")
-        fp.close
 
-    newIcons = len(newDrawables)
-    print("There are %i new icons" % newIcons)
+    with open(newdrawables, "w") as fp:
+        json.dump(data, fp, indent=4, sort_keys=True)
 
-
-# new appfilter sort
-def sortxml(path: str):
-    # Parse the XML file
-    parser = etree.XMLParser(remove_blank_text=True)
-    tree = etree.parse(path, parser)
-    root = tree.getroot()
-    comment_str = None
-
-    # Find all elements that have a comment preceding them
-    elements = []
-    items = []
-    for element in root:
-        if element.tag == etree.Comment:
-            if comment_str != None:
-                elements.append((comment_str, items))
-                items = []
-            # Get the XML string representation of the element
-            comment_str = element.text
-        else:
-            items.append(element)
-    # This needs to be here ore the last entry is gone
-    elements.append((comment_str, items))
-
-    # Sort the elements by the comment value
-    elements.sort(key=lambda element: element[0].lower())
-
-    # Write the sorted elements back to the XML file
-    root.clear()
-    for element in elements:
-        comment = etree.Comment(element[0])
-        root.append(comment)
-        root.extend(element[1])
-
-    # Add Spaces between entries
-    xml_str = etree.tostring(root, encoding="utf-8", pretty_print=True)
-    xml_str_line = add_newline_before_occurrences(xml_str.decode(), r"  <!--|</res")
-    xml_str_line = add_tab(xml_str_line, r"..(<!|<i)")
-
-    # Write sorted xml to file
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(xml_str_line)
-
-
-def add_tab(string, pattern):
-    return re.sub(pattern, r"\t\g<1>", string)
-
-
-def add_newline_before_occurrences(string, pattern):
-    return re.sub(pattern, r"\n\g<0>", string)
-
-
-##### Legacy Arcticons #####
+    print(f"There are {len(newDrawables)} new icons")
 
 
 # Change Color of SVG based on rules
