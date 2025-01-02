@@ -8,7 +8,7 @@ body {
     color: white;
     background: #141414;
     text-align: left;
-    margin: auto;
+    margin: auto 0.25rem;
     font-variant-ligatures: none;
 }
 
@@ -27,7 +27,7 @@ header { max-width: 80ch; margin: auto }
 }
 
 .invisible {
-    display:none !important;
+    display: none !important;
 }
 
 .button-on {
