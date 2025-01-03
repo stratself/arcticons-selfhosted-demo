@@ -1268,7 +1268,11 @@
             "other"
         ]
     },
-    
+    "vaultwarden": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "searxng": {
         "categories": [
             "selfhosted"
