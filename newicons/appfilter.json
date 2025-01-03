@@ -4,6 +4,11 @@
             "selfhosted"
         ]
     },
+    "apple": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
