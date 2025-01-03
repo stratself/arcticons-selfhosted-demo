@@ -141,6 +141,11 @@
             "programming"
         ]
     },
+    "proton": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
