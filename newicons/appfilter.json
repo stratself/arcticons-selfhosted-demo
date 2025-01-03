@@ -120,6 +120,12 @@
             "selfhosted"
         ]
     },
+    "passbolt": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    
     "activepieces": {
         "categories": [
             "selfhosted"
