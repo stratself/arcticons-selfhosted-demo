@@ -114,11 +114,6 @@
             "selfhosted"
         ]
     },
-    "minetest_luanti": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "baserow": {
         "categories": [
             "selfhosted"
@@ -813,6 +808,11 @@
         "alts": [
             "minecraft_alt_1"
         ],
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "minetest_luanti": {
         "categories": [
             "selfhosted"
         ]
