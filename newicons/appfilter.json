@@ -65,6 +65,11 @@
             "selfhosted"
         ]
     },
+    "gitea": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
