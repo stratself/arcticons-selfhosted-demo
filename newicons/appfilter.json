@@ -1233,6 +1233,11 @@
             "schildichat_alt"
         ]
     },
+    "schildinext": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "seafile": {
         "categories": [
             "selfhosted"
