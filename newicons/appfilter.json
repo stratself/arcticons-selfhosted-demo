@@ -1273,7 +1273,11 @@
             "selfhosted"
         ]
     },
-    
+    "whatsapp": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "vaultwarden": {
         "categories": [
             "selfhosted"
