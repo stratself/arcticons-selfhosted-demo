@@ -1,13 +1,1 @@
-<svg version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
- <g transform="translate(0 2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
-  <g transform="translate(0 .49998)">
-   <g stroke-width="1px">
-    <path d="m24 6.5 12 12-12 12-12-12z"/>
-    <path d="m36 24.5-12 12-12-12"/>
-    <path d="m36 18.5h5.5"/>
-    <path d="m6.5 18.5h5.5"/>
-   </g>
-   <circle cx="24" cy="18.5" r="4" style="paint-order:stroke fill markers"/>
-  </g>
- </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><style>.b{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="b" d="M24,8.5l12,12-12,12-12-12,12-12Z"/><path class="b" d="M36,27.5l-12,12-12-12"/><path class="b" d="M36,20.5h6.5"/><path class="b" d="M5.5,20.5h6.5"/><circle class="b" cx="24" cy="20.5" r="3.5"/></svg>
