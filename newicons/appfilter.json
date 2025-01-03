@@ -1278,6 +1278,12 @@
             "selfhosted"
         ]
     },
+    "xmpp": {
+        "categories": [
+            "selfhosted",
+            "programming"
+        ]
+    },
     "vaultwarden": {
         "categories": [
             "selfhosted"
