@@ -1238,6 +1238,11 @@
             "selfhosted"
         ]
     },
+    "shlink": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "seafile": {
         "categories": [
             "selfhosted"
