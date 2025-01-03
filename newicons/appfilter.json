@@ -1248,7 +1248,11 @@
             "selfhosted"
         ]
     },
-    
+    "stirling_pdf": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "seafile": {
         "categories": [
             "selfhosted"
