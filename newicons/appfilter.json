@@ -85,6 +85,12 @@
             "selfhosted"
         ]
     },
+    "irc": {
+        "categories": [
+            "selfhosted",
+            "programming"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
