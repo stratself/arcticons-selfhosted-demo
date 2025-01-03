@@ -1192,12 +1192,12 @@
             "other"
         ]
     },
-    "redlib": {
+    "redis": {
         "categories": [
             "selfhosted"
         ]
     },
-    "redis": {
+    "redlib": {
         "categories": [
             "selfhosted"
         ]
