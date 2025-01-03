@@ -1,5 +1,3 @@
-from shutil import copy2
-from typing import List
 from PIL import Image
 import os
 import io
@@ -8,21 +6,63 @@ import glob
 import cairosvg
 import argparse
 import json
+import jsonschema
+import tomllib
+
+configSchema = {
+    "type": "object",
+    "properties": {
+        "name": {"type": "string"},
+        "size": {"type": "integer"},
+        "color": {"type": "string"},
+        "src": {
+            "type": "object",
+            "properties": {"path": {"type": "string"}},
+            "required": ["path"],
+            "additionalProperties": False,
+        },
+        "dst": {
+            "type": "object",
+            "properties": {
+                "svg": {"type": "string"},
+                "png": {"type": "string"},
+                "webp": {"type": "string"},
+            },
+            "minProperties": 1,
+            "additionalProperties": False,
+        },
+    },
+    "required": ["size", "color", "src", "dst"],
+}
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--checkonly", action="store_true", help="Run checks only")
-parser.add_argument("--new", action="store_true", help="Run a new Release")
-parser.add_argument("ARCTICONS_DIR", type=str, help="Path to the Arcticons directory")
-parser.add_argument("--remove", type=str, help="Remove icons upon creation")
+parser.add_argument("-c", "--config", type=str, help="Config file to use")
+parser.add_argument("--checkonly", action="store_true", help="Run checks only. Requires -c or --checksrc to be set")
+parser.add_argument(
+    "--checksrc",
+    type=str,
+    help="Path to the icons directory for checking (only enabled alongside --checkonly flag)",
+)
+parser.add_argument(
+    "--nopreserve",
+    action="store_true",
+    help="Remove icons after creation",
+)
 
 args = parser.parse_args()
 
-ARCTICONS_DIR = os.path.abspath(args.ARCTICONS_DIR)
+
+def get_config(config_file: str, configSchema: dict):
+    # Get config file and check their validity
+    config = tomllib.load(open(config_file, "rb"))
+    for i in config:
+        jsonschema.validate(instance=config[i], schema=configSchema)
+    return config
 
 
 def check_arcticons_path(path):
     # Check if the given path includes "Arcticons" folder or if it is one level below
-    arcticons_folder = os.path.join(path, "Arcticons-selfhosted")
+    arcticons_folder = os.path.join(path, "arcticons-selfhosted")
     if os.path.exists(arcticons_folder) and os.path.isdir(arcticons_folder):
         return arcticons_folder
     else:
@@ -37,7 +77,7 @@ def check_arcticons_path(path):
             return path
         else:
             print(
-                f"The path '{path}' does not include the 'Arcticons-selfhosted' folder."
+                f"The path '{path}' does not include the 'arcticons-selfhosted' folder."
             )
             while True:
                 user_input = input("Do you want to continue? (y/n): ").lower()
@@ -50,35 +90,11 @@ def check_arcticons_path(path):
     return path
 
 
-ARCTICONS_PATH = check_arcticons_path(ARCTICONS_DIR)
-
-# Define Path
-NEWICONS_PATH = ARCTICONS_PATH + "/newicons"
-ICONS_PATH = ARCTICONS_PATH + "/icons"
-NEWDRAWABLE_PATH = ARCTICONS_PATH + "/newicons/generated/newdrawables.json"
-WHITE_DIR = ICONS_PATH + "/white/svg"
-BLACK_DIR = ICONS_PATH + "/black/svg"
-EXPORT_DARK_DIR = ICONS_PATH + "/white/webp"
-EXPORT_LIGHT_DIR = ICONS_PATH + "/black/webp"
-EXPORT_DARK_DIR_PNG = ICONS_PATH + "/white/png"
-EXPORT_LIGHT_DIR_PNG = ICONS_PATH + "/black/png"
-
-# Export Sizes of the icons
-SIZES = [256]
 # Define original color
 ORIGINAL_STROKE = r"stroke\s*:\s*(#FFFFFF|#ffffff|#fff|white|rgb\(255,255,255\)|rgba\(255,255,255,1\.?\d*\))"
 ORIGINAL_STROKE_ALT = r"stroke\s*=\"\s*(#FFFFFF|#ffffff|#fff|white|rgb\(255,255,255\)|rgba\(255,255,255,1\.?\d*\))\""
 ORIGINAL_FILL = r"fill\s*:\s*(#FFFFFF|#ffffff|#fff|white|rgb\(255,255,255\)|rgba\(255,255,255,1\.?\d*\))"
 ORIGINAL_FILL_ALT = r"fill\s*=\"\s*(#FFFFFF|#ffffff|#fff|white|rgb\(255,255,255\)|rgba\(255,255,255,1\.?\d*\))\""
-# Define Replace Colors
-REPLACE_STROKE_WHITE = "stroke:#fff"
-REPLACE_STROKE_WHITE_ALT = '''stroke="#fff"'''
-REPLACE_FILL_WHITE = "fill:#fff"
-REPLACE_FILL_WHITE_ALT = '''fill="#fff"'''
-REPLACE_STROKE_BLACK = "stroke:#000"
-REPLACE_STROKE_BLACK_ALT = '''stroke="#000"'''
-REPLACE_FILL_BLACK = "fill:#000"
-REPLACE_FILL_BLACK_ALT = '''fill="#000"'''
 
 ##### Iconpack stuff #####
 
@@ -122,53 +138,63 @@ def svg_colors(
     replace_stroke_alt: str,
     replace_fill_alt: str,
 ) -> None:
-    for x in glob.glob(f"{dir}/*.svg"):
-        with open(x, "r") as fp:
+    generatedData: dict = {}
+    for file_path in glob.glob(f"{dir}/*.svg"):
+        file = os.path.basename(file_path)
+        name = file[:-4]
+        with open(file_path, "r") as fp:
             content = fp.read()
-
+        file = os.path.basename(file_path)
         content = re.sub(stroke, replace_stroke, content, flags=re.IGNORECASE)
         content = re.sub(fill, replace_fill, content, flags=re.IGNORECASE)
         content = re.sub(stroke_alt, replace_stroke_alt, content, flags=re.IGNORECASE)
         content = re.sub(fill_alt, replace_fill_alt, content, flags=re.IGNORECASE)
-
-        with open(x, "w") as fp:
-            fp.write(content)
+        generatedData[name] = content
+    return generatedData
 
 
 # Create PNG of the SVG and Copy to destination
 def create_icons(
-    sizes: List[int],
-    dir: str,
-    export_dir: str,
+    generatedData: dict,
+    size: str,
+    export_dir_svg: str,
     export_dir_png: str,
-    icon_dir: str,
+    export_dir_webp: str,
     mode: str,
 ):
     print(f"Working on {mode}")
-    for file_path in glob.glob(f"{dir}/*.svg"):
-        file = os.path.basename(file_path)
-        name = file[:-4]
-        copy2(file_path, f"{icon_dir}/{file}")
-        for size in sizes:
-            try:
-                # Convert SVG to PNG
-                png_data = cairosvg.svg2png(
-                    url=file_path,
-                    output_width=size,
-                    output_height=size,
-                )
+    for icon in generatedData:
+        content = generatedData[icon]
+        if export_dir_svg is not None:
+            if os.path.exists(export_dir_svg) is not True:
+                os.makedirs(export_dir_svg)
+            with open(f"{export_dir_svg}/{icon}.svg", "w") as fp:
+                fp.write(content)
+        try:
+            # Convert SVG to PNG
+            png_data = cairosvg.svg2png(
+                bytestring=content,
+                output_width=size,
+                output_height=size,
+            )
 
-                # Open the PNG image from the in-memory data
-                image = Image.open(io.BytesIO(png_data))
+            # Open the PNG image from the in-memory data
+            image = Image.open(io.BytesIO(png_data))
 
-                # Convert and save it as WebP
-                image.save(export_dir + f"/{name}.webp", format="WEBP")
+            # Convert and save it as PNG
+            if export_dir_png is not None:
+                if os.path.exists(export_dir_png) is not True:
+                    os.makedirs(export_dir_png)
 
-                # Convert and save it as PNG
-                image.save(export_dir_png + f"/{name}.png", format="PNG")
+            # Convert and save it as WebP
+            image.save(export_dir_png + f"/{icon}.png", format="PNG")
+            if export_dir_webp is not None:
+                if os.path.exists(export_dir_webp) is not True:
+                    os.makedirs(export_dir_webp)
+                image.save(export_dir_webp + f"/{icon}.webp", format="WEBP")
 
-            except Exception as e:
-                print(f"Error: {e}")
+        except Exception as e:
+            print(f"Error: {e}")
 
 
 def remove_svg(dir: str):
@@ -351,54 +377,60 @@ def checkSVG(dir: str):
     return False
 
 
+# Check Icons
+
+
 ###### Main #####
 # runs everything in necessary order
 def main():
-    if checkSVG(NEWICONS_PATH):
+    if args.config is not None:
+        CONFIG = get_config(args.config, configSchema)
+    elif args.checksrc is not None and args.checkonly is True:
+        checkSVG(args.checksrc)
         return
-    if args.checkonly:
+    else:
+        raise ValueError("Please provide a config file")
         return
-    create_new_drawables(NEWICONS_PATH, NEWDRAWABLE_PATH)
-    svg_colors(
-        NEWICONS_PATH,
-        ORIGINAL_STROKE,
-        ORIGINAL_FILL,
-        ORIGINAL_STROKE_ALT,
-        ORIGINAL_FILL_ALT,
-        REPLACE_STROKE_WHITE,
-        REPLACE_FILL_WHITE,
-        REPLACE_STROKE_WHITE_ALT,
-        REPLACE_FILL_WHITE_ALT,
+
+    ARCTICONS_DIR = os.path.dirname(
+        os.path.abspath("drafts/scripts/generate-icons.toml")
     )
-    create_icons(
-        SIZES,
-        NEWICONS_PATH,
-        EXPORT_DARK_DIR,
-        EXPORT_DARK_DIR_PNG,
-        WHITE_DIR,
-        "Dark Mode",
-    )
-    svg_colors(
-        NEWICONS_PATH,
-        ORIGINAL_STROKE,
-        ORIGINAL_FILL,
-        ORIGINAL_STROKE_ALT,
-        ORIGINAL_FILL_ALT,
-        REPLACE_STROKE_BLACK,
-        REPLACE_FILL_BLACK,
-        REPLACE_STROKE_BLACK_ALT,
-        REPLACE_FILL_BLACK_ALT,
-    )
-    create_icons(
-        SIZES,
-        NEWICONS_PATH,
-        EXPORT_LIGHT_DIR,
-        EXPORT_LIGHT_DIR_PNG,
-        BLACK_DIR,
-        "Light Mode",
-    )
-    if args.remove:
-        remove_svg(NEWICONS_PATH)
+    check_arcticons_path(ARCTICONS_DIR)
+
+    for flavor in CONFIG:
+        NEWICONS_PATH = CONFIG[flavor]["src"]["path"]
+        MODE = flavor + ' - ' + CONFIG[flavor]["name"]
+        SIZE = CONFIG[flavor]["size"]
+        COLOR = CONFIG[flavor]["color"]
+        REPLACE_STROKE = f"stroke:{COLOR}"
+        REPLACE_STROKE_ALT = f'''stroke="{COLOR}"'''
+        REPLACE_FILL = f"fill:{COLOR}"
+        REPLACE_FILL_ALT = f'''fill="{COLOR}"'''
+
+        EXPORT_DIR_SVG = CONFIG[flavor]["dst"]["svg"]
+        EXPORT_DIR_PNG = CONFIG[flavor]["dst"]["png"]
+        EXPORT_DIR_WEBP = CONFIG[flavor]["dst"]["webp"]
+
+        checkSVG(NEWICONS_PATH)
+        if args.checkonly:
+            return
+        data = svg_colors(
+            NEWICONS_PATH,
+            ORIGINAL_STROKE,
+            ORIGINAL_FILL,
+            ORIGINAL_STROKE_ALT,
+            ORIGINAL_FILL_ALT,
+            REPLACE_STROKE,
+            REPLACE_FILL,
+            REPLACE_STROKE_ALT,
+            REPLACE_FILL_ALT,
+        )
+
+        create_icons(data, SIZE, EXPORT_DIR_SVG, EXPORT_DIR_PNG, EXPORT_DIR_WEBP, MODE)
+        print("There are f{len(data)} new icons")
+    for flavor in CONFIG:
+        if args.nopreserve:
+            remove_svg(NEWICONS_PATH)
 
 
 if __name__ == "__main__":

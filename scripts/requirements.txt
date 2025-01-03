@@ -2,3 +2,4 @@ pillow
 argparse
 cairosvg
 beautifulsoup4
+jsonschema
