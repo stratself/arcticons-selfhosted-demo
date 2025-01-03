@@ -1008,6 +1008,9 @@
     "owncloud": {
         "categories": [
             "selfhosted"
+        ],
+        "alts":[
+            "owncloud_alt"
         ]
     },
     "paperless-ngx": {
