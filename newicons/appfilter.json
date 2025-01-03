@@ -30,6 +30,11 @@
         ],
         "alts": ["cloudflare_alt"]
     },
+    "cloudron": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
