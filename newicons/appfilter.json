@@ -151,6 +151,11 @@
             "other"
         ]
     },
+    "proton_drive": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
