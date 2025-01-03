@@ -125,6 +125,11 @@
             "selfhosted"
         ]
     },
+    "notesnook": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "actual_budget": {
         "categories": [
             "selfhosted"
