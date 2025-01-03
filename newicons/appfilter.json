@@ -104,6 +104,9 @@
     "mkdocs_material": {
         "categories": [
             "selfhosted"
+        ],
+        "alts": [
+            "mkdocs_material_alt"
         ]
     },
     "activepieces": {
