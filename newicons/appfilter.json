@@ -24,6 +24,11 @@
             "selfhosted"
         ]
     },
+    "cloudflare": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
