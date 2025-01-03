@@ -1228,6 +1228,9 @@
     "schildichat": {
         "categories": [
             "selfhosted"
+        ],
+        "alts" :[
+            "schildichat_alt"
         ]
     },
     "seafile": {
