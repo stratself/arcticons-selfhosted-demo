@@ -427,7 +427,7 @@ def main():
         )
 
         create_icons(data, SIZE, EXPORT_DIR_SVG, EXPORT_DIR_PNG, EXPORT_DIR_WEBP, MODE)
-        print("There are f{len(data)} new icons")
+        print(f"There are {len(data)} new icons")
     for flavor in CONFIG:
         if args.nopreserve:
             remove_svg(NEWICONS_PATH)
