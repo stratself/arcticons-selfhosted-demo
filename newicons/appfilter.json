@@ -75,6 +75,11 @@
             "other"
         ]
     },
+    "habitica": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
