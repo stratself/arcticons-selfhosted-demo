@@ -146,6 +146,11 @@
             "other"
         ]
     },
+    "proton_calendar": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
