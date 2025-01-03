@@ -156,6 +156,11 @@
             "other"
         ]
     },
+    "proton_mail": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
