@@ -101,6 +101,11 @@
             "selfhosted"
         ]
     },
+    "mkdocs_material": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
