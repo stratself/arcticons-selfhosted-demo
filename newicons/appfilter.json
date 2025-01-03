@@ -646,7 +646,8 @@
     },
     "matrix": {
         "categories": [
-            "selfhosted"
+            "selfhosted",
+            "programming"
         ]
     },
     "mattermost": {
