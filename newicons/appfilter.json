@@ -114,6 +114,11 @@
             "selfhosted"
         ]
     },
+    "minetest_luanti": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "baserow": {
         "categories": [
             "selfhosted"
