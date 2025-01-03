@@ -109,6 +109,12 @@
             "mkdocs_material_alt"
         ]
     },
+    "mysql": {
+        "categories": [
+            "selfhosted",
+            "programming"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
