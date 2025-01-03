@@ -1,200 +1,7 @@
 {
-    "appflowy": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "apple": {
-        "categories": [
-            "other"
-        ]
-    },
-    "apple_photos": {
-        "categories": [
-            "other"
-        ]
-    },
-    "apple_music": {
-        "categories": [
-            "other"
-        ]
-    },
-    "calibre": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "cloudflare": {
-        "categories": [
-            "other"
-        ],
-        "alts": ["cloudflare_alt"]
-    },
-    "cloudron": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "conduit": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "dashy": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "dawarich": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "desec_io": {
-        "categories": [
-            "other"
-        ]
-    },
-    "fladder": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "flaresolverr": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "gitea": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "google_photos": {
-        "categories": [
-            "other"
-        ]
-    },
-    "habitica": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "hedgedoc": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "irc": {
-        "categories": [
-            "selfhosted",
-            "programming"
-        ]
-    },
-    "liberapay": {
-        "categories": [
-            "other"
-        ]
-    },
-    "lubelogger": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "mkdocs_material": {
-        "categories": [
-            "selfhosted"
-        ],
-        "alts": [
-            "mkdocs_material_alt"
-        ]
-    },
-    "mysql": {
-        "categories": [
-            "selfhosted",
-            "programming"
-        ]
-    },
-    "navidrome": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "passbolt": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "paypal": {
-        "categories": [
-            "other"
-        ]
-    },
-    "plausible": {
-        "categories": [
-            "other"
-        ]
-    },
-    "podman": {
-        "categories": [
-            "selfhosted",
-            "programming"
-        ]
-    },
-    "proton": {
-        "categories": [
-            "other"
-        ]
-    },
-    "proton_calendar": {
-        "categories": [
-            "other"
-        ]
-    },
-    "proton_drive": {
-        "categories": [
-            "other"
-        ]
-    },
-    "proton_mail": {
-        "categories": [
-            "other"
-        ],
-        "alts": [
-            "proton_mail_alt"
-        ]
-    },
-    "proton_pass": {
-        "categories": [
-            "other"
-        ]
-    },
-    "proton_wallet": {
-        "categories": [
-            "other"
-        ]
-    },
-    "radicale": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "reids": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "activepieces": {
         "categories": [
             "selfhosted"
-        ]
-    },
-    "notesnook": {
-        "categories": [
-            "selfhosted"
-        ],
-        "alts" :[
-            "notesnook_alt"
         ]
     },
     "actual_budget": {
@@ -245,6 +52,26 @@
     "ansible": {
         "categories": [
             "programming"
+        ]
+    },
+    "appflowy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "apple": {
+        "categories": [
+            "other"
+        ]
+    },
+    "apple_music": {
+        "categories": [
+            "other"
+        ]
+    },
+    "apple_photos": {
+        "categories": [
+            "other"
         ]
     },
     "apprise": {
@@ -322,6 +149,11 @@
             "selfhosted"
         ]
     },
+    "calibre": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "calibre_web": {
         "categories": [
             "selfhosted"
@@ -342,7 +174,25 @@
             "programming"
         ]
     },
+    "cloudflare": {
+        "alts": [
+            "cloudflare_alt"
+        ],
+        "categories": [
+            "other"
+        ]
+    },
+    "cloudron": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "collabora_online": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "conduit": {
         "categories": [
             "selfhosted"
         ]
@@ -372,9 +222,24 @@
             "programming"
         ]
     },
+    "dashy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "dawarich": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "debian": {
         "categories": [
             "distros"
+        ]
+    },
+    "desec_io": {
+        "categories": [
+            "other"
         ]
     },
     "discord": {
@@ -481,6 +346,16 @@
             "other"
         ]
     },
+    "fladder": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "flaresolverr": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "flarum": {
         "categories": [
             "selfhosted"
@@ -539,6 +414,11 @@
     "gitbook": {
         "categories": [
             "other"
+        ]
+    },
+    "gitea": {
+        "categories": [
+            "selfhosted"
         ]
     },
     "github": {
@@ -611,6 +491,11 @@
             "other"
         ]
     },
+    "google_photos": {
+        "categories": [
+            "other"
+        ]
+    },
     "google_sheets": {
         "categories": [
             "other"
@@ -636,12 +521,22 @@
             "selfhosted"
         ]
     },
+    "habitica": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "hashicorp_terraform": {
         "categories": [
             "programming"
         ]
     },
     "headscale": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "hedgedoc": {
         "categories": [
             "selfhosted"
         ]
@@ -697,6 +592,12 @@
     "invoice_ninja": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "irc": {
+        "categories": [
+            "selfhosted",
+            "programming"
         ]
     },
     "ivpn": {
@@ -777,6 +678,11 @@
             "selfhosted"
         ]
     },
+    "liberapay": {
+        "categories": [
+            "other"
+        ]
+    },
     "libreoffice": {
         "categories": [
             "other"
@@ -808,6 +714,11 @@
         ]
     },
     "logseq": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "lubelogger": {
         "categories": [
             "selfhosted"
         ]
@@ -911,6 +822,14 @@
             "selfhosted"
         ]
     },
+    "mkdocs_material": {
+        "alts": [
+            "mkdocs_material_alt"
+        ],
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "monero": {
         "categories": [
             "other"
@@ -921,7 +840,18 @@
             "other"
         ]
     },
+    "mysql": {
+        "categories": [
+            "selfhosted",
+            "programming"
+        ]
+    },
     "n8n": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "navidrome": {
         "categories": [
             "selfhosted"
         ]
@@ -959,6 +889,14 @@
     "nordvpn": {
         "categories": [
             "other"
+        ]
+    },
+    "notesnook": {
+        "alts": [
+            "notesnook_alt"
+        ],
+        "categories": [
+            "selfhosted"
         ]
     },
     "notion": {
@@ -1070,16 +1008,26 @@
         ]
     },
     "owncloud": {
+        "alts": [
+            "owncloud_alt"
+        ],
         "categories": [
             "selfhosted"
-        ],
-        "alts":[
-            "owncloud_alt"
         ]
     },
     "paperless-ngx": {
         "categories": [
             "selfhosted"
+        ]
+    },
+    "passbolt": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "paypal": {
+        "categories": [
+            "other"
         ]
     },
     "peertube": {
@@ -1125,6 +1073,11 @@
             "selfhosted"
         ]
     },
+    "plausible": {
+        "categories": [
+            "other"
+        ]
+    },
     "pleroma": {
         "categories": [
             "selfhosted"
@@ -1140,6 +1093,12 @@
             "selfhosted"
         ]
     },
+    "podman": {
+        "categories": [
+            "selfhosted",
+            "programming"
+        ]
+    },
     "postgresql": {
         "categories": [
             "selfhosted",
@@ -1151,7 +1110,40 @@
             "selfhosted"
         ]
     },
+    "proton": {
+        "categories": [
+            "other"
+        ]
+    },
+    "proton_calendar": {
+        "categories": [
+            "other"
+        ]
+    },
+    "proton_drive": {
+        "categories": [
+            "other"
+        ]
+    },
+    "proton_mail": {
+        "alts": [
+            "proton_mail_alt"
+        ],
+        "categories": [
+            "other"
+        ]
+    },
+    "proton_pass": {
+        "categories": [
+            "other"
+        ]
+    },
     "proton_vpn": {
+        "categories": [
+            "other"
+        ]
+    },
+    "proton_wallet": {
         "categories": [
             "other"
         ]
@@ -1190,12 +1182,22 @@
             "selfhosted"
         ]
     },
+    "radicale": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "reddit": {
         "categories": [
             "other"
         ]
     },
     "redlib": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "redis": {
         "categories": [
             "selfhosted"
         ]
@@ -1226,11 +1228,11 @@
         ]
     },
     "schildichat": {
+        "alts": [
+            "schildichat_alt"
+        ],
         "categories": [
             "selfhosted"
-        ],
-        "alts" :[
-            "schildichat_alt"
         ]
     },
     "schildinext": {
@@ -1238,61 +1240,7 @@
             "selfhosted"
         ]
     },
-    "shlink": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "stash": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "stirling_pdf": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "seafile": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "truenas_core": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "tumblr": {
-        "categories": [
-            "other"
-        ]
-    },
-    "valkey": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "whatsapp": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "xmpp": {
-        "categories": [
-            "selfhosted",
-            "programming"
-        ],
-        "alts":[
-            "xmpp_alt"
-        ]
-    },
-    "zoraxy": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "vaultwarden": {
         "categories": [
             "selfhosted"
         ]
@@ -1303,6 +1251,11 @@
         ]
     },
     "sftpgo": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "shlink": {
         "categories": [
             "selfhosted"
         ]
@@ -1378,6 +1331,16 @@
             "selfhosted"
         ]
     },
+    "stash": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "stirling_pdf": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "syncthing": {
         "categories": [
             "selfhosted"
@@ -1433,6 +1396,16 @@
             "selfhosted"
         ]
     },
+    "truenas_core": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "tumblr": {
+        "categories": [
+            "other"
+        ]
+    },
     "twingate": {
         "categories": [
             "selfhosted"
@@ -1467,6 +1440,16 @@
             "selfhosted"
         ]
     },
+    "valkey": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "vaultwarden": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "vikunja": {
         "categories": [
             "selfhosted"
@@ -1482,6 +1465,11 @@
         "categories": [
             "selfhosted",
             "programming"
+        ]
+    },
+    "whatsapp": {
+        "categories": [
+            "selfhosted"
         ]
     },
     "wikiless": {
@@ -1508,6 +1496,15 @@
     "x_twitter": {
         "categories": [
             "other"
+        ]
+    },
+    "xmpp": {
+        "alts": [
+            "xmpp_alt"
+        ],
+        "categories": [
+            "selfhosted",
+            "programming"
         ]
     },
     "yarr": {
@@ -1543,6 +1540,11 @@
     "zoom": {
         "categories": [
             "other"
+        ]
+    },
+    "zoraxy": {
+        "categories": [
+            "selfhosted"
         ]
     },
     "zorin": {
