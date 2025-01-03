@@ -19,6 +19,11 @@
             "other"
         ]
     },
+    "calibre": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
