@@ -1,0 +1,21 @@
+[ arcticons-white ]
+name = "Dark mode"
+size = 512
+color = "#fff"
+[ arcticons-white.src ]
+path = "newicons"
+[ arcticons-white.dst ]
+svg = "icons/white/svg"
+png = "icons/white/png"
+webp = "icons/white/webp"
+
+[ arcticons-black ]
+name = "Light mode"
+size = 512
+color = "#000"
+[ arcticons-black.src ]
+path = "newicons"
+[ arcticons-black.dst ]
+svg = "icons/black/svg"
+png = "icons/black/png"
+webp = "icons/black/webp"

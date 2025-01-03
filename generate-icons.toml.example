@@ -1,0 +1,30 @@
+# Define each flavor in a section as below
+# All paths are relative to this file's directory
+
+[ arcticons-custom ]
+name = "Custom mode"
+size = 512 # Size of exported PNG/WEBP in pixels
+color = "#639" # Color in hex
+
+[ arcticons-custom.src ]
+path = "newicons"
+
+[ arcticons-custom.dst ]
+# Define destination for each format
+svg = "icons/custom/svg"
+png = "icons/custom/png"
+webp = "icons/custom/webp"
+
+# Add more sections for more flavors
+
+# [ arcticons-white ]
+# name = "Dark mode"
+# line_weight = 1
+# size = 512
+# color = "#fff"
+# [ arcticons-custom.src ]
+# path = "newicons"
+# [ arcticons-custom.dst ]
+# svg = "icons/white/svg"
+# png = "icons/white/png"
+# webp = "icons/white/webp"
