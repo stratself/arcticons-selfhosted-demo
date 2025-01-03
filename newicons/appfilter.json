@@ -35,6 +35,11 @@
             "selfhosted"
         ]
     },
+    "conduit": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
