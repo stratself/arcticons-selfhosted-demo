@@ -1263,6 +1263,12 @@
             "selfhosted"
         ]
     },
+    "tumblr": {
+        "categories": [
+            "other"
+        ]
+    },
+    
     "searxng": {
         "categories": [
             "selfhosted"
