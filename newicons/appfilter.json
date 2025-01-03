@@ -169,6 +169,11 @@
             "other"
         ]
     },
+    "proton_wallet": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
