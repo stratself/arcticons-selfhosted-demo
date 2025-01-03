@@ -13,6 +13,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--checkonly", action="store_true", help="Run checks only")
 parser.add_argument("--new", action="store_true", help="Run a new Release")
 parser.add_argument("ARCTICONS_DIR", type=str, help="Path to the Arcticons directory")
+parser.add_argument("--remove", type=str, help="Remove icons upon creation")
 
 args = parser.parse_args()
 
@@ -396,7 +397,8 @@ def main():
         BLACK_DIR,
         "Light Mode",
     )
-    remove_svg(NEWICONS_PATH)
+    if args.remove:
+        remove_svg(NEWICONS_PATH)
 
 
 if __name__ == "__main__":
