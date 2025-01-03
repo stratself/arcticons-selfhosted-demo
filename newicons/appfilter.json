@@ -1282,6 +1282,9 @@
         "categories": [
             "selfhosted",
             "programming"
+        ],
+        "alts":[
+            "xmpp_alt"
         ]
     },
     "vaultwarden": {
