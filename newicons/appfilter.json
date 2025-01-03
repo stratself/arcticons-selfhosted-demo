@@ -159,6 +159,9 @@
     "proton_mail": {
         "categories": [
             "other"
+        ],
+        "alts": [
+            "proton_mail_alt"
         ]
     },
     "activepieces": {
