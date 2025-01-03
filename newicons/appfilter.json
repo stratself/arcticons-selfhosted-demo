@@ -55,6 +55,11 @@
             "other"
         ]
     },
+    "fladder": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
