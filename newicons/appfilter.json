@@ -130,6 +130,11 @@
             "other"
         ]
     },
+    "plausible": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
