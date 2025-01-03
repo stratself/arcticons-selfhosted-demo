@@ -135,6 +135,12 @@
             "other"
         ]
     },
+    "podman": {
+        "categories": [
+            "selfhosted",
+            "programming"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
