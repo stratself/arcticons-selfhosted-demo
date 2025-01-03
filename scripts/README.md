@@ -27,9 +27,9 @@ options:
   --checksrc CHECKSRC   Path to the icons directory for checking (only enabled alongside --checkonly flag)
   --nopreserve          Remove icons after creation
 ```
-## 2. check-icons.py
+## 2. check-appfilter.py
 
-Validate the JSON category map (`appfilter.json`) and sort alphabetically with the `--sort` flag. Currently only checks for files with missing category or without a reference.
+Validate the JSON category map (`appfilter.json`) and auto-sort entries alphabetically. Currently only checks for files with missing category or without a reference.
 
 If an alert is raised, kindly fix the issue before proceeding.
 
