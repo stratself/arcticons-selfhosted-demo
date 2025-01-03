@@ -96,6 +96,11 @@
             "other"
         ]
     },
+    "lubelogger": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
