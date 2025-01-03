@@ -1268,6 +1268,12 @@
             "other"
         ]
     },
+    "valkey": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    
     "vaultwarden": {
         "categories": [
             "selfhosted"
