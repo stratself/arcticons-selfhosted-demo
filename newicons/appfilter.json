@@ -164,6 +164,11 @@
             "proton_mail_alt"
         ]
     },
+    "proton_pass": {
+        "categories": [
+            "other"
+        ]
+    },
     "activepieces": {
         "categories": [
             "selfhosted"
