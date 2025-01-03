@@ -1287,6 +1287,11 @@
             "xmpp_alt"
         ]
     },
+    "zoraxy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "vaultwarden": {
         "categories": [
             "selfhosted"
