@@ -20,7 +20,8 @@ path = "newicons"
 
 [ arcticons-custom.dst ]
 # Define destination for each format
-svg = "icons/custom/svg"
+svg = "icons/custom/svg" # svgs will be copied
+# png and webp will be generated according to size
 png = "icons/custom/png"
 webp = "icons/custom/webp"
 
@@ -39,4 +40,4 @@ The new files will be available.
 
 ## Selfhosting the icons
 
-You may self-host this icon pack by exposing the `/icons` subdirectory of this repo via a web server e.g. Caddy or Nginx.
+You may self-host this icon pack by exposing the contents of this repo via a web server e.g. Caddy or Nginx. By default they're the black and white flavors found in `/icons`.

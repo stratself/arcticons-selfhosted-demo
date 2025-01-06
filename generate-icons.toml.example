@@ -11,7 +11,8 @@ path = "newicons"
 
 [ arcticons-custom.dst ]
 # Define destination for each format
-svg = "icons/custom/svg"
+svg = "icons/custom/svg" # svgs will be copied
+# png and webp will be generated according to size
 png = "icons/custom/png"
 webp = "icons/custom/webp"
 
