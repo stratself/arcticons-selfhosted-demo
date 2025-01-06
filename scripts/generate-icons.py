@@ -406,10 +406,19 @@ def main():
         REPLACE_STROKE_ALT = f'''stroke="{COLOR}"'''
         REPLACE_FILL = f"fill:{COLOR}"
         REPLACE_FILL_ALT = f'''fill="{COLOR}"'''
-
-        EXPORT_DIR_SVG = CONFIG[flavor]["dst"]["svg"]
-        EXPORT_DIR_PNG = CONFIG[flavor]["dst"]["png"]
-        EXPORT_DIR_WEBP = CONFIG[flavor]["dst"]["webp"]
+        
+        try:
+            EXPORT_DIR_SVG = CONFIG[flavor]["dst"]["svg"]
+        except KeyError:
+            EXPORT_DIR_SVG = None
+        try:
+            EXPORT_DIR_PNG = CONFIG[flavor]["dst"]["png"]
+        except KeyError:
+            EXPORT_DIR_PNG = None
+        try:
+            EXPORT_DIR_WEBP = CONFIG[flavor]["dst"]["webp"]
+        except KeyError:
+            EXPORT_DIR_WEBP = None
 
         checkSVG(NEWICONS_PATH)
         if args.checkonly:
