@@ -1,7 +1,6 @@
 # Arcticons-selfhosted - Arcticons for self-hosted dashboards!
 
-
-**NOTICE: this is an unofficial WIP. I'll probably showcase this to Arcticons-team later, when I have the time to, but for now it stays here as demo.**
+**This WIP is highly complete and probably ready to ship. Please file an issue if you wanna improve/suggest anything.**
 
 <center>
 
