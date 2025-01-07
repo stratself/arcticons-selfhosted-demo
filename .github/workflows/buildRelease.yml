@@ -11,6 +11,8 @@ jobs:
     name: Build Arcticons-selfhosted release
     # if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
+    env:
+      ZIP_PREFIX: Arcticons-selfhosted
     steps:
       - name: Checking out branch
         uses: actions/checkout@v4
@@ -30,15 +32,19 @@ jobs:
       
       - name: Create dark mode
         run: |
-          mkdir -p generated/dark
-          cp icons/white/* generated/dark
-          zip -r generated/arcticons-dark-$GITHUB_REF_NAME.zip generated/dark
+          mkdir -p generated/arcticons/dark
+          cp -r icons/white/* generated/arcticons/dark
+          zip -r generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.zip generated/arcticons/dark
       
       - name: Create light mode
         run: |
-          mkdir -p generated/light
-          cp icons/black/* generated/light
-          zip -r generated/arcticons-dark-$GITHUB_REF_NAME.zip generated/dark     
+          mkdir -p generated/arcticons/light
+          cp -r icons/black/* generated/arcticons/light
+          zip -r generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.zip generated/arcticons/light
+
+      - name: Create light mode
+        run: |
+          zip -r generated/$ZIP_PREFIX-$GITHUB_REF_NAME.zip generated/arcticons
           ls -lash generated
 
       # - name: Create the Github release
