@@ -6,13 +6,13 @@ name = "Custom mode"
 size = 512 # Size of exported PNG/WEBP in pixels
 color = "#639" # Color in hex
 
+# Path to SVGs
 [ arcticons-custom.src ]
 path = "newicons"
 
 [ arcticons-custom.dst ]
 # Define destination for each format
-svg = "icons/custom/svg" # svgs will be copied
-# png and webp will be generated according to size
+svg = "icons/custom/svg"
 png = "icons/custom/png"
 webp = "icons/custom/webp"
 
