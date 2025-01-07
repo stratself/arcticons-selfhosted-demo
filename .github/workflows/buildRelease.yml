@@ -41,15 +41,15 @@ jobs:
           zip -r generated/arcticons-dark-$GITHUB_REF_NAME.zip generated/dark     
           ls -lash generated
 
-      - name: Create the Github release
-        run: |
-          name="$GITHUB_REF_NAME Release"
-          changelog=
+      # - name: Create the Github release
+      #   run: |
+      #     name="$GITHUB_REF_NAME Release"
+      #     changelog=
           
-          gh release create $GITHUB_REF_NAME\
-            --generate-notes\
-            --title "$name"\
-            --notes "$changelog"\
+      #     gh release create $GITHUB_REF_NAME\
+      #       --generate-notes\
+      #       --title "$name"\
+      #       --notes "$changelog"\
             
-        env:
-          GH_TOKEN: ${{ github.token }}
+      #   env:
+      #     GH_TOKEN: ${{ github.token }}
