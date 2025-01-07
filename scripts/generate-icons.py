@@ -62,7 +62,7 @@ def get_config(config_file: str, configSchema: dict):
 
 def check_arcticons_path(path):
     # Check if the given path includes "Arcticons" folder or if it is one level below
-    arcticons_folder = os.path.join(path, "arcticons-selfhosted")
+    arcticons_folder = os.path.join(path, "arcticons-selfhosted-demo")
     if os.path.exists(arcticons_folder) and os.path.isdir(arcticons_folder):
         return arcticons_folder
     else:
