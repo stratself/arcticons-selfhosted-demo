@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - master
-#    tags:
-#      - '^\d+.\d.\d+(?:-beta)$'
+    tags:
+     - '^\d+.\d.\d+(?:-beta)$'
 
 jobs:
   build:
@@ -22,31 +22,36 @@ jobs:
         run: |
           mkdir -p generated/arcticons/dark
           cp -r icons/white/* generated/arcticons/dark
-          zip -r generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.zip generated/arcticons/dark
-          tar -cvzf generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.zip generated/arcticons/dark
+          zip -qr generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.zip generated/arcticons/dark
+          tar -czf generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.tar.gz generated/arcticons/dark
       
       - name: Create light pack
         run: |
           mkdir -p generated/arcticons/light
           cp -r icons/black/* generated/arcticons/light
-          zip -r generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.zip generated/arcticons/light
-          tar -cvzf generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.zip generated/arcticons/light
+          zip -qr generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.zip generated/arcticons/light
+          tar -cvzf generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.tar.gz generated/arcticons/light
 
       - name: Create both packs
         run: |
-          zip -r generated/$ZIP_PREFIX-$GITHUB_REF_NAME.zip generated/arcticons
-          tar -cvzf generated/$ZIP_PREFIX-$GITHUB_REF_NAME.zip generated/arcticons
+          zip -qr generated/$ZIP_PREFIX-$GITHUB_REF_NAME.zip generated/arcticons
+          tar -czf generated/$ZIP_PREFIX-$GITHUB_REF_NAME.tar.gz generated/arcticons
           ls -lash generated
 
-      # - name: Create the Github release
-      #   run: |
-      #     name="$GITHUB_REF_NAME Release"
-      #     changelog=
+      - name: Create the Github release
+        run: |
+          name="$GITHUB_REF_NAME Release"
+          changelog="$(ls -i icons/black/svg | wc -l) icons in total"
           
-      #     gh release create $GITHUB_REF_NAME\
-      #       --generate-notes\
-      #       --title "$name"\
-      #       --notes "$changelog"\
-            
-      #   env:
-      #     GH_TOKEN: ${{ github.token }}
+          gh release create $GITHUB_REF_NAME\
+            --generate-notes\
+            --title "$name"\
+            --notes "$changelog"\
+            $ZIP_PREFIX-dark-$GITHUB_REF_NAME.zip
+            $ZIP_PREFIX-light-$GITHUB_REF_NAME.zip\
+            $ZIP_PREFIX-$GITHUB_REF_NAME.zip\
+            generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.tar.gz\
+            generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.tar.gz\
+            generated/$ZIP_PREFIX-$GITHUB_REF_NAME.tar.gz
+        env:
+          GH_TOKEN: ${{ github.token }}
