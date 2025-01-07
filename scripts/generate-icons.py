@@ -396,7 +396,7 @@ def main():
     ARCTICONS_DIR = os.path.dirname(
         os.path.abspath(args.config)
     )
-    check_arcticons_path(ARCTICONS_DIR)
+    #check_arcticons_path(ARCTICONS_DIR)
 
     for flavor in CONFIG:
         print(flavor)
