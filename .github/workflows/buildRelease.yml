@@ -1,7 +1,6 @@
 on:
-  # on numbered tagged push and beta releasesgit
-  release:
-    types: [published]
+  # on numbered tagged push and beta releases
+  push:
     tags:
      - '^\d+.\d.\d+(?:-beta)$'
 
