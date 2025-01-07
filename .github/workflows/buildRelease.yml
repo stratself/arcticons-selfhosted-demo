@@ -47,9 +47,9 @@ jobs:
             --generate-notes\
             --title "$name"\
             --notes "$changelog"\
-            $ZIP_PREFIX-dark-$GITHUB_REF_NAME.zip
-            $ZIP_PREFIX-light-$GITHUB_REF_NAME.zip\
-            $ZIP_PREFIX-$GITHUB_REF_NAME.zip\
+            generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.zip
+            generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.zip\
+            generated/$ZIP_PREFIX-$GITHUB_REF_NAME.zip\
             generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.tar.gz\
             generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.tar.gz\
             generated/$ZIP_PREFIX-$GITHUB_REF_NAME.tar.gz
