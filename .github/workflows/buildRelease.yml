@@ -27,3 +27,29 @@ jobs:
         run: uv sync --all-extras --dev
       - name: Run checks on appfilter
         run: uv run ./scripts/check-appfilter.py -c generate-icons.toml ./newicons/appfilter.json
+      
+      - name: Create dark mode
+        run: |
+          mkdir -p generated/dark
+          cp icons/white/* generated/dark
+          zip -r generated/arcticons-dark-$GITHUB_REF_NAME.zip generated/dark
+      
+      - name: Create light mode
+        run: |
+          mkdir -p generated/light
+          cp icons/black/* generated/light
+          zip -r generated/arcticons-dark-$GITHUB_REF_NAME.zip generated/dark     
+          ls -lash generated
+
+      - name: Create the Github release
+        run: |
+          name="$GITHUB_REF_NAME Release"
+          changelog=
+          
+          gh release create $GITHUB_REF_NAME\
+            --generate-notes\
+            --title "$name"\
+            --notes "$changelog"\
+            
+        env:
+          GH_TOKEN: ${{ github.token }}
