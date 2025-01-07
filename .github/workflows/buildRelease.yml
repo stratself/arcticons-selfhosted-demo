@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write
     env:
       ZIP_PREFIX: Arcticons-selfhosted
     steps:
@@ -48,11 +49,7 @@ jobs:
             --generate-notes\
             --title "$name"\
             --notes "$changelog"\
-            generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.zip
-            generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.zip\
-            generated/$ZIP_PREFIX-$GITHUB_REF_NAME.zip\
-            generated/$ZIP_PREFIX-dark-$GITHUB_REF_NAME.tar.gz\
-            generated/$ZIP_PREFIX-light-$GITHUB_REF_NAME.tar.gz\
-            generated/$ZIP_PREFIX-$GITHUB_REF_NAME.tar.gz
+            generated/*.zip
+            generated/*.tar.gz
         env:
           GH_TOKEN: ${{ github.token }}
