@@ -1,8 +1,6 @@
 on:
   pull_request:
-    types:
-      - opened
-      - edited
+
 jobs:
   Audit-Pull-Request:
     runs-on: ubuntu-latest
