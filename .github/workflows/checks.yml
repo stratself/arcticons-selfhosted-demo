@@ -1,6 +1,6 @@
 on:
   pull_request:
-
+    types: [ assigned, opened, synchronize, reopened ]
 jobs:
   Audit-Pull-Request:
     runs-on: ubuntu-latest
