@@ -1,5 +1,4 @@
 on:
-  # on numbered tagged push and beta releases
   release:
     types: [published]
   push:
