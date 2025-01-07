@@ -1,8 +1,10 @@
 on:
   # on numbered tagged push and beta releases
+  release:
+    types: [published]
   push:
     tags:
-     - '^\d+.\d.\d+(?:-beta)$'
+     - '*'
 
 jobs:
   build:
