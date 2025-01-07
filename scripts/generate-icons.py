@@ -207,6 +207,7 @@ def remove_svg(dir: str):
 
 # Check Icons
 def checkSVG(dir: str):
+    print(f"Checking drawability of icons in {dir}")
     def replace_stroke(match):
         strokestr = match.group("strokestr")
         stroke_width = float(match.group("number"))
@@ -389,15 +390,16 @@ def main():
         checkSVG(args.checksrc)
         return
     else:
-        raise ValueError("Please provide a config file")
+        raise ValueError("Please provide paths or a config file")
         return
 
     ARCTICONS_DIR = os.path.dirname(
-        os.path.abspath("drafts/scripts/generate-icons.toml")
+        os.path.abspath(args.config)
     )
     check_arcticons_path(ARCTICONS_DIR)
 
     for flavor in CONFIG:
+        print(flavor)
         NEWICONS_PATH = CONFIG[flavor]["src"]["path"]
         MODE = flavor + ' - ' + CONFIG[flavor]["name"]
         SIZE = CONFIG[flavor]["size"]
@@ -407,6 +409,10 @@ def main():
         REPLACE_FILL = f"fill:{COLOR}"
         REPLACE_FILL_ALT = f'''fill="{COLOR}"'''
         
+        checkSVG(NEWICONS_PATH)
+        if args.checkonly:
+            continue
+                   
         try:
             EXPORT_DIR_SVG = CONFIG[flavor]["dst"]["svg"]
         except KeyError:
@@ -420,9 +426,6 @@ def main():
         except KeyError:
             EXPORT_DIR_WEBP = None
 
-        checkSVG(NEWICONS_PATH)
-        if args.checkonly:
-            return
         data = svg_colors(
             NEWICONS_PATH,
             ORIGINAL_STROKE,
