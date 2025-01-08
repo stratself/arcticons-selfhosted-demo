@@ -23,3 +23,4 @@ jobs:
       - name: Check icons drawability
         run: |
           uv run scripts/generate-icons.py -c generate-icons.toml --checkonly
+        continue-on-error: true

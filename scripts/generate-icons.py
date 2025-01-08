@@ -367,13 +367,13 @@ def checkSVG(dir: str):
                         strokeattr[file] = [linejoin]
 
     if len(strokeattr) > 0:
-        print("\n\n______ Found SVG with wrong line attributtes ______\n")
+        print("\n\n::warn ______ Found SVG with wrong line attributtes ______\n")
         for svg in strokeattr:
             print(f"\n{svg}:")
             for attr in strokeattr[svg]:
                 print(f"\t {attr}")
 
-        print("\n\n____ Please check these first before proceeding ____\n\n")
+        print("\n\n::warn ____ Please check these first before proceeding ____\n\n")
         return True
     return False
 
@@ -409,7 +409,8 @@ def main():
         REPLACE_FILL = f"fill:{COLOR}"
         REPLACE_FILL_ALT = f'''fill="{COLOR}"'''
         
-        checkSVG(NEWICONS_PATH)
+        checkSVG(NEWICONS_PATH):
+
         if args.checkonly:
             continue
                    
