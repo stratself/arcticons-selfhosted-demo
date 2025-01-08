@@ -4,8 +4,9 @@ on:
       - master
       - main
     paths:
-      - icons/*
+      - icons/**
       - newicons/appfilter.json
+  workflow_dispatch:
 
 jobs:
   Publish-Website:
