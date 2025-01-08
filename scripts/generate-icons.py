@@ -409,7 +409,7 @@ def main():
         REPLACE_FILL = f"fill:{COLOR}"
         REPLACE_FILL_ALT = f'''fill="{COLOR}"'''
         
-        checkSVG(NEWICONS_PATH):
+        checkSVG(NEWICONS_PATH)
 
         if args.checkonly:
             continue
