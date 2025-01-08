@@ -372,8 +372,7 @@ def checkSVG(dir: str):
             print(f"\n{svg}:")
             for attr in strokeattr[svg]:
                 print(f"\t {attr}")
-
-        print("\n\n____ Please check these first before proceeding ____\n\n")
+        raise ValueError print("\n\n____ Please check these first before proceeding ____\n\n")
         return True
     return False
 
