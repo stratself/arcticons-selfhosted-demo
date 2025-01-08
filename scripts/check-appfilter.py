@@ -39,6 +39,7 @@ parser.add_argument("-c", "--config", type=str, help="Config file to use")
 parser.add_argument(
     "-p", "--paths", type=str, help="Comma-separated paths to the icons directory"
 )
+parser.add_argument("-e", "--error", action="store_true", help="Return error on incomplete checks")
 parser.add_argument("JSON_APPFILTER", type=str, help="Path to the JSON file")
 
 args = parser.parse_args()
@@ -77,18 +78,19 @@ def check_icons(icons_paths: list, categories_map_path: str) -> None:
     ]
 
     if len(lostIcons) > 0:
-        print("::warning WARN: The following icons are not found in the category map:\n")
+        print("WARN: The following icons are not found in the category map:\n")
         [print(f"\t{lostIcon}.svg") for lostIcon in lostIcons]
         print("\n")
     if len(lostKeys) > 0:
-        print("::warning WARN: The following keys do not have an icon associated with it:\n")
+        print("WARN: The following keys do not have an icon associated with it:\n")
         [print(f"\t{lostKey}.svg") for lostKey in lostKeys]
         print("\n")
     if len(lostCategories) > 0:
-        print("::warning WARN: The following icons are not assigned a category:\n")
+        print("WARN: The following icons are not assigned a category:\n")
         [print(f"\t{lostCategory}.svg") for lostCategory in lostCategories]
         print("\n")
-
+    if len(lostIcons) + len(lostKeys) + len(lostCategories) > 0 and args.error is True:
+        raise KeyError("Appfilter is incomplete. Please check logs for more")
     if args.nosort:
         return
     print("Sorting JSON categories map")
