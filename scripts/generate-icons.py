@@ -48,6 +48,7 @@ parser.add_argument(
     action="store_true",
     help="Remove icons after creation",
 )
+parser.add_argument("-e", "--error", action="store_true", help="Errors on invalid checks")
 
 args = parser.parse_args()
 
@@ -373,8 +374,9 @@ def checkSVG(dir: str):
             for attr in strokeattr[svg]:
                 print(f"\t {attr}")
         print("\n\n____ Please check these first before proceeding ____\n\n")
-        raise ValueError("Icons not up to specification")
-        print("\n\n ____ Please check these first before proceeding ____\n\n")
+        
+        if args.error:
+            raise ValueError("Icons not up to specification")    
         return True
     return False
 
@@ -411,7 +413,7 @@ def main():
         REPLACE_FILL_ALT = f'''fill="{COLOR}"'''
         
         if checkSVG(NEWICONS_PATH):
-            return
+            continue
 
         if args.checkonly:
             continue
