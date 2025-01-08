@@ -1,0 +1,50 @@
+name: "Pre-audit pull request"
+on:
+  pull_request:
+    types: [ assigned, opened, synchronize, reopened ]
+    branches:
+      - main
+      - master
+    paths:
+      - newicons/*
+
+jobs:
+  Audit-SVGs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out branch
+        uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+      - name: Install the project
+        run: uv sync --all-extras --dev
+      - name: Check icons drawability
+        run: |
+          uv run scripts/generate-icons.py --checksrc newicons --checkonly
+
+  Audit-Appfilter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out branch
+        uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+      - name: Install the project
+        run: uv sync --all-extras --dev
+      - name: Check icons appfilter entries
+        run: |
+          uv run scripts/.py -c generate-icons.toml --checkonly -e newicons/appfilter.json 
