@@ -66,7 +66,7 @@ def check_icons(icons_paths: list, categories_map_path: str) -> None:
     iconList = []
     for icons_path in icons_paths:
         print(icons_path)
-        iconsInPath = [icon[:-4] for icon in os.listdir(icons_path)]
+        iconsInPath = [icon[:-4] for icon in os.listdir(icons_path) if icon.endswith('.svg')]
         print("There are", len(iconsInPath), f"icons in {icons_path}")
         iconList += iconsInPath
 
