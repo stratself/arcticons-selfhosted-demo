@@ -27,7 +27,7 @@ jobs:
         run: uv sync --all-extras --dev
       - name: Check icons drawability
         run: |
-          uv run scripts/generate-icons.py --checksrc newicons --checkonly
+          uv run scripts/generate-icons.py --checksrc newicons --checkonly -e
 
   Audit-Appfilter:
     runs-on: ubuntu-latest
