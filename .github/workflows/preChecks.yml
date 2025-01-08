@@ -47,4 +47,4 @@ jobs:
         run: uv sync --all-extras --dev
       - name: Check icons appfilter entries
         run: |
-          uv run scripts/.py -c generate-icons.toml --checkonly -e newicons/appfilter.json 
+          uv run scripts/check-appfilter.py -c generate-icons.toml --checkonly -e newicons/appfilter.json 
