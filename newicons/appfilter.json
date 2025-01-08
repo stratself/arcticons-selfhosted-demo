@@ -24,6 +24,11 @@
             "other"
         ]
     },
+    "odysee": {
+        "categories": [
+            "other"
+        ]
+    },
     "akkoma": {
         "categories": [
             "selfhosted"
