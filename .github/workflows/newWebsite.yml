@@ -1,8 +1,14 @@
 on:
-  pull_request:
-    types: [ assigned, opened, synchronize, reopened ]
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - icons/*
+      - newicons/appfilter.json
+
 jobs:
-  Audit-Pull-Request:
+  Publish-Website:
     runs-on: ubuntu-latest
     steps:
       - name: Checking out branch
@@ -20,5 +26,4 @@ jobs:
         run: uv sync --all-extras --dev
       - name: Check icons drawability
         run: |
-          uv run scripts/generate-icons.py -c generate-icons.toml --checkonly
-        continue-on-error: true
+          uv run scripts/publish-website.py
