@@ -373,6 +373,7 @@ def checkSVG(dir: str):
             for attr in strokeattr[svg]:
                 print(f"\t {attr}")
         raise ValueError print("\n\n____ Please check these first before proceeding ____\n\n")
+        print("\n\n ____ Please check these first before proceeding ____\n\n")
         return True
     return False
 
@@ -409,6 +410,7 @@ def main():
         REPLACE_FILL_ALT = f'''fill="{COLOR}"'''
         
         checkSVG(NEWICONS_PATH)
+
         if args.checkonly:
             continue
                    
