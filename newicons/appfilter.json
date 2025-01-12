@@ -180,9 +180,6 @@
         ]
     },
     "cloudflare": {
-        "alts": [
-            "cloudflare_alt"
-        ],
         "categories": [
             "other"
         ]
