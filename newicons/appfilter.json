@@ -24,11 +24,6 @@
             "other"
         ]
     },
-    "odysee": {
-        "categories": [
-            "other"
-        ]
-    },
     "akkoma": {
         "categories": [
             "selfhosted"
@@ -200,6 +195,9 @@
         ]
     },
     "conduwuit": {
+        "alts": [
+            "conduwuit_alt"
+        ],
         "categories": [
             "selfhosted"
         ]
@@ -439,6 +437,9 @@
         ]
     },
     "goblog": {
+        "alts": [
+            "goblog_alt"
+        ],
         "categories": [
             "selfhosted"
         ]
@@ -927,6 +928,11 @@
         ]
     },
     "obtainium": {
+        "categories": [
+            "other"
+        ]
+    },
+    "odysee": {
         "categories": [
             "other"
         ]
