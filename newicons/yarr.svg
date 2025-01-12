@@ -1,0 +1,8 @@
+<svg version="1.1" viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs><style>
+      .cls-1 {
+        fill: none;
+        stroke:#fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style></defs><rect class="cls-1" x="5.5" y="4.8543" width="37" height="37" rx="4" ry="4" stroke="#fff"/><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="m24 14.5v22" stroke-width="1px"/><circle cx="24" cy="12" r="2.5" style="paint-order:stroke fill markers"/></g><circle cx="24" cy="12" r=".75" fill="#fff" stroke-width="0" style="paint-order:stroke fill markers"/><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="m14 26.5h4" stroke-width="1px"/><path d="m30 26.5h4" stroke-width="1px"/><path d="m34 26.5a10 10 0 0 1-5 8.6603 10 10 0 0 1-10 0 10 10 0 0 1-5-8.6603" style="paint-order:stroke fill markers"/></g></svg>
