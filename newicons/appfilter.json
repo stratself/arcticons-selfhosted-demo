@@ -4,6 +4,11 @@
             "selfhosted"
         ]
     },
+    "rust": {
+        "categories": [
+            "programming"
+        ]
+    },
     "actual_budget": {
         "categories": [
             "selfhosted"
