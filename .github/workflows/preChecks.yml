@@ -1,12 +1,14 @@
 name: "Pre-audit pull request"
+
 on:
-  pull_request:
-    types: [ assigned, opened, synchronize, reopened ]
-    branches:
-      - main
-      - master
-    paths:
-      - newicons/*
+  workflow_dispatch:
+  # pull_request:
+  #   types: [ assigned, opened, synchronize, reopened ]
+  #   branches:
+  #     - main
+  #     - master
+  #   paths:
+  #     - newicons/*
 
 jobs:
   Audit-SVGs:

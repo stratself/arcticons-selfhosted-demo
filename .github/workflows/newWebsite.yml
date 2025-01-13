@@ -1,3 +1,5 @@
+name: "Publish new website"
+
 on:
   push:
     branches:
@@ -35,5 +37,5 @@ jobs:
           git config user.email "github-actions@github.com"
           git pull
           git add .
-          git commit -m "Generated new website"
+          git commit -m "Publish new website"
           git push       
