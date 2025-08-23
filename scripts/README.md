@@ -6,7 +6,7 @@ To prepare a release, run the following scripts from the root directory of the r
 
 ```bash
 uv sync --dev # sync dependencies
-uv run ./scripts/generate-icons.py -c generate-config.toml --nopreserve
+uv run ./scripts/generate-icons.py -c generate-config.toml --delete-after
 uv run ./scripts/check-icons.py icons/white/svg newicons/appfilter.json --sort
 uv run ./scripts/publish-website.py
 ```
@@ -22,7 +22,7 @@ This script is a heavily modified version of [`preparerelease.py`](https://githu
 <summary>It takes the following arguments:</summary>
 
 ```
-usage: generate-icons.py [-h] [-c CONFIG] [--checkonly] [--checksrc CHECKSRC] [--nopreserve]
+usage: generate-icons.py [-h] [-c CONFIG] [--checkonly] [--checksrc CHECKSRC] [--delete-after] [-e]
 
 options:
   -h, --help            show this help message and exit
@@ -30,7 +30,8 @@ options:
                         Config file to use
   --checkonly           Run checks only. Requires -c or --checksrc to be set
   --checksrc CHECKSRC   Path to the icons directory for checking (only enabled alongside --checkonly flag)
-  --nopreserve          Remove icons after creation
+  --delete-after        Delete icons from the source folder after creation
+  -e, --error           Errors on invalid checks
 ```
 
 </details>

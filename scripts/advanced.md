@@ -33,7 +33,7 @@ webp = "icons/custom/webp"
 Place this config file at the root directory of the repo, as the referenced paths are **relative** to the file. Then run the `generate-icons.py` script referencing it:
 
 ```bash
-uv run scripts/generate-icons.py -c generate-icons-custom.toml --nopreserve
+uv run scripts/generate-icons.py -c generate-icons-custom.toml --delete-after
 ```
 
 The new files will be available.
