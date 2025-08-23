@@ -70,4 +70,4 @@ options:
 
 ## publish-website.py
 
-Read from `appfilter.json` and add each icon as appropriate divs inside website.
+Read from `appfilter.json` and add each icon as appropriate divs inside the website. This script requires a `site-config.json` file as found in the repo root.
