@@ -1,6 +1,7 @@
 html {
     scrollbar-color: white transparent;
     scrollbar-width: thin;
+    overflow-y: scroll;
 }
 
 body {    
