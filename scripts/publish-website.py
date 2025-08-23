@@ -23,7 +23,7 @@ for icon in appfilter:
 for category in config['categories']:
     config['categories'][category]['count'] = categories.count(category)
 
-print(config)
+config['iconCount'] = len(icons)
 
 results_template = environment.get_template("index.html")
 context = {
@@ -32,5 +32,7 @@ context = {
 }
 
 with open(f"{config['dst']}/{config['pageName']}", mode="w", encoding="utf-8") as results:
+    print("Generating webpage with the following config:")
+    print(json.dumps(config, indent=4))
     results.write(results_template.render(context))
     print(f"... wrote {config['pageName']}")
