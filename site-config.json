@@ -2,7 +2,7 @@
     "title": "Arcticons",
     "dst": "docs",
     "pageName": "index.html",
-    "templatesDir": "templates",
+    "templatesDir": "scripts/templates",
     "cdnUrl": "https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white",
     "categories": {
         "selfhosted": {},
