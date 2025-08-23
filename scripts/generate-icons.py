@@ -186,9 +186,9 @@ def create_icons(
             if export_dir_png is not None:
                 if os.path.exists(export_dir_png) is not True:
                     os.makedirs(export_dir_png)
+                image.save(export_dir_png + f"/{icon}.png", format="PNG")
 
             # Convert and save it as WebP
-            image.save(export_dir_png + f"/{icon}.png", format="PNG")
             if export_dir_webp is not None:
                 if os.path.exists(export_dir_webp) is not True:
                     os.makedirs(export_dir_webp)
