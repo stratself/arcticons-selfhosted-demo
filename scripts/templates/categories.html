@@ -1,0 +1,8 @@
+<div id="category-filters">
+    <text>Categories:</text>
+        {% for category in config.categories %}
+            <button class="button-on" id="{{category}}-toggle" onclick="filter('{{category}}')">
+                {{ category.title() }} ({{ config.categories[category]['count']}})
+            </button>
+        {% endfor %}
+</div>

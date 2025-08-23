@@ -1,0 +1,9 @@
+<div class="iconImageDiv">
+    <img class="iconImage" width="96px" src="{{ config.cdnUrl }}/svg/{{ icon }}.svg">
+    
+    {% if 'alts' in appfilter[icon] %}
+    <a class="icon-switcher" href="javascript:;" onclick="switchIcon('{{icon}}')">
+        [ switch icon ]
+    </a>
+    {% endif %}
+</div>

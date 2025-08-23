@@ -1,0 +1,12 @@
+<div class="iconList">
+    {% for icon in appfilter %}
+    <div class="iconPanel" 
+    data-categories="{{ ' '.join(appfilter[icon].categories) }}" 
+    data-current="{{ icon }}" 
+    data-alt="{{ icon +  ' ' + ' '.join(appfilter[icon]['alts']) if 'alts' in appfilter[icon] }}"
+    id="{{ icon }}">
+        {% include 'partials/iconImage.html' %}
+        {% include 'partials/iconDetails.html' %}
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,20 @@
+<div class="iconDetails">
+    <h3>
+        {{icon.replace("_"," ").title()}}
+    </h3>
+    <div class="iconCopy">
+        <div class="iconFormats">
+            <a class="iconLink" href="{{ config.cdnUrl }}/svg/{{ icon }}.svg" onclick="copyUrl(event)">
+                SVG
+            </a>
+            |
+            <a class="iconLink" href="{{ config.cdnUrl }}/png/{{ icon }}.png" onclick="copyUrl(event)">
+                PNG
+            </a>
+            |
+            <a class="iconLink" href="{{ config.cdnUrl }}/webp/{{ icon }}.webp" onclick="copyUrl(event)">
+                WEBP
+            </a>
+        </div>
+    </div>
+</div>

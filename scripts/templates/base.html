@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arcticons Selfhosted - Arcticons for selfhosted dashboards</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="icon" href="arcticons.svg">
+  </head>
+  <body>
+    {% include "header.html" %}
+    <center id="search">
+      {% include "search.html" %}
+      {% block iconCategories %} {% endblock %}
+    </center>
+    <div id="popup">
+      URL copied!
+    </div> 
+    <div class="iconList">
+      {% block iconList %} {% endblock %}
+    </div>
+      {% block scripts %} {% endblock %}
+  </body>
+</html>

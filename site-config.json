@@ -1,0 +1,13 @@
+{
+    "title": "Arcticons",
+    "dst": "docs",
+    "pageName": "index.html",
+    "templatesDir": "templates",
+    "cdnUrl": "https://raw.githubusercontent.com/skedastically/arcticons-selfhosted-demo/refs/heads/master/icons/white",
+    "categories": {
+        "selfhosted": {},
+        "programming": {},
+        "distros": {},
+        "other": {}
+    }
+}
