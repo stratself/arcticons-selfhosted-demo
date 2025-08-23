@@ -10,7 +10,7 @@
 
 See the website to search for icons.
 
-All icons are in the `/icons` folder of this repo. It follows a `{color}/{format}` :
+All icons are in the `/icons` folder of this repo. It follows a `{color}/{format}` structure:
 
 ```
 ├── icons
@@ -25,6 +25,8 @@ All icons are in the `/icons` folder of this repo. It follows a `{color}/{format
 ```
 
 ### Self-hosting the icons
+
+TODO: Add guide(s)
 
 ## Contribute
 
