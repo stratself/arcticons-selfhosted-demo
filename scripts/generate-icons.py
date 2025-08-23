@@ -44,9 +44,9 @@ parser.add_argument(
     help="Path to the icons directory for checking (only enabled alongside --checkonly flag)",
 )
 parser.add_argument(
-    "--nopreserve",
+    "--delete-after",
     action="store_true",
-    help="Remove icons after creation",
+    help="Delete icons from the source folder after creation",
 )
 parser.add_argument("-e", "--error", action="store_true", help="Errors on invalid checks")
 
@@ -446,7 +446,7 @@ def main():
         create_icons(data, SIZE, EXPORT_DIR_SVG, EXPORT_DIR_PNG, EXPORT_DIR_WEBP, MODE)
         print(f"There are {len(data)} new icons")
     for flavor in CONFIG:
-        if args.nopreserve:
+        if args.delete-after:
             remove_svg(NEWICONS_PATH)
 
 
