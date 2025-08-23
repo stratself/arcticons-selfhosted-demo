@@ -1,7 +1,5 @@
 # Arcticons-selfhosted - Arcticons for self-hosted dashboards!
 
-**This WIP is highly complete and probably ready to ship. Please file an issue if you wanna improve/suggest anything.**
-
 <center>
 
 | Website | Matrix Chat (Arcticons Space) | Knowledge Base | [Privacy](PRIVACY.md)
@@ -10,9 +8,9 @@
 
 ## Usage
 
-See website to search for icons, or search directly on this Github repo.
+See the website to search for icons.
 
-All icons are in the `/icons` folder of this repo in the following tree structure:
+All icons are in the `/icons` folder of this repo. It follows a `{color}/{format}` :
 
 ```
 ├── icons
@@ -26,7 +24,7 @@ All icons are in the `/icons` folder of this repo in the following tree structur
 │       └── webp
 ```
 
-You can use them for further self-hosting.
+### Self-hosting the icons
 
 ## Contribute
 
@@ -34,13 +32,15 @@ See [Contributing.md](CONTRIBUTING.md)
 
 ## Requests and issues
 
-Please file an issue, preferably with link(s) to the logo(s).
+If you want to request an icon, please file an issue. It would be nice if you can link to the logo/icon being requested.
+
+For other problems or questions, you can use the issue tracker too.
 
 ## Credits
 
 Inspiration from https://selfh.st/icons.
 
-Thank you to all contributors!
+This icon package shares a lot of icons with the main Arcticon repo. Thank you to all contributors of both repos!
 
 ## License
 
