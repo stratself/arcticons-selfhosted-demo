@@ -3,3 +3,5 @@ argparse
 cairosvg
 beautifulsoup4
 jsonschema
+jinja2
+json
