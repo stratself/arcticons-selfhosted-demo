@@ -8,7 +8,9 @@ on:
     paths:
       - newicons/*
   workflow_dispatch:
-    
+  push:
+    branches:
+      - master
 jobs:
   Audit-SVGs:
     runs-on: ubuntu-latest
