@@ -6,13 +6,13 @@ on:
       - main
       - master
     paths:
-      - newicons/*
+      - newicons/**
   workflow_dispatch:
   push:
     branches:
       - master
     paths:
-      - newicons/*
+      - newicons/**
 
 jobs:
   Audit-SVGs:
