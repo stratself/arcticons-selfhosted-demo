@@ -848,6 +848,11 @@
             "other"
         ]
     },
+    "tammy": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
     "mysql": {
         "categories": [
             "selfhosted",
@@ -1007,7 +1012,8 @@
             "opnsense_alt"
         ],
         "categories": [
-            "selfhosted"
+            "selfhosted",
+            "distros"
         ]
     },
     "organizr": {
