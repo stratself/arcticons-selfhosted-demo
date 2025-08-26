@@ -83,7 +83,7 @@ def check_icons(icons_paths: list, categories_map_path: str) -> None:
         print("\n")
     if len(lostKeys) > 0:
         print("WARN: The following keys do not have an icon associated with it:\n")
-        [print(f"\t{lostKey}.svg") for lostKey in lostKeys]
+        [print(f"\t{lostKey}") for lostKey in lostKeys]
         print("\n")
     if len(lostCategories) > 0:
         print("WARN: The following icons are not assigned a category:\n")
