@@ -77,6 +77,7 @@ def check_icons(icons_paths: list, categories_map_path: str) -> None:
     for i in categories_map:
         try:
             if len(categories_map[i]["categories"]) == 0:
+                lostCategories.append(i)
         except KeyError:
             lostCategories.append(i)
 
