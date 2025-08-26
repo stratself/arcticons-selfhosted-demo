@@ -1,6 +1,6 @@
 # Arcticons-selfhosted - Arcticons for self-hosted dashboards!
 
-ABC
+AB
 
 <center>
 
