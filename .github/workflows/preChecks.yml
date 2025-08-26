@@ -11,6 +11,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - newicons/*
+
 jobs:
   Audit-SVGs:
     runs-on: ubuntu-latest
