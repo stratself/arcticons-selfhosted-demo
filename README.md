@@ -1,5 +1,7 @@
 # Arcticons-selfhosted - Arcticons for self-hosted dashboards!
 
+Lorem ipsum
+
 <center>
 
 | Website | Matrix Chat (Arcticons Space) | Knowledge Base | [Privacy](PRIVACY.md)
