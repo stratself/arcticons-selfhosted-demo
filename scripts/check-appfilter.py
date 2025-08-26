@@ -73,9 +73,12 @@ def check_icons(icons_paths: list, categories_map_path: str) -> None:
 
     lostIcons = list(set(iconList) - set(icons))
     lostKeys = list(set(icons) - set(iconList))
-    lostCategories = [
-        i for i in categories_map if len(categories_map[i]["categories"]) == 0
-    ]
+    lostCategories = []
+    for i in categories_map:
+        try:
+            if len(categories_map[i]["categories"]) == 0:
+        except KeyError:
+            lostCategories.append(i)
 
     if len(lostIcons) > 0:
         print("WARN: The following icons are not found in the category map:\n")
