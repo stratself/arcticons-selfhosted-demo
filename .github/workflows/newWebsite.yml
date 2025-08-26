@@ -1,7 +1,6 @@
 on:
   push:
     branches:
-      - master
       - main
     paths:
       - icons/**
@@ -16,14 +15,10 @@ jobs:
       - name: Checking out branch
         uses: actions/checkout@v4
       - name: Install uv
-        uses: astral-sh/setup-uv@v2
+        uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
           cache-dependency-glob: "uv.lock"
-      - name: "Set up Python"
-        uses: actions/setup-python@v5
-        with:
-          python-version-file: ".python-version"
       - name: Install the project
         run: uv sync --all-extras --dev
       - name: Export icons to website
@@ -36,4 +31,4 @@ jobs:
           git pull
           git add .
           git commit -m "Generated new website"
-          git push       
+          git push
