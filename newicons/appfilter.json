@@ -757,16 +757,6 @@
             "programming"
         ]
     },
-    "mattermost": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "metabase": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "microsoft_azure": {
         "categories": [
             "other"
