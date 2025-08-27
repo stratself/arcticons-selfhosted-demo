@@ -124,6 +124,11 @@
             "selfhosted"
         ]
     },
+    "beeper": {
+        "categories": [
+            "other"
+        ]
+    },
     "bitwarden": {
         "categories": [
             "selfhosted"
@@ -189,11 +194,6 @@
             "selfhosted"
         ]
     },
-    "onlyoffice": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "conduit": {
         "categories": [
             "selfhosted"
@@ -212,19 +212,9 @@
             "selfhosted"
         ]
     },
-    "librespeed": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
     "cplusplus": {
         "categories": [
             "programming"
-        ]
-    },
-    "beeper": {
-        "categories": [
-            "other"
         ]
     },
     "cryptpad": {
@@ -250,6 +240,11 @@
     "debian": {
         "categories": [
             "distros"
+        ]
+    },
+    "deluge": {
+        "categories": [
+            "selfhosted"
         ]
     },
     "desec_io": {
@@ -671,6 +666,11 @@
             "selfhosted"
         ]
     },
+    "kiwix": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "kodi": {
         "categories": [
             "selfhosted"
@@ -709,6 +709,16 @@
     "libreoffice": {
         "categories": [
             "other"
+        ]
+    },
+    "librephotos": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "librespeed": {
+        "categories": [
+            "selfhosted"
         ]
     },
     "libretube": {
@@ -787,6 +797,12 @@
             "selfhosted"
         ]
     },
+    "meshtastic": {
+        "categories": [
+            "selfhosted",
+            "other"
+        ]
+    },
     "metabase": {
         "categories": [
             "selfhosted"
@@ -863,6 +879,11 @@
             "selfhosted"
         ]
     },
+    "mobilizon": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "monero": {
         "categories": [
             "other"
@@ -871,37 +892,6 @@
     "moonlight": {
         "categories": [
             "other"
-        ]
-    },    
-    "nextcloud_dev": {
-        "categories": [
-            "selfhosted"
-        ]
-    },    
-    "kiwix": {
-        "categories": [
-            "selfhosted"
-        ]
-    },    
-    "librephotos": {
-        "categories": [
-            "selfhosted"
-        ]
-    },    
-    "meshtastic": {
-        "categories": [
-            "selfhosted",
-            "other"
-        ]
-    },   
-    "mobilizon": {
-        "categories": [
-            "selfhosted"
-        ]
-    },
-    "deluge": {
-        "categories": [
-            "selfhosted"
         ]
     },
     "mullvad_vpn": {
@@ -931,6 +921,11 @@
         ]
     },
     "nextcloud": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "nextcloud_dev": {
         "categories": [
             "selfhosted"
         ]
@@ -1009,6 +1004,11 @@
         ]
     },
     "onionshare": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "onlyoffice": {
         "categories": [
             "selfhosted"
         ]
