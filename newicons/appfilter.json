@@ -875,7 +875,8 @@
     },    
     "meshtastic": {
         "categories": [
-            "selfhosted"
+            "selfhosted",
+            "other"
         ]
     },    
     "deluge": {
