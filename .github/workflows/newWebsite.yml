@@ -1,3 +1,4 @@
+name: "Publish new website"
 on:
   push:
     branches:

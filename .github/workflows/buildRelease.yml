@@ -1,3 +1,4 @@
+name: "Build versioned release"
 on:
   release:
     types: [published]
