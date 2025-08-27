@@ -2,14 +2,28 @@
 
 This project uses [uv](https://docs.astral.sh/uv/) to run Python commands. Dependencies are also noted in [`requirements.txt`](requirements.txt)
 
-To prepare a release, run the following scripts from the root directory of the repo:
+To prepare a release, first check the icons' drawability and metadata to be correct. Please **run all commands from the root dir of this repo**.
 
 ```bash
 uv sync --dev # sync dependencies
-uv run ./scripts/generate-icons.py -c generate-config.toml --delete-after
-uv run ./scripts/check-icons.py icons/white/svg newicons/appfilter.json --sort
-uv run ./scripts/publish-website.py
+
+# check (not generate) all icons in ./newicons
+uv run scripts/generate-icons.py --checksrc ./newicons --checkonly -e
+# check appfilter JSON
+uv run scripts/check-appfilter.py -c ./generate-icons.toml -e --nosort newicons/appfilter.json 
 ```
+
+Then when all errors are resolved, run the following scripts, also from the repo's root directory:
+
+```bash
+# sort appfilter
+uv run ./scripts/check-appfilter.py -c .\generate-icons.toml newicons/appfilter.json
+
+# generate icons
+uv run ./scripts/generate-icons.py -c generate-icons.toml --delete-after
+```
+
+After generating icons into the `./icons/**` paths, CI will automatically generate and publish new website. However you can also do it manually with `uv run ./scripts/publish-website.py`.
 
 ## 1. generate-icons.py
 
