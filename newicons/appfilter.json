@@ -6,7 +6,8 @@
     },
     "yggdrasil": {
         "categories": [
-            "selfhosted"
+            "selfhosted",
+            "programming"
         ]
     },
     "polycule": {
@@ -814,7 +815,7 @@
     "meshtastic": {
         "categories": [
             "selfhosted",
-            "other"
+            "programming"
         ]
     },
     "metabase": {
