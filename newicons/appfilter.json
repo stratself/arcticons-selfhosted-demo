@@ -878,7 +878,12 @@
             "selfhosted",
             "other"
         ]
-    },    
+    },   
+    "mobilizon": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "deluge": {
         "categories": [
             "selfhosted"
