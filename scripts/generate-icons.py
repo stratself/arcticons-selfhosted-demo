@@ -446,7 +446,7 @@ def main():
         create_icons(data, SIZE, EXPORT_DIR_SVG, EXPORT_DIR_PNG, EXPORT_DIR_WEBP, MODE)
         print(f"There are {len(data)} new icons")
     for flavor in CONFIG:
-        if args.delete-after:
+        if args.delete_after:
             remove_svg(NEWICONS_PATH)
 
 
