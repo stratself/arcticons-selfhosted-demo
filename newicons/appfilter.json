@@ -189,6 +189,11 @@
             "selfhosted"
         ]
     },
+    "onlyoffice": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "conduit": {
         "categories": [
             "selfhosted"
