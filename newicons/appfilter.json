@@ -519,6 +519,11 @@
             "selfhosted"
         ]
     },
+    "graphene_os": {
+        "categories": [
+            "distros"
+        ]
+    },
     "grocy": {
         "categories": [
             "selfhosted"
@@ -701,6 +706,11 @@
             "selfhosted"
         ]
     },
+    "lineage_os": {
+        "categories": [
+            "distros"
+        ]
+    },
     "linkedin": {
         "categories": [
             "other"
@@ -841,16 +851,6 @@
     "monero": {
         "categories": [
             "other"
-        ]
-    },
-    "graphene_os": {
-        "categories": [
-            "distros"
-        ]
-    },
-    "lineage_os": {
-        "categories": [
-            "distros"
         ]
     },
     "mullvad_vpn": {

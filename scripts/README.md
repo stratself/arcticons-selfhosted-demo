@@ -19,7 +19,7 @@ Then when all errors are resolved, run the following scripts, also from the repo
 
 ```bash
 # sort appfilter
-uv run ./scripts/check-appfilter.py -c .\generate-icons.toml newicons/appfilter.json
+uv run ./scripts/check-appfilter.py -c ./generate-icons.toml newicons/appfilter.json
 
 # generate icons
 uv run ./scripts/generate-icons.py -c generate-icons.toml --delete-after
