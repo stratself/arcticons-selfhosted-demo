@@ -853,6 +853,16 @@
             "other"
         ]
     },
+    "moonlight": {
+        "categories": [
+            "other"
+        ]
+    },    
+    "nextcloud_dev": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
     "deluge": {
         "categories": [
             "selfhosted"
