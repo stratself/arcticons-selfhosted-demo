@@ -3,6 +3,10 @@ import argparse
 
 baseUrl = "https://raw.githubusercontent.com/Arcticons-Team/Arcticons/main/icons/white/"
 
+# for newicons folder
+# baseUrl = "https://raw.githubusercontent.com/Arcticons-Team/Arcticons/main/newicons/"
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument("SRC_FILENAME", type=str, help="Source filename without .svg")
 parser.add_argument("DST_FILENAME", type=str, nargs ='?', help="Destination filename (optional)")
