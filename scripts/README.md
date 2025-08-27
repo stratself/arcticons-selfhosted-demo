@@ -2,7 +2,9 @@
 
 This project uses [uv](https://docs.astral.sh/uv/) to run Python commands. Dependencies are also noted in [`requirements.txt`](requirements.txt)
 
-To prepare a release, first check the icons' drawability and metadata to be correct. Please **run all commands from the root dir of this repo**.
+## Process for adding icons
+
+To add icons to website, first check the icons' drawability and metadata to be correct. Please **run all commands from the root dir of this repo**.
 
 ```bash
 uv sync --dev # sync dependencies
@@ -25,7 +27,18 @@ uv run ./scripts/generate-icons.py -c generate-icons.toml --delete-after
 
 After generating icons into the `./icons/**` paths, CI will automatically generate and publish new website. However you can also do it manually with `uv run ./scripts/publish-website.py`.
 
-## 1. generate-icons.py
+## Process for preparing a release
+
+Every once in a while, let's do versioned releases. Use an annotated git tag and push it, the CI will take care of packaging.
+
+```bash
+git tag -a "0.3.3.2-beta"
+git push --tag
+```
+
+## Script details
+
+### 1. generate-icons.py
 
 Takes icons from `/newicons` and export them to svg, png, and webp files.
 
@@ -50,7 +63,7 @@ options:
 
 </details>
 
-## 2. check-appfilter.py
+### 2. check-appfilter.py
 
 Validate the JSON category map (`appfilter.json`) against either 
 
@@ -82,6 +95,6 @@ options:
 
 </details>
 
-## publish-website.py
+### publish-website.py
 
 Read from `appfilter.json` and add each icon as appropriate divs inside the website. This script requires a `site-config.json` file as found in the repo root.
