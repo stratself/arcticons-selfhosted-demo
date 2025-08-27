@@ -212,9 +212,19 @@
             "selfhosted"
         ]
     },
+    "librespeed": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "cplusplus": {
         "categories": [
             "programming"
+        ]
+    },
+    "beeper": {
+        "categories": [
+            "selfhosted"
         ]
     },
     "cryptpad": {
@@ -926,6 +936,11 @@
         ]
     },
     "nextcloud_news": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "nextcloud_notes": {
         "categories": [
             "selfhosted"
         ]
