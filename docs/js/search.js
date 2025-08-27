@@ -11,3 +11,14 @@ document.getElementById('searchBar').addEventListener('input', function (event) 
         }
     });
 });
+
+// Focus on searchbar when pressing '/'
+const SearchBar = document.getElementById('searchBar')
+document.addEventListener("keydown", focusSearch);
+function focusSearch(event) {
+    if ((event.key === 'k' || event.key === 'K') && event.ctrlKey) {
+        SearchBar.focus();
+        event.preventDefault();
+        return false;
+    }
+}
