@@ -390,6 +390,9 @@
     "forgejo": {
         "categories": [
             "selfhosted"
+        ],
+        "alts": [
+            "forgejo_alt"
         ]
     },
     "freeipa": {
