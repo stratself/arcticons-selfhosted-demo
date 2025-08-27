@@ -1297,6 +1297,11 @@
             "selfhosted"
         ]
     },
+    "wallabag": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
     "revolt": {
         "categories": [
             "selfhosted"
