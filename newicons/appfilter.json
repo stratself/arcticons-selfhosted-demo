@@ -868,6 +868,16 @@
             "selfhosted"
         ]
     },    
+    "librephotos": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
+    "meshtastic": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
     "deluge": {
         "categories": [
             "selfhosted"
