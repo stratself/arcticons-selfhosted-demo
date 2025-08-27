@@ -863,6 +863,11 @@
             "selfhosted"
         ]
     },    
+    "kiwix": {
+        "categories": [
+            "selfhosted"
+        ]
+    },    
     "deluge": {
         "categories": [
             "selfhosted"
