@@ -848,11 +848,6 @@
             "other"
         ]
     },
-    "tammy": {
-        "categories": [
-            "selfhosted"
-        ]
-    },    
     "mysql": {
         "categories": [
             "selfhosted",
@@ -896,9 +891,13 @@
     },
     "nginx_proxy_manager": {
         "categories": [
+            "selfhosted"
         ]
     },
     "nordvpn": {
+        "categories": [
+            "other"
+        ]
     },
     "notesnook": {
         "alts": [
@@ -1362,6 +1361,11 @@
         ]
     },
     "tailscale": {
+        "categories": [
+            "selfhosted"
+        ]
+    },
+    "tammy": {
         "categories": [
             "selfhosted"
         ]
