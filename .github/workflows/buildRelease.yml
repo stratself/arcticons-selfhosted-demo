@@ -44,7 +44,6 @@ jobs:
         run: |
           name="$GITHUB_REF_NAME Release"
           changelog="$(ls -i icons/black/svg | wc -l) icons in total"
-          
           gh release create $GITHUB_REF_NAME\
             --generate-notes\
             --title "$name"\
