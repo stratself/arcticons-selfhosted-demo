@@ -4,6 +4,15 @@
             "selfhosted"
         ]
     },
+    "polycule": {
+        "categories": [
+            "selfhosted"
+        ],
+        "alts": [
+            "polycule_alt"
+        ]
+        
+    },
     "actual_budget": {
         "categories": [
             "selfhosted"
