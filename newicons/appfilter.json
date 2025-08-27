@@ -843,6 +843,16 @@
             "other"
         ]
     },
+    "graphene_os": {
+        "categories": [
+            "distros"
+        ]
+    },
+    "lineage_os": {
+        "categories": [
+            "distros"
+        ]
+    },
     "mullvad_vpn": {
         "categories": [
             "other"
