@@ -1,5 +1,8 @@
 # Arcticons-selfhosted - Arcticons for self-hosted dashboards!
 
+**This repo is now moved to https://codeberg.org/Arcticons/Arcticons-selfhosted**
+
+
 <center>
 
 | Website | Matrix Chat (Arcticons Space) | Knowledge Base | [Privacy](PRIVACY.md)
@@ -47,5 +50,6 @@ This icon package shares a lot of icons with the main Arcticon repo. Thank you t
 ## License
 
 Arcticons-selfhosted uses the [GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
 
 All icons are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
